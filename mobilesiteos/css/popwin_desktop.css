@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+/*	MobileSiteOS 'popwin.js' style properties, (don't change these). It is better
+	to add your own style sheets or inline styles: Copyright©2008-2011 - OpenSiteMobile
+*/
+
+  html {
+	overflow:hidden; 
+  }
+  body {	/* Required by Android browser (other's?) because popwin is not sized via javascript correctly */
+    position:absolute;
+    top:0;
+    left:0;
+  }
+  #popup {
+    width:636px;
+    height:474px;
+  }
+  #popup_title {
+    font-weight:bold;
+    font-size:x-small;
+	color: #FFF;
+	text-shadow:1px 1px 1px #333;
+    height:18px;
+    letter-spacing:1px;
+    margin-bottom:2px;
+  }
+  #popup_title,
+  #popup_buttons {
+	border-radius:4px;
+  }
+  #popup_content {
+    height:430px;
+    border:1px solid #999;
+    overflow:auto;
+  }
+  #popup_buttons * {
+    font-size:xx-small;
+  }
+  #popup_content * {
+    font-size:x-small;
+  }
+  #popup_buttons {
+    height:18px;
+    margin-top:2px;
+  }
+  

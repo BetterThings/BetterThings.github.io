@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/*	MobileSiteOS keyboard widget style properties, (don't change these). It is better
+	to add your own style sheets or inline styles: Copyright©2008-2011 - OpenSiteMobile
+*/
+
+  #keyboard_container {
+    position:absolute;
+    visibility:hidden;
+    border:2px outset grey;
+	border-radius:5px;
+  }
+  #keyboard_header {
+    position:absolute;
+	border-radius:4px;
+    z-index:70;
+  }
+  #keyboard_close {
+	float:right;
+    z-index:90;
+  }
+  #keyboard_display {
+    position:absolute;
+    top:26px;
+    left:0;
+    padding:2px;
+    z-index:100;
+  }
+  #keyboard_display div {
+    position:absolute;
+    text-align:center;
+    z-index:90;
+    border:1px outset;
+	border-radius:3px;
+    overflow:hidden;
+    cursor:pointer;
+    background-repeat:no-repeat;
+    background-position:center;
+  }
+  #keyboard_container button {
+	font-size:small;
+  }
+
+  #shiftl,
+  #shiftr	{ background-image:url(../images/shift.png);}
+  #tab		{ background-image:url(../images/tab.png);	}
+  #caps		{ background-image:url(../images/caps.png);	}
+  #enter	{ background-image:url(../images/enter.png);}
+  #backsp	{ background-image:url(../images/bksp.png);	}
+  #del		{ background-image:url(../images/del.png);	}

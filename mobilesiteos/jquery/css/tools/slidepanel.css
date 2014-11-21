@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+a.trigger {
+	position: absolute;
+}
+a.trigger.left {
+	left: 0;
+}
+a.trigger.right {
+	right: 0;
+}
+a.trigger.active {
+	z-index: 201;
+}
+a.trigger.active i {
+	color: red;
+    background-color: white;
+    -webkit-border-radius: 0.6em;
+    -moz-border-radius: 0.6em;
+    border-radius: 0.6em;
+}
+.panel {
+	position: absolute;
+	display: none;
+}
+.panel.left {
+	left: 0;
+	-webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    border-radius: 1em;
+}
+.panel.right {
+	right: 0;
+	-webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    border-radius: 1em;
+}
+.panel.active {
+	z-index: 200;
+}

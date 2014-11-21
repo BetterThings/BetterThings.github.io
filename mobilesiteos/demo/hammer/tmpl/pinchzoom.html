@@ -1,0 +1,29 @@
+
+
+		<style type="text/css">
+		/* <![CDATA[ */
+
+			#pinchzoom {
+				width:100%;
+				height:300px;
+				overflow:hidden;
+				-webkit-transform: translate3d(0,0,0);
+			}
+
+		/* ]]> */
+		</style>
+
+		<section>
+			<h2><u>Hammer.js</u>&nbsp;Pinch-Zoom Demo</h2>
+
+			<div class="pgrph well">
+				Gesture on the "image" below. Pinch with two fingers to zoom, or twist for rotation. For desktop
+				or laptop pc's, add <code style="white-space: nowrap;">?verbose=true</code> to the base
+				url (before the # sign). This adds "fake finger" support for non-touch devices. Use the "shift"
+				key to start simulated "two finger" support.
+			</div>
+
+			<div id="pinchzoom">
+				<img id="rect" src="./bootstrap/images/mdo-sfmoma-01.jpg" ondragstart="return false" alt="Bootstrap demo picture" />
+			</div>
+		</section>

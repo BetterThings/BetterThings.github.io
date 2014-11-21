@@ -1,0 +1,287 @@
+@charset "utf-8";
+
+/* MobileSiteOS color and site specific style properties.
+   Use as a base for your application specific.css file. */
+
+html, body, table, div, article, section, fieldset {
+    color: #000000;
+}
+u {
+    text-decoration: none;
+}
+h1,
+h2,
+h3 {
+	color: #666;
+}
+a.msos_link {
+    color: #FF8429;
+}
+a.msos_link:hover {
+    color: salmon;
+}
+
+#header, #popup_title,
+#footer, #popup_buttons,
+#pyromane_toolbar {
+    background-color: #FFCC88;
+    background-color: rgba(255,204,136,1);
+}
+#marquee {
+    color: #FF8429;
+    text-shadow: 2px 2px 2px #000;
+}
+#slogan {
+    color: #000;
+    text-shadow: 1px 1px 1px #999;
+}
+#ajax_container,
+#calendar_container,
+#colortool_container,
+#debug_container,
+#keyboard_container {
+    background-color: #F7F7F7;
+}
+
+
+  /* MobileSiteOS button color scheme (ref. Bootstrap style css) */
+.btn-msos,
+.btn-msos:hover {
+    color: #FFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.btn-msos:active,
+.btn-msos.active {
+	color: #FFF;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+	cursor: default;
+}
+.btn-msos {
+    background-color: #FF8429;
+    background-color: rgba(255,132,41,1);
+    border-color: #FF4411 #9F9F9F #9F9F9F #FF4411;
+}
+.btn-msos:hover,
+.btn-msos:active,
+.btn-msos.active,
+.btn-msos.disabled,
+.btn-msos[disabled] {
+    background-color: #FF7700;
+}
+.btn-msos.disabled,
+.btn-msos[disabled] {
+    color: #FFF;
+    opacity: 0.4;
+}
+.btn-msos .caret {
+    border-top-color: #FFF;
+    border-bottom-color: #FFF;
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+}
+
+  /* MobileSiteOS color scheme (ref. Bootstrap style css*/
+.dropdown-menu li.active > a,
+.dropdown-submenu li.active > a {
+    color: #FFF;
+    background-color: salmon;
+    text-shadow: 1px 1px 1px #666;
+}
+.dropdown-submenu > a:after {
+    border-color: transparent;
+    border-left-color: #CCC;
+}
+.dropdown-submenu li:hover > a:after {
+    border-left-color: #FFF;
+}
+.dropdown-menu li.disabled > a,
+.dropdown-submenu li.disabled > a {
+    color: #999999;
+    background-color: #FFF;
+    text-shadow: none;
+}
+
+.pagination > li.active > a,
+.pagination > li.active > span,
+.pagination > li.active > a:hover,
+.pagination > li.active > span:hover,
+.pagination > li.active > a:focus,
+.pagination > li.active > span:focus,
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus,
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus,
+.nav-stacked > li.active > a,
+.nav-stacked > li.active > a:hover,
+.nav-stacked > li.active > a:focus {
+  color: #fff;
+  background-color: #ffc2aa;
+  text-shadow: 1px 1px 2px #888;
+}
+
+  /* Misc. MSOS specific */
+.msos_navbar .brand {
+    color: #FF8429;
+    font-size: 1.6em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px white, -1px -1px 1px #444;
+    margin-left: 0.3em;
+}
+.msos_navbar .dropdown-menu:before {
+	border-bottom: 7px solid #CCC;
+	border-bottom-color: rgba(0, 0, 0, 0.2);
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+}
+.msos_navbar .dropdown-menu:after {
+	border-bottom: 6px solid #FFF;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+}
+.msos_navbar .breadcrumb li a.active {
+	color: #EEE;
+	cursor: default;
+	text-shadow: 1px 1px 1px #333;
+}
+.msos_navbar .breadcrumb li > span.divider {
+	color: #FFF;
+	font-weight: bold;
+	padding: 0 0.2em 0 0.4em;
+	text-shadow: -1px -1px 0 #000;
+}
+.msos_navbar .menus li.dropdown.open .caret,
+.msos_navbar .menus li.dropdown.open a:hover .caret,
+.msos_navbar .menus li.dropdown .dropdown-toggle .caret {
+	border-bottom-color: #FFF;
+	border-top-color: #FFF;
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+.msos_navbar .menus > li.dropdown.active .caret,
+.msos_navbar .menus > li.dropdown.open.active .caret {
+	border-bottom-color: red;
+	border-top-color: red;
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+.msos_navbar .menus > li.dropdown.open.active > a:hover {
+	color: #FFF;
+    background-color: #FF8429;
+    background-color: rgba(255,132,41,1);
+    border-color: #FF4411 #9F9F9F #9F9F9F #FF4411;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.msos_list li {
+    background-image: url(../images/osm_item.gif);
+    background-repeat: no-repeat;
+}
+.crumb {
+	color: #FFF;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px #000;
+	cursor: default;
+}
+.scroll_handle {
+    background: #FF9933;
+}
+.html5_color_btn {
+	color: green;
+	text-shadow: -4px -4px 2px red, 4px 4px 2px blue;
+	background-image: none;
+}
+.html5_color_btn:hover {
+	text-shadow: -4px -4px 2px salmon, 4px 4px 2px lightblue;
+}
+
+/* Tab style properties */
+.tab_passive {
+    background-color: rgba(255,204,136,1);
+    border-bottom: 2px solid #FFF;
+}
+.tab_active {
+    background-color: #E0E0E0;
+    border-bottom: 2px solid #E0E0E0;
+}
+.tab_content {
+    background-color: #E0E0E0;
+}
+
+
+  /* MSOS generic site colors specifications */
+.bgcolor {
+    background-color: #BFBFBF;
+}
+.highlight {
+    background-color: yellow;
+}
+.accent1 {
+    background-color: #FA8072;
+}
+.accent2 {
+    background-color: #F7BC83;
+}
+.accent3 {
+    background-color: #FF9933;
+}
+.contrast0 {
+    background-color: #FFFFFF;
+}
+.contrast1 {
+    background-color: #EFEFEF;
+}
+.contrast2 {
+    background-color: #E0E0E0;
+}
+.contrast3 {
+    background-color: #A1A1A1;
+}
+.bg_inherit {
+    background-color: inherit;
+}
+.outline {
+    border: 1px dashed #F0F0F0;
+}
+.well {
+	background-color: #FAFAFA;
+}
+
+  /* MobileSiteOS box-shadow specifications */
+#header, #popup_title,
+#footer, #popup_buttons,
+#pyromane_toolbar,
+.ui-widget-header {
+    -webkit-box-shadow:1px 1px 2px 0 #999;
+            box-shadow:1px 1px 2px 0 #999;
+}
+#body,
+#pyromane {
+	-webkit-box-shadow: 0 0 0.6em rgba(0,0,0,0.6);
+            box-shadow: 0 0 0.6em rgba(0,0,0,0.6);
+}
+.sdmenu,
+.ui-dialog,
+.ui-datepicker,
+.overlay-shadow,
+.msos_popup {
+    -webkit-box-shadow:0 0 0.6em rgba(0,0,0,0.6);
+            box-shadow:0 0 0.6em rgba(0,0,0,0.6);
+}
+.msos_display {
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
+}
+
+  /* Notifier.js (msos.notifier) Specific */
+.notify {
+    -webkit-box-shadow:0 0 12px #999;
+            box-shadow:0 0 12px #999;
+}
+.notify:hover {
+    -webkit-box-shadow:0 0 12px #000;
+            box-shadow:0 0 12px #000;
+}
+
+

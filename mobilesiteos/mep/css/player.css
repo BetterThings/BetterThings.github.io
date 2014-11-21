@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+
+/* position:relative is set by fitmedia css code */
+.mejs-container {
+	background-color:#999;
+	overflow: hidden;
+	z-index: 200;
+}
+.mejs-container-fullscreen {
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	z-index:1000;
+}
+
+.mejs-audio {
+	height:33px;
+	margin-bottom:1em;
+	-webkit-border-radius:0.4em;
+	   -moz-border-radius:0.4em;
+			border-radius:0.4em;
+}
+
+.mejs-layers,
+.mejs-poster,
+.mejs-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+.mejs-poster {
+	z-index:100;
+}
+.mejs-overlay {
+	z-index:101;
+}
+.mejs-overlay-button,
+.mejs-overlay-loading {
+	font-size: xx-large;
+	background-color:transparent;
+}
+.mejs-overlay-button {
+	color: #FFF;
+	cursor: pointer;
+	opacity: 0.7;
+}
+.mejs-overlay-loading > i.loading {
+	color: orange;
+}
+.mejs-overlay-button:hover {
+	opacity:1;
+}
+.mejs-controls {
+	position:absolute;
+	bottom:1%;
+	left:1%;
+	background-image:url(../images/background.png);
+	background-color:rgba(0, 0, 0, 0.7);
+	height:30px;
+	width:98%;
+	-webkit-border-radius:0.3em;
+	   -moz-border-radius:0.3em;
+			border-radius:0.3em;
+	z-index:200;
+}
+.mejs-controls > div {
+	float:left;
+	width:26px;
+	height:26px;
+	margin:2px;
+	font-size:11px;
+	line-height:11px;
+}
+.mejs-controls .mejs-button button {
+	cursor:pointer;
+	display:block;
+	margin:5px 5px;
+	position:absolute;
+	height:16px;
+	width:16px;
+	padding:0;
+	border:0;
+	background-color:transparent;
+	z-index:201;
+}
+
+.mejs-controls .mejs-time {
+	color:#FFF;
+	display:block;
+	height:26px;
+	width:36px;
+	overflow:hidden;
+	text-align:left;
+	cursor:default;
+}
+.mejs-controls .mejs-time span {
+	color:#FFF;
+	font-size: 11px;
+	line-height: 26px;
+	margin-top: 2px;
+}
+.mejs-controls button > i {
+	display: none;
+	color:#FFF;
+}
+.mejs-controls button > i:hover {
+	color: orange;
+}
+.mejs-controls .mejs-play button > i.fa-play {
+	display:inline;
+}
+.mejs-controls .mejs-pause button > i.fa-pause {
+	display:inline;
+}
+.mejs-controls .mejs-stop button > i.fa-stop {
+	display:inline;
+}
+.mejs-controls .mejs-fullscreen button > i.fa-arrows-alt {
+	display:inline;
+}
+.mejs-controls .mejs-unfullscreen button > i.fa-square-o {
+	display:inline;
+}
+
+.me-cannotplay > a > img {
+	width:100%;
+	height:100%;
+}
+.me-cannotplay > a > span {
+	color:#FFF;
+	font-weight:bold;
+	padding:15px;
+	display:block;
+}

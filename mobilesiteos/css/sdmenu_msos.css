@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+  /* Color properties (similar to button & .button above) */
+  .sdmenu div i,
+  .sdmenu div span {
+	color:#FFF;
+  }
+  .sdmenu div {
+	background-color:#FF8429;
+	background-color:rgba(255,132,41,1);
+	border-top:1px solid #FF4411;
+	border-left:1px solid #FF4411;
+	border-right:1px solid #9F9F9F;
+  }
+  .sdmenu div:last-child {
+	border-bottom:1px solid #9F9F9F;
+  }
+  .sdmenu div.collapsed:hover,
+  .sdmenu div.collapsed:active,
+  .sdmenu div.collapsed.active,
+  .sdmenu div.collapsed.disabled,
+  .sdmenu div.collapsed[disabled] {
+	background-color:#FF7700;
+  }
+  .sdmenu div a {
+	background-color:#FFCC88;
+	background-color:rgba(255,204,136,1);
+	color:#FF8429;
+  }
+  .sdmenu div a:hover {
+	color:#FFF;
+	text-shadow:1px 1px 1px #666;
+	background-color:salmon;
+  }
+  .sdmenu div a.current {
+	background-color:#CCC;
+  }
+  .sdmenu div a:last-child {
+	border-bottom:1px solid #FFCC88;
+  }

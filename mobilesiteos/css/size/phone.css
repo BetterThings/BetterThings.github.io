@@ -1,0 +1,237 @@
+@charset "utf-8";
+
+/*	MobileSiteOS size specific css, (you typically don't change these). It is better
+	to add your own style sheets or inline styles: Copyright©2008-2011 - OpenSiteMobile */
+
+a,
+abbr,
+address,
+article,
+aside,
+b,
+blockquote,
+body,
+button,
+caption,
+cite,
+code,
+dd,
+del,
+dfn,
+dialog,
+div,
+dl,
+dt,
+em,
+fieldset,
+figure,
+footer,
+form,
+header,
+hgroup,
+hr,
+html,
+i,
+iframe,
+input,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+p,
+pre,
+q,
+samp,
+section,
+select,
+small,
+span,
+strong,
+sub,
+sup,
+table,
+tbody,
+td,
+tfoot,
+thead,
+time,
+tr,
+ul,
+var {
+  font-size: small;
+}
+th {
+  font-size: small;
+}
+h1 {
+  font-size: medium;
+}
+h2 {
+  font-size: small;
+}
+h3 {
+  font-size: small;
+}
+h4 {
+  font-size: x-small;
+}
+section {
+  width: 310px;
+}
+#body, #pyromane, #debug {
+  width: 320px;
+}
+#rotate_marquee {
+  height: 52px;
+}
+#marquee {
+  width: 316px;
+  font-size: x-large;
+  top: 0;
+  left: 0;
+  height: 40px;
+  line-height: 40px;
+}
+#slogan {
+  width: 316px;
+  font-size: small;
+  top: 40px;
+  left: 0;
+  height: 10px;
+  line-height: 10px;
+}
+
+.btn,
+.add-on {
+  line-height: 1.3em;
+  padding: 0.2em 0.4em;
+}
+.msos_height {
+  height: 420px;
+}
+.msos_width {
+  width: 300px;
+}
+.msos_box {
+  padding: 0 8px;
+}
+.w_demi {
+  width: 95%;
+}
+
+/* Google AdSense sizing (special case: shifted for full width) */
+.osm-responsive-2014 {
+  position: relative;
+  top: 2px;
+  left: -2px;
+  width: 320px;
+  height: 50px;
+}
+
+/* Size specific adjustments */
+.nav_legend_left {
+  left: 0;
+}
+#header.navbar .nav > li {
+  margin-top: 0.2em;
+}
+.msos_legend_link {
+  left: 0;
+}
+
+/* MSOS Grid specific css */
+.row {
+  width: 100%;
+}
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+.row div[class*="span"] {
+  display: inline-table;
+  min-height: 1em;
+  vertical-align: top;
+}
+.row .span12 {
+  width: 98%;
+}
+.row .span11 {
+  width: 89.5%;
+}
+.row .span10 {
+  width: 81.8%;
+}
+.row .span9 {
+  width: 73.9%;
+}
+.row .span8 {
+  width: 65.4%;
+}
+.row .span7 {
+  width: 57.1%;
+}
+.row .span6 {
+  width: 48.8%;
+}
+.row .span5 {
+  width: 40.6%;
+}
+.row .span4 {
+  width: 32.2%;
+}
+.row .span3 {
+  width: 24.1%;
+}
+.row .span2 {
+  width: 15.7%;
+}
+.row .span1 {
+  width: 7.2%;
+}
+
+.row.adjust {
+  width: 95%;
+}
+/* Set Grid to single column */
+.row.adjust > div[class*="span"] {
+  display: inline-block;
+  width: 85%;
+}
+/* Reverse for small display */
+.row.adjust > div.text_rt {
+  text-align: left;
+}
+
+
+/* Bootstrap size specific CSS */
+#header a.btn,
+#header button.btn,
+#footer a.btn,
+#footer button.btn{
+  font-size: small;
+}
+.carousel-caption {
+  position: static;
+}
+.dl-horizontal dt {
+  float: none;
+  width: auto;
+  clear: none;
+  text-align: left;
+}
+.dl-horizontal dd {
+  margin-left: 0;
+}
+.alert > button.close {
+  font-size: larger;
+}

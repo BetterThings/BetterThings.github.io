@@ -1,0 +1,1 @@
+{ "unknown": "未知的错误", "internal": "脚本或浏览器错误", "input": "输入错误", "server": "Web服务器错误", "authentication": "验证错误", "timeout": "超时错误", "large": "大尺寸显示器", "medium": "中等尺寸显示器", "small": "小尺寸显示", "tablet": "大型电话显示", "phone": "小手机显示屏", "blocked": "我们遇到的问题，同时创造一个弹出窗口。是否被阻止弹出窗口积极？" }

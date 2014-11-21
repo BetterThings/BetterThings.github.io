@@ -1,0 +1,57 @@
+
+		<style type="text/css">
+		/* <![CDATA[ */
+
+			.icon-thumbs-up {
+				color:green;
+				font-size:larger;
+			}
+			.icon-thumbs-down {
+				color:red;
+				font-size:larger;
+			}
+			.msos_list > li {
+				margin-top: 0.3em;
+			}
+
+		/* ]]> */
+		</style>
+
+		<section>
+			<h2><u>MobileSiteOS™</u>&nbsp;Module Loading</h2>
+
+			<div class="pgrph well">
+				This page provides feedback about the bulk loading of&nbsp;<u>MobileSiteOS™</u>&nbsp;modules.
+				Modules "required" by this page may load correctly, yet call other missing or corrupt
+				modules which do not (and is part of the test). As such, this page is an "acid test" of
+				our module loading functions and module interactions. Any timing issues should also become
+				apparent. It really, really is loading extreme amounts of JavaScript and CSS, making
+				over 300 individual file requests.
+			</div>
+
+			<div class="msos_legend">
+				<h2 id='status'><span style="color:orange;">Loading...</span></h2>
+
+				<div class="row">
+					<div class="span5">
+						<ul id='results1' class='msos_list notranslate'>
+							<li>Loading...</li>
+						</ul>
+					</div>
+					<div class="span5">
+						<ul id='results2' class='msos_list notranslate'>
+							<li>Loading...</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<h3>Hundreds of Individual Modules</h3>
+
+			<div class="pgrph well">
+				Have a look at your browser's error console, or our&nbsp;<code>msos.console</code>&nbsp;output
+				for this page. Please note, many modules are being loaded which normally would
+				not be loaded at the same time. So most of the console warnings you will see are
+				related to these non-typical module loading conditions.
+			</div>
+		</section>

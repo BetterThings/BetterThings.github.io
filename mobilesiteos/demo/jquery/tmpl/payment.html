@@ -1,0 +1,43 @@
+
+
+		<style type="text/css">
+		/* <![CDATA[ */
+
+			input.invalid {
+				border: 2px solid red;
+			}
+
+			.validation.failed:after {
+				color: red;
+				content: 'Validation failed';
+			}
+
+			.validation.passed:after {
+				color: green;
+				content: 'Validation passed';
+			}
+
+		/* ]]> */
+		</style>
+
+		<section>
+			<h1>HTML5 Payment Form Validation</h1>
+			<div id='status'><span style="color: red;"></span></div>
+
+			<form novalidate autocomplete="on">
+				<h2>Card number formatting</h2>
+				<input type="text" class="cc-number" pattern="\d*" x-autocompletetype="cc-number" placeholder="Card number" required>
+
+				<h2>Expiry formatting</h2>
+				<input type="text" class="cc-exp" pattern="\d*" x-autocompletetype="cc-exp" placeholder="Expires MM/YY" required maxlength="9">
+
+				<h2>CVC formatting</h2>
+				<input type="text" class="cc-cvc" pattern="\d*" x-autocompletetype="cc-csc" placeholder="Security code" required  autocomplete="off">
+
+				<h2>Restrict Numeric</h2>
+				<input type="text" data-numeric>
+
+				<h2 class="validation"></h2>
+				<button type="submit">Submit</button>
+			</form>
+		</section>

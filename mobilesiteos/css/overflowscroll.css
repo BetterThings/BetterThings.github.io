@@ -1,0 +1,49 @@
+/*
+ * CSS Styles that are needed by msos.overflowscroll for it to operate correctly.
+ */
+
+  .scroll_pane {
+	position:absolute;
+	top:0;
+	left:0;
+  }
+  .scroll_gutter_vert {
+	position:absolute;
+	top:0;
+	right:0;
+	height:100%;
+	width:5px;
+  }
+  .scroll_gutter_horz {
+	position:absolute;
+	bottom:0;
+	left:0;
+	height:5px;
+	width:100%;
+  }
+  .scroll_corner {
+	position:absolute;
+	bottom:0;
+	right:0;
+	height:5px;
+	width:5px;
+  }
+  .scroll_handle {
+	position:relative;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+	top:0;
+	left:0;
+	cursor:pointer;
+  }
+  .scroll_gutter_horz .scroll_handle {
+	float:left;
+	height:100%;
+	border-right:1px solid;
+	border-left:1px solid;
+  }
+  .scroll_gutter_vert .scroll_handle {
+	border-top:1px solid;
+	border-bottom:1px solid;
+  }

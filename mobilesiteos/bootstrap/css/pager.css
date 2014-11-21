@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+
+.pager {
+  padding-left: 0;
+  margin: 1.4em 0;
+  text-align: center;
+  list-style: none;
+}
+.pager li {
+  display: inline;
+}
+.pager li > a,
+.pager li > span {
+  display: inline-block;
+  padding: 5px 14px;
+  color: #666;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 1.2em;
+}
+.pager li > a:hover,
+.pager li > a:focus {
+  color: #000;
+  background-color: #eee;
+  border-color: #ddd;
+}
+.pager .next > a,
+.pager .next > span {
+  float: right;
+}
+.pager .previous > a,
+.pager .previous > span {
+  float: left;
+}
+.pager .disabled > a,
+.pager .disabled > a:hover,
+.pager .disabled > a:focus,
+.pager .disabled > span {
+  color: #999;
+  cursor: not-allowed;
+  background-color: #fff;
+}
+.pager:before,
+.pager:after {
+  display: table;
+  content: " ";
+}
+.pager:after {
+  clear: both;
+}

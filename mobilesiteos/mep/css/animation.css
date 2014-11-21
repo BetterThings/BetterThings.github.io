@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+
+.mejs-time-buffering {
+  -webkit-animation: buffering-stripes 2s linear infinite;
+	 -moz-animation: buffering-stripes 2s linear infinite;
+      -ms-animation: buffering-stripes 2s linear infinite;
+       -o-animation: buffering-stripes 2s linear infinite;
+          animation: buffering-stripes 2s linear infinite;
+}
+
+@-webkit-keyframes buffering-stripes {
+  from  { background-position: 0 0; }
+  to    { background-position: 30px 0; }
+}
+@-moz-keyframes buffering-stripes {
+  from  { background-position: 0 0; }
+  to    { background-position: 30px 0; }
+}
+@-ms-keyframes buffering-stripes {
+  from  { background-position: 0 0; }
+  to    { background-position: 30px 0; }
+}
+@-o-keyframes buffering-stripes {
+  from  { background-position: 0 0; }
+  to    { background-position: 30px 0; }
+}
+@keyframes buffering-stripes {
+  from  { background-position: 0 0; }
+  to    { background-position: 30px 0; }
+}

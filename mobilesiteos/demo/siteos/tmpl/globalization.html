@@ -1,0 +1,369 @@
+
+		<style type="text/css">
+		/* <![CDATA[ */
+
+		/* Ref tab.css for rest of 'tab_content spec. */
+		div.tabs_div {
+			height:15px;
+		}
+		div.tab_content_inner {
+			height:400px;
+		}
+
+		.results,
+		.info {
+			border-collapse: collapse;
+		}
+		.results td,
+		.info td {
+			font-size: x-small;
+			white-space: nowrap;
+		}
+		.results th,
+		.info th {
+			border: 1px solid #C1DAD7;
+			letter-spacing: 2px;
+			font-size: small;
+			text-align: center;
+			padding: 6px 6px 6px 12px;
+			white-space: nowrap;
+		}
+		table {
+			width: 100%;
+		}
+		fieldset {
+			width: 230px;
+		}
+		ol > li {
+			font-size: x-small;
+		}
+
+		.row {
+			margin-bottom:0.5em;
+		}
+
+		.config > li > * {
+			margin-bottom: 3px;
+			margin-top: 3px;
+		}
+		.config > li > div {
+			display: inline-block;
+			text-align: left;
+			width: 8em;
+		}
+		.config > li > select {
+			width: 15em;
+		}
+
+		/* ]]> */
+		</style>
+
+		<script id="formattmpl" type="text/x-dot-template">
+			<tr>
+				<th>Number</th>
+				{{~ it.formats :fmt}}
+					<th>{{=fmt}}</th>
+				{{~}}
+			</tr>
+			{{~ it.numbers :num:i}}
+			<tr class="result">
+				<td>{{=num}}</td>
+				{{~ it.formated_numbers :fnum:j}}
+					<td>{{=it.formated_numbers[j][i]}}</td>
+				{{~}}
+			</tr>
+			{{~}}
+		</script>
+
+		<script id="dateformattmpl" type="text/x-dot-template">
+			<tr>
+				<th>Date</th>
+				{{~ it.dateFormats :dfmt}}
+				<th>{{=dfmt}}</th>
+				{{~}}
+			</tr>
+			{{~ it.dates :dts:i }}
+			<tr class="result">
+				<td>{{=dts}}</td>
+				{{~ it.formated_dates :fds:j}}
+					<td>{{=it.formated_dates[j][i]}}</td>
+				{{~}}
+			</tr>
+			{{~}}
+		</script>
+
+		<script id="infonumbertmpl" type="text/x-dot-template">
+			<legend>Number Formatting</legend>
+			<table class="info table table-bordered table-striped">
+				<tr>
+					<td>Pattern</td>
+					<td>{{=it.pattern}}</td>
+					<td>Decimals</td>
+					<td>{{=it.decimals}} ({{=it['.']}})</td>
+				</tr>
+				<tr>
+					<td>Grouping</td>
+					<td>{{=it[',']}}</td>
+					<td>Group Size</td>
+					<td>{{=it.groupSizes}}</td>
+				</tr>
+				<tr>
+					<td>Positive</td>
+					<td>{{=it['+']}}</td>
+					<td>Negative</td>
+					<td>{{=it['-']}}</td>
+				</tr>
+				<tr>
+					<td colspan="4" style="text-align:center;">Percent (symbol = {{=it.percent.symbol}})</td>
+				</tr>
+				<tr>
+					<td>Pattern</td>
+					<td>{{=it.percent.pattern}}</td>
+					<td>Decimals</td>
+					<td>{{=it.percent.decimals}} ({{=it.percent['.']}})</td>
+				</tr>
+				<tr>
+					<td>Grouping</td>
+					<td>{{=it.percent[',']}}</td>
+					<td>Group Size</td>
+					<td>{{=it.percent.groupSizes}}</td>
+				</tr>
+				<tr>
+					<td colspan="4" style="text-align:center;">Currency (symbol = {{=it.currency.symbol}})</td>
+				</tr>
+				<tr>
+					<td>Pattern</td>
+					<td>{{=it.currency.pattern}}</td>
+					<td>Decimals</td>
+					<td>{{=it.currency.decimals}} ({{=it.currency['.']}})</td>
+				</tr>
+				<tr>
+					<td>Grouping</td>
+					<td>{{=it.currency[',']}}</td>
+					<td>Group Size</td>
+					<td>{{=it.currency.groupSizes}}</td>
+				</tr>
+			</table>
+		</script>
+
+		<script id="infodatetmpl" type="text/x-dot-template">
+			<legend>Date Formatting</legend>
+			<table class="info table table-bordered table-striped">
+				<tr>
+					<td>Name</td>
+					<td colspan="3">{{=it.name}}</td>
+				</tr>
+				<tr>
+					<td>AM</td>
+					<td>{{=it.AM}}</td>
+					<td>PM</td>
+					<td>{{=it.PM}}</td>
+				</tr>
+				<tr>
+					<td>Eras</td>
+					<td colspan="3">
+						<ol>
+						{{~ it.eras :er}}
+							<li>{{=er.name }} (year offset {{=er.offset }})</li>
+						{{~}}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>Days</td>
+					<td colspan="3">
+						<ol>
+						{{~ it.days.names :dn}}
+							<li>{{=dn}}</li>
+						{{~}}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>Days (abbr.)</td>
+					<td colspan="3">
+						<ol>
+						{{~ it.days.namesAbbr :dna}}
+							<li>{{=dna}}</li>
+						{{~}}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>Days (short)</td>
+					<td colspan="3">
+						<ol>
+						{{~ it.days.namesShort :dns}}
+							<li>{{=dns}}</li>
+						{{~}}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>Months</td>
+					<td colspan="3">
+						<ol>
+						{{~ it.months.names :mn }}
+							<li>{{=mn}}</li>
+						{{~}}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td>Months (abbr.)</td>
+					<td colspan="3">
+						<ol>
+						{{~ it.months.namesAbbr :mna}}
+							<li>{{=mna}}</li>
+						{{~}}
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align:center;" colspan="4">Patterns</td>
+				</tr>
+				{{for(var item in it.patterns) { }}
+				<tr>
+					<td style="text-align:center;">{{=item}}</td><td colspan="3">{{=it.patterns[item]}}</td>
+				</tr>
+				{{ } }}
+			</table>
+		</script>
+
+		<section>
+			<h2>Globalization</h2>
+
+			<div class="well">
+				<div class="pgrph">
+					This is a demo of the&nbsp;<u>jQuery Globalize Library</u>. You can view the source or keep up to
+					date with issues, changes, etc. for this project on&nbsp;<u>GitHub</u>:
+					<a class="msos_link" href="https://github.com/jquery/globalize/">Globalize on GitHub</a>
+				</div>
+
+				<div class="pgrph">
+					As demonstrated in our version called&nbsp;<code>'msos.intl'</code>, alternate culture calendars are built
+					by extending the culture's standard calendar with the specific alternate calendar's different parameters.
+					Not entirely sure that this is correct (what the db of cultures was meant to represent), so be fore warned
+					and/or email corrections. As of this writing, the&nbsp;<code>globalize.js</code>&nbsp;demo page seems to just
+					ingore the missing parameters.
+				</div>
+
+				<div class="pgrph">
+					The other important difference in this implementation of the&nbsp;<u>jQuery Globalize Library</u>&nbsp;is
+					that only the files needed for each language/culture (locale) are loaded. This means a few more http ajax
+					calls, but the user's device only loads the needed, individulally small, culture specific files.
+				</div>
+			</div>
+
+			<h3>Interesting Cultures to Preview</h3>
+
+			<div>
+				<div class="row">
+					<div class="span2"><a class="btn btn-success sml_submit" href="?locale=ja_jp#/page/demo.siteos.globalization">ja-JP</a></div>
+					<div class="span10 text_lt">Japanese (Japan):<br />Has an optional calendar that has 4 different eras.</div>
+				</div>
+				<div class="row">
+					<div class="span2"><a class="btn btn-success sml_submit" href="?locale=th_th#/page/demo.siteos.globalization">th-TH</a></div>
+					<div class="span10 text_lt">Thai (Thailand):<br />Standard calendar has a year offset.</div>
+				</div>
+				<div class="row">
+					<div class="span2"><a class="btn btn-success sml_submit" href="?locale=te_in#/page/demo.siteos.globalization">te-IN</a></div>
+					<div class="span10 text_lt">Telugu (India):<br />Numbers have unequal groupings.</div>
+				</div>
+				<div class="row">
+					<div class="span2"><a class="btn btn-success sml_submit" href="?locale=ar_sa#/page/demo.siteos.globalization">ar-SA</a></div>
+					<div class="span10 text_lt">
+						Arabic (Saudi Arabia):<br />
+						Standard calendar is UmAlQura, a non-gregorian based calendar that requires custom conversion logic.
+						It also supports the Hijri calendar, and a standard gregorian calendar translated into one of <i>4 languages</i>.
+					</div>
+				</div>
+				<div class="row">
+					<div class="span2"><a class="btn btn-danger sml_submit" href="?locale=xx#/page/demo.siteos.globalization">Reset</a></div>
+					<div class="span10 text_lt">Reset to Browser:<br />Reset the demo based on your browser's 'navigator.language'.</div>
+				</div>
+			</div>
+
+			<h2>Select a Preferred Culture (by Language):</h2>
+
+			<div style="max-width: 26em;">
+				<ul class="config">
+					<li><div>Language: </div><select id='locale'	name='locale'></select></li>
+					<li><div>Culture:  </div><select id='culture'	name='culture'></select></li>
+					<li><div>Calendar: </div><select id='calendar'	name='calendar'></select></li>
+				</ul>
+			</div>
+
+			<div id="spl_tabs_div" class="tabs_div"></div>
+
+			<div id="tab_content_0" class="tab_content tab_active">
+				<div class='tab_content_inner' data-role="content_tab">
+
+					<h2>Culture Date Formats</h2>
+
+					<table id="dateformat" class="results table table-bordered table-striped">
+					</table>
+
+					<div>
+						<b>Parsing:</b> Type a date in one of the culture formats:<br />
+						<input id="parseDate" type="text" /><br />
+						<span id="parseDateResult"></span>
+					</div>
+
+				</div>
+			</div>
+
+			<div id="tab_content_1" class="tab_content">
+				<div class='tab_content_inner' data-role="content_tab">
+
+					<h2>Culture Number Formats</h2>
+
+					<table id="format" class="results table table-bordered table-striped">
+					</table>
+
+					<div>
+						<b>Parsing:</b> Type a number using the culture group and decimal separators:<br />
+						<input id="parseNumber" type="text" /><br />
+						<span id="parseNumberResult"></span>
+					</div>
+
+				</div>
+			</div>
+
+			<div id="tab_content_2" class="tab_content">
+				<div class='tab_content_inner' data-role="content_tab">
+
+					<h2>Culture Symbols, Patterns and Calendar Info.</h2>
+
+					<table class="table" style="width: 330px;">
+						<tr>
+							<td>Name (English):</td><td><span id="englishName"></span></td>
+						</tr>
+						<tr>
+							<td>Name (Native):</td><td><span id="nativeName"></span></td>
+						</tr>
+						<tr>
+							<td>Is RTL culture:</td><td><span id="isRTL"></span></td>
+						</tr>
+					</table>
+
+					<fieldset id="infonumber">
+					</fieldset>
+
+					<fieldset id="infodate">
+					</fieldset>
+				</div>
+			</div>
+
+			<h3>Click here to view the culture file output:</h3>
+			<div>
+				<a class="btn btn-msos" href="#/page/demo.siteos.globalizationjson"><u>JSON</u>&nbsp;Output</a>
+			</div>
+
+			<h3>
+				Click here to view similar&nbsp;<u>Dojo</u>&nbsp;Gregorian Calendar file output:
+			</h3>
+			<div>
+				<a class="btn btn-msos" href="#/page/demo.siteos.gregorian">Gregorian Calendar</a>
+			</div>
+		</section>

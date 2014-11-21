@@ -1,0 +1,64 @@
+
+		<style type="text/css">
+		/* <![CDATA[ */
+
+		div.tool_input_div {
+			width:12em;
+			padding:0.4em;
+			margin-bottom:1em;
+			border-radius:0.5em;
+		}
+
+		/* ]]> */
+		</style>
+
+		<section>
+			<h2>Color Tool Demo</h2>
+
+			<div class="pgrph well">
+				This page is used to test our color selection tool. Set colors for the color table below using
+				our&nbsp;<u>CSS</u>&nbsp;Color Input. Or try using these alternate inputs below. They use the
+				same color tool instance in order to keep page computations and size relatively light.
+			</div>
+
+			<div class="msos_legend">
+				<h3>Select Property to Set</h3>
+
+				<table class='float_table notranslate'>
+					<tr>
+						<td class='text_lt'><input type='radio' name='color_target' id='css_bgcolor' />background</td>
+						<td class='text_lt'><input type='radio' name='color_target' id='css_font_color' />font</td>
+						<td class='text_lt'><input type='radio' name='color_target' id='css_http_link' />a:link</td>
+					</tr><tr>
+						<td class='text_lt'><input type='radio' name='color_target' id='css_visit_link' />a:visited</td>
+						<td class='text_lt'><input type='radio' name='color_target' id='css_active_link' />a:active</td>
+						<td class='text_lt'><input type='radio' name='color_target' id='css_hover_link' />a:hover</td>
+					</tr><tr>
+						<td class='text_lt'><input type='radio' name='color_target' id='css_accent1' />accent1</td>
+						<td class='text_lt'><input type='radio' name='color_target' id='css_accent2' />accent2</td>
+						<td class='text_lt'><input type='radio' name='color_target' id='css_accent3' />accent3</td>
+					</tr><tr>
+						<td class='text_lt'><input type='radio' name='color_target' id='css_contrast1' />contrast1</td>
+						<td class='text_lt'><input type='radio' name='color_target' id='css_contrast2' />contrast2</td>
+						<td class='text_lt'><input type='radio' name='color_target' id='css_contrast3' />contrast3</td>
+					</tr>
+				</table>
+
+				<h2 title='Select the demo stylesheet color group you want to modify'><u>CSS</u>&nbsp;Color Input</h2>
+
+				<div class='tool_input_div'>
+					<input type='text' class='tool_input' id='color_input0' maxlength='7' size='9' />
+				</div>
+			</div>
+
+			<div class="msos_legend">
+				<h3>Alternate Color Inputs</h3>
+
+				<div class='tool_input_div'>
+					<input type='text' class='tool_input' id='color_input1' maxlength='7' size='9' value='808080' />
+				</div>
+				<div class='tool_input_div'>
+					<input type='text' class='tool_input' id='color_input2' maxlength='7' size='9' />
+				</div>
+			</div>
+		</section>

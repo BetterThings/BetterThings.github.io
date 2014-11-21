@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+input,
+select,
+textarea {
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+            transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+.fade {
+    -webkit-transition: opacity 0.15s linear;
+            transition: opacity 0.15s linear;
+}
+.collapsing {
+    -webkit-transition: height .35s ease;
+            transition: height .35s ease;
+}
+
+
+  /* Bootstrap UI Specific */
+.progress-bar {
+    -webkit-transition: width 0.6s ease;
+            transition: width 0.6s ease;
+}
+.carousel-inner > .item {
+    -webkit-transition: 0.6s ease-in-out left;
+            transition: 0.6s ease-in-out left;
+}
+.modal.fade .modal-dialog {
+    -webkit-transition: -webkit-transform .3s ease-out;
+            transition:         transform .3s ease-out;
+    -webkit-transform: translate(0, -25%);
+            transform: translate(0, -25%);
+}
+.modal.in .modal-dialog {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+}
+.thumbnail {
+    -webkit-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+}
+.form-control {
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+            transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8" />
+
+<script src="../msos/base.min.js"></script>
+<script>
+
+// Redirect configuration settings
+
+msos.console.info('config -> start, (/hello/redirect.html for window: ' + (window.name || 'child') + ').');
+msos.console.time('config');
+
+var _win_parent = window.opener || window.parent;
+
+if (_win_parent.msos.console
+ && _win_parent.msos.console.debug) {
+		msos.console = _win_parent.msos.console;
+
+    // Apply the same logging as parent window
+    msos.config.debug =         _win_parent.msos.config.debug;
+    msos.config.debug_script =  _win_parent.msos.config.debug_script;
+    msos.config.verbose =       _win_parent.msos.config.verbose;
+}
+
+// --------------------------
+// Scripts to 'defer' load (script injection)
+// --------------------------
+
+if (msos.config.debug_script) {
+
+	// Debug full scripts (line no's mean something)
+	msos.deferred_scripts = [
+		msos.resource_url('underscore', 'v170.uc.js'),
+		msos.resource_url('hello', 'v029.uc.js'),
+		msos.resource_url('hello', 'authenticate.uc.js')
+	];
+
+} else {
+
+	// Standard site provided scripts
+	msos.deferred_scripts = [
+		msos.resource_url('underscore', 'v170.min.js'),
+		msos.resource_url('hello', 'v029.min.js'),
+		msos.resource_url('hello', 'authenticate.min.js')
+	];
+}
+
+msos.script_loader(msos.deferred_scripts);
+
+msos.console.info('config -> done!');
+msos.console.timeEnd('config');
+
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>

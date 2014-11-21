@@ -1,0 +1,70 @@
+<!-- Tab container -->
+
+<div id="ct_tabs_div" class="tabs_div"></div>
+
+<!-- Main tab content -->
+
+<div id="ct_main_tab" class="tab_content tab_active">
+
+  <div id="ct_canvas">
+	<canvas id='ct_wheel_can' width="160" height="160" alt="Color Wheel"></canvas>
+	<i id="pointer_circle" class="fa fa-circle-o btn-small"></i>
+  </div>
+
+  <div id="colortool_input" class='bg_inherit'>
+	<div class="row">
+		<div class="span6">
+		  <span class="ct_inp_label">R</span>
+		  <input type="number" min="0" max="255" id="rgb_r" value="" tabindex="1" />
+		</div>
+		<div class="span6">
+		  <span class="ct_inp_label">H</span>
+		  <input type="number" min="0" max="360" id="hsb_h" value="" tabindex="5" />
+		</div>
+	</div>
+	<div class="row">
+		<div class="span6">
+		  <span class="ct_inp_label">G</span>
+		  <input type="number" min="0" max="255" id="rgb_g" value="" tabindex="2" />
+		</div>
+		<div class="span6">
+		  <span class="ct_inp_label">S</span>
+		  <input type="number" min="0" max="100" id="hsb_s" value="" tabindex="6" />
+		</div>
+	</div>
+	<div class="row">
+		<div class="span6">
+		  <span class="ct_inp_label">B</span>
+		  <input type="number" min="0" max="255" id="rgb_b" value="" tabindex="3" />
+		</div>
+		<div class="span6">
+		  <span class="ct_inp_label">V</span>
+		  <input type="number" min="0" max="100" id="hsb_v" value="" tabindex="7" />
+		</div>
+	</div>
+	<div class="row">
+		<div class="span6">
+			<input type='checkbox'	id='ct_web_smart'	value='Smart' class='text_rt' />
+			<button id='ct_update_main' class='btn btn-small btn-info fa fa-refresh' tabindex="10"></button>
+		</div>
+		<div class="span6">
+			<input type="text"		id="ct_hex_inp"		value="" class="color" tabindex="9" />
+			<span class="fa fa-edit"></span>
+		</div>
+	</div>
+  </div>
+</div>
+
+<!-- Additional tab content -->
+
+<div id="ct_websafe_tab" class="tab_content"></div>
+
+<div id="ct_saved_tab"	 class="tab_content"></div>
+
+<!-- End tab content -->
+
+<div id='ct_buttons'>
+    <button id='ct_save_color' class='btn btn-small btn-info fa fa-save'></button>
+    <button id='ct_use_color'  class='btn btn-small btn-success fa fa-check'></button>
+    <div id="ct_display">#</div>
+</div>

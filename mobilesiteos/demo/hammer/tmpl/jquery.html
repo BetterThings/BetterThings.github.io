@@ -1,0 +1,65 @@
+
+
+		<style type="text/css">
+		/* <![CDATA[ */
+
+			@keyframes highlight {
+				0%{ background: rgba(255, 240, 140, 1); }
+				100%{ background: rgba(255, 240, 140, 0); }
+			}
+			@-moz-keyframes highlight{
+				0%{ background: rgba(255, 240, 140, 1); }
+				100%{ background: rgba(255, 240, 140, 0); }
+			}
+			@-webkit-keyframes highlight{
+				0%{ background: rgba(255, 240, 140, 1); }
+				100%{ background: rgba(255, 240, 140, 0); }
+			}
+
+			#items > li {
+				font-size: medium;
+				margin-bottom: 0.5em;
+				padding: 0.3em;
+			}
+
+		/* ]]> */
+		</style>
+
+		<section>
+			<h2><u>Hammer.js jQuery</u>&nbsp;Integration</h2>
+
+			<div id='status'></div>
+
+			<div class="pgrph well">
+				This page is used to demo the&nbsp;<u>Hammer.js</u>&nbsp;JavaScript gesture utility by&nbsp;<u>Jorik Tangelder</u>. Please see
+				<a class="msos_link notranslate" href='https://github.com/EightMedia/hammer.js'>Eight Media</a>&nbsp;for project details.
+			</div>
+
+			<div class="hero-unit toucharea">
+
+				<h2>Touch me</h2>
+
+				<p>
+					The tap event will be fired. Notice in the sourcecode that event delegation
+					is also supported. In your console you can see the event data by
+					adding&nbsp;<code style="white-space: nowrap;">(?verbose=true)</code>&nbsp;to
+					the base url (before the # sign).
+				</p>
+
+				<h3>List items with stopPropagation</h3>
+
+				<div style="width: 200px;">
+					<ul id="items">
+						<li class="btn">List item 1</li>
+						<li class="btn">List item 2</li>
+						<li class="btn">List item 3</li>
+						<li class="btn">List item 4</li>
+						<li class="btn">List item 5</li>
+					</ul>
+					<div style="margin-top: 1.0em;">
+						<a href="#" id="add-list-item" class="btn btn-success">Add list item</a>
+					</div>
+
+				</div>
+			</div>
+		</section>

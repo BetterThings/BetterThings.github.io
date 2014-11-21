@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/*	MobileSiteOS 'div#ajax_container' style properties, (don't change these). It is better
+	to add your own style sheets or inline styles: Copyright©2008-2011 - OpenSiteMobile
+*/
+
+  #ajax_container {
+    width:420px;
+    height:382px;
+  }
+  #ajax_header {
+    width:416px;
+  }
+  #ajax_display {
+    width:416px;
+    height:350px;
+  }
+  #ajax_display .tab_content_inner {
+    /* Ref tab.css for rest of 'tab_content spec. (ref. 86% of 'ajax_display') */
+    height:314px;
+  }

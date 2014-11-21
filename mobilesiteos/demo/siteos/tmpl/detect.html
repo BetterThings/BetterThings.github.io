@@ -1,0 +1,63 @@
+
+		<style type="text/css">
+		/* <![CDATA[ */
+
+		h2 {
+			margin-top: 1.3em;
+		}
+		div.row {
+			margin-top: 1em;
+		}
+		.msos_list > li {
+		  margin-top: 0.4em;
+		}
+
+		/* ]]> */
+		</style>
+
+		<section>
+			<h1>Browser Detection</h1>
+
+			<div class="pgrph well">
+				This page provides simple feedback via JavaScript and our&nbsp;<u>MobileSiteOS™</u>&nbsp;framework
+				about your web browser and some specific device capabilities.
+			</div>
+
+			<div class="msos_legend">
+				<h2>Your Browsing User Agent</h2>
+				<div id='user_agent'></div>
+
+				<div class="row adjust">
+					<div class="span6">
+						<h2><u>MSOS</u>&nbsp;Browser</h2>
+						<div id='browser_detection' style="max-width: 20em;"></div>
+					</div>
+					<div class="span6">
+						<h2><u>MSOS</u>&nbsp;Device</h2>
+						<div id="msos_detection" style="max-width: 20em;"></div>
+					</div>
+				</div>
+
+				<div class="row adjust">
+					<div class="span6">
+						<h2><u>Modernizr</u>&nbsp;Detection</h2>
+						<div id="modernizr_detect" style="max-width: 20em;"></div>
+					</div>
+					<div class="span6">
+						<h2>Plug-in Detection</h2>
+						<div id="plugin_detect" style="max-width: 20em;"></div>
+					</div>
+				</div>
+			</div>
+
+			<div id='font_size_test' style='visibility:hidden;'>
+			  <!-- These spans are used to calculate browse dependent font widths
+				   for a given generic font size -->
+			  <span id='xl' style='font-size:x-large;' >Open Source</span><br />
+			  <span id='lg' style='font-size:large;'   >Open Source</span><br />
+			  <span id='md' style='font-size:medium;'  >Open Source</span><br />
+			  <span id='sm' style='font-size:small;'   >Open Source</span><br />
+			  <span id='xs' style='font-size:x-small;' >Open Source</span><br />
+			  <span id='xx' style='font-size:xx-small;'>Open Source</span>
+			</div>
+		</section>

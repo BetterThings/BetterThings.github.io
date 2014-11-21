@@ -1,0 +1,60 @@
+
+		<section>
+			<h2>Virtual Keyboard - Text Input</h2>
+
+			<div class='pgrph well'>
+				The&nbsp;<code>textarea</code>&nbsp;and&nbsp;<code>input:text</code>&nbsp;field below are used
+				to demonstrate the ability of our virtual keyboard to insert&nbsp;<code>utf-8</code>&nbsp;characters.
+				Several languages are available (more could be added) and the virtual keyboard does not
+				interfere with std. keyboard input.
+			</div>
+
+			<div class="msos_legend" style="padding-bottom: 1em;">
+				<h3>Popup Keyboard -
+					<span id='keyboard_button1'></span>
+					<span id='reset_button'></span>
+				</h3>
+			</div>
+		</section>
+
+			<textarea class='msos_display msos_height msos_width' name='textfield' id="keyboard_textarea" title="Standard textarea">
+				Here is some text to edit using our virtual keyboard.
+			</textarea>
+
+		<section>
+			<div class="msos_legend" style="padding-bottom: 1em;">
+				<h3>Change Keyboard Language Layouts</h3>
+	
+				<div style="max-width: 24em; margin-top: 1em;">
+					<div class="row adjust" style="margin-bottom: 0.6em;">
+						<div class="span3 text_rt">Language:</div>
+						<div class="span9 text_lt"><select id='locale' name='locale'></select></div>
+					</div>
+					<div class="row adjust">
+						<div class="span3 text_rt">Keyboard:</div>
+						<div class="span9 text_lt"><select id='keyboard' name='keyboard'></select></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="msos_legend" style="padding-bottom: 1em;">
+				<h3>Text Input Demo</h3>
+
+				<input type='text' id='keyboard_inp_text' title='Standard text input' value='Try here too...' />
+				<span id='keyboard_button2'></span>
+			</div>
+
+			<div class="msos_legend">
+				<h3>Keyboard CSS Positioning</h3>
+				<button id='gen_size_css' class='btn btn-msos'>Size&nbsp;<u>CSS</u></button>
+
+				<div class='pgrph'>
+					Click the above button to display calculated keyboard element&nbsp;<code>css</code>&nbsp;positioning
+					data in the above textarea. You can use this function to rebuild keyboard display&nbsp;<code>css</code>&nbsp;positioning.
+					Start with an existing size&nbsp;<code>css</code>&nbsp;file and make changes to width and
+					height&nbsp;<code>css</code>&nbsp;specifications as desired. Then rerun this function (for the
+					correct size name) and copy/paste the new positioning data into that display size name&nbsp;<code>css</code>&nbsp;file.
+					Don't forget: clear your browser's cache each time you reload the page.
+				</div>
+			</div>
+		</section>

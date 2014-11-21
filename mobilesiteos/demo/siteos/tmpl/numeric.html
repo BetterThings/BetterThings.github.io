@@ -1,0 +1,63 @@
+
+		<style type="text/css">
+		/* <![CDATA[ */
+
+		div#numeric_table {
+			width:200px;
+			border:2px outset;
+			-webkit-border-radius:4px;
+			   -moz-border-radius:4px;
+				border-radius:4px;
+			padding:3px;
+		}
+		td#quantity_txt {
+			font-size: small;
+			vertical-align: middle;
+		}
+		input#input_quantity {
+			width: 25px;
+			float: left;
+		}
+
+		/* ]]> */
+		</style>
+
+		<section>
+			<h2>Numeric Input Control</h2>
+
+			<div class="pgrph  well">
+				The below is a demo of our "Numeric control" widget for&nbsp;<code>input:text</code>&nbsp;inputs.
+				This page is used for debugging of the&nbsp;<code>msos.number_ctrl</code>&nbsp;module, which we
+				use in conjunction with our&nbsp;<code>msos.html5.numeric</code>&nbsp;module. Together they replace
+				<code>input:number</code>&nbsp;inputs in non-compliant HTML5 browsers with a&nbsp;<code>input:text</code>&nbsp;field
+				and numeric control widget.
+			</div>
+
+			<h3 id='status'></h3>
+
+			<div id="numeric_table">
+				<table>
+					<tr>
+					  <td class='text_rt' id='quantity_txt' title='Enter a quantity'>Quantity: </td>
+					  <td class='text_lt'>
+						<div class='numeric_input'>
+							<input type="text" id="input_quantity" value='1' />
+						</div>
+					  </td>
+					</tr>
+				</table>
+			</div>
+
+			<h3>Configuration settings:</h3>
+
+			<div class="row">
+				<div class="span5">
+					<ul class="msos_list">
+						<li>minimum <i class="fa fa-arrow-right"></i> 0,</li>
+						<li>maximum <i class="fa fa-arrow-right"></i> 10,</li>
+						<li>value <i class="fa fa-arrow-right"></i> 1 (initial),</li>
+						<li>allow blank <i class="fa fa-arrow-right"></i> true (default)</li>
+					</ul>
+				</div>
+			</div>
+		</section>

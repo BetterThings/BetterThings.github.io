@@ -1,0 +1,202 @@
+
+
+		<style type="text/css">
+		/* <![CDATA[ */
+
+			div.row {
+				margin-bottom:1em;
+			}
+			.date_min_max {
+				font-size: xx-small;
+			}
+
+		/* ]]> */
+		</style>
+
+		<section>
+			<h2>HTML5 Form Inputs</h2>
+
+			<form id="example_form" class="form" action="#" method="get">
+				<fieldset>
+					<legend>Basic Responsive Form</legend>
+
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label for="first_name"> First Name: </label></div>
+						<div class='span8'><input type="text"	name="first_name"	id="first_name"	required="required"	placeholder="Enter your first name" class="span11 pull_lt" /></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label for="last_name"> Last Name: </label></div>
+						<div class='span8'><input type="text"	name="last_name"	id="last_name"	required="required"	placeholder="Enter your last name" class="span11 pull_lt" /></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label for="username"> Username: </label></div>
+						<div class='span8'><input type="text"	name="username"		id="username"	required="required"	placeholder="Enter a username" class="span11 pull_lt" /></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label for="password"> Password: </label></div>
+						<div class='span8'><input type="password"	name="password"	id="password"	required="required"	placeholder="Enter a password" class="span11 pull_lt" /></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label for="confirm"> Confirm: </label></div>
+						<div class='span8'><input type="password"	name="confirm"	id="confirm"	required="required"	placeholder="Confirm your password" class="span11 pull_lt" /></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label for="email"> Email: </label></div>
+						<div class='span8'><input type="email"	name="email"		id="email"	required="required"	placeholder="Enter your email address" class="span11 pull_lt"/></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label for="url"> Url: </label></div>
+						<div class='span8'><input type="url"	name="url"			id="url"	required="required"	placeholder="Enter your website url" class="span11 pull_lt" /></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label for="search"> Search: </label></div>
+						<div class='span8'><input type="search"	name="search"		id="search"	placeholder="Enter a search term" class="span11 pull_lt" /></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label for="search"> File: </label></div>
+						<div class='span8'><input type="file"	name="file"			id="file" class="span11 pull_lt" /></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label for="telephone"> Telephone: </label></div>
+						<div class='span8'><input type="tel"	name="telephone"	id="telephone"	placeholder="Enter your telephone #" class="span7 pull_lt" /></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label for="cellphone"> Cellphone: </label></div>
+						<div class='span8'><input type="tel"	name="cellphone"	id="cellphone"	placeholder="Enter your cellphone #" class="span7 pull_lt" /></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label for="accent_color"> Accent Color: </label></div>
+						<div class='span8'><input type="color"	name="accent_color"	id="accent_color" value="#FFCC66" class="pull_lt" /></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label for="contrast_color"> Contrast Color: </label></div>
+						<div class='span8'><input type="color"	name="contrast_color"	id="contrast_color" value="#CCCCCC" class="pull_lt" /></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label for="one_ten"> Number 1-10: </label></div>
+						<div class='span8'><input type="number"	name="one_ten"			id="one_ten"	required="required"	min="1" max="10" value="4" step="1" class="pull_lt" /></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label for="one_ten_ev"> Even 2-10: </label></div>
+						<div class='span8'><input type="number"	name="two_ten_ev"		id="two_ten_ev"	required="required"	min="2" max="10" value="4" step="2" class="pull_lt" /></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label for="range100_300"> Range 100-300: </label></div>
+						<div class='span8'><input type="range"	name="range100_300" 	id="range100_300" min="100" max="300" value="150" /></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label for="date"> Date <sup class="date_min_max">2012-01-01 to 2015-12-31</sup>: </label></div>
+						<div class='span8'><input type="date"	name="date"		id="date" min="2012-01-01" max="2015-12-31" class="pull_lt" /></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label for="month"> Month: </label></div>
+						<div class='span8'><input type="month"	name="month"	id="month" class="pull_lt" /></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label for="week"> Week: </label></div>
+						<div class='span8'><input type="week"	name="week"		id="week" class="pull_lt" /></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label for="datetime"> Date/Time: </label></div>
+						<div class='span8'><input type="datetime"	name="datetime"	id="datetime" class="pull_lt" /></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label for="datetime_local"> Local Date/Time: </label></div>
+						<div class='span8'><input type="datetime-local" name="datetime_local" id="datetime_local" class="pull_lt" /></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label for="vote_yes"> Yes: </label></div>
+						<div class='span8'><input type="radio"	name="vote"		id="vote_yes"	value="yes" class="pull_lt" /></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label for="vote_no"> No: </label></div>
+						<div class='span8'><input type="radio"	name="vote"		id="vote_no"	value="no" class="pull_lt" /></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label for="newsletter"> Newsletter: </label></div>
+						<div class='span8'><input type="checkbox"	name="newsletter"	id="newsletter" value="yes" class="pull_lt" /></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label for="policy"> Policy: </label></div>
+						<div class='span8'><input type="checkbox"	name="policy"	id="policy"	value="agree" class="pull_lt" /></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label for="comments"> Comments: </label></div>
+						<div class='span8'><textarea	name="comments"	id="comments" class="span11 auto_grow pull_lt"></textarea></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label for="latitude"> Latitude: </label></div>
+						<div class='span8'><input type="text"	name="latitude"		id="latitude" class="pull_lt" /></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label for="longitude"> Longitude: </label></div>
+						<div class='span8'><input type="text"	name="longitude"	id="longitude" class="pull_lt" /></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label for="country"> Country: </label></div>
+						<div class='span8'><input type='text'	name='country'		id='country'	class="pull_lt" /></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label for="state"> State: </label></div>
+						<div class='span8'><input type='text'	name='state'		id='state'		class="pull_lt" /></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label for="locale"> Language: </label></div>
+						<div class='span8'><select id='locale'	name='locale'	class="pull_lt"></select></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label for="culture"> Culture: </label></div>
+						<div class='span8'><select id='culture'	name='culture'	class="pull_lt"></select></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label for="calendar"> Calendar: </label></div>
+						<div class='span8'><select id='calendar' name='calendar' class="pull_lt"></select></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label for="keyboard"> Keyboard: </label></div>
+						<div class='span8'><select id='keyboard' name='keyboard' class="pull_lt"></select></div>
+					</div>
+
+					<!-- Here inputs are floated left (see page css) -->
+
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label> Input Image: </label></div>
+						<div class='span8'><input type="image" src="./images/info_icon.png" alt="Image (input)" class="pull_lt" /></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label> Input Reset: </label></div>
+						<div class='span8'><input type="reset" value="Reset" class="pull_lt" /></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label> Input Button: </label></div>
+						<div class='span8'><input type="button" value="Button" class="pull_lt" /></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label> Input Submit: </label></div>
+						<div class='span8'><input	type="submit" value="Submit" class="pull_lt" /></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label> Button Reset: </label></div>
+						<div class='span8'><button type="reset" class="pull_lt">Reset</button></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label> Button: </label></div>
+						<div class='span8'><button type="button" class="pull_lt">Button</button></div>
+					</div>
+					<div class='row adjust'>
+						<div class='span4 text_rt'><label> Button Submit: </label></div>
+						<div class='span8'><button	type="submit" class="pull_lt">Submit</button></div>
+					</div>
+
+				</fieldset>
+			</form>
+
+			<div class="grid">
+				<fieldset>
+					<legend>Gather Form Data</legend>
+					<div class='row'>
+						<div class='span12'><button class="btn btn-success" id="get_data"> Get Data </button></div>
+					</div>
+				</fieldset>
+			</div>
+		</section>

@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+/*	MobileSiteOS colortool widget style properties, (don't change these). It is better
+	to add your own style sheets or inline styles: Copyright©2008-2011 - OpenSiteMobile
+*/
+
+  #colortool_container {
+    position:absolute;
+    visibility:hidden;
+    border:2px outset grey;
+	border-radius:5px;
+  }
+  #colortool_header {
+    position:absolute;
+	border-radius:4px;
+    z-index:70;
+  }
+  #colortool_close {
+	float:right;
+    z-index:90;
+  }
+  #colortool_display {
+    position:absolute;
+    top:18px;
+    left:4px;
+	overflow:hidden;
+    z-index:100;
+  }
+  #colortool_display .tab_common {
+	font-size:x-small;
+  }
+  #ct_use_color,
+  #ct_update_main {
+    float:right;
+	z-index:11;
+  }
+  #ct_save_color,
+  #ct_web_smart {
+    float:left;
+	z-index:11;
+  } 
+  #ct_display {
+	padding:0.1em 0.2em;
+	line-height:1.3em;
+    font-size:x-small;
+    cursor:default;
+	width: 140px;
+	border:1px solid #E6E6E6;
+	border-radius:4px;
+	z-index:11;
+  }
+  .ct_saved_msg {	/* Moz required this to get font-size right? */
+    font-size:small;
+    background:inherit;
+  }
+  .ct_saved_colors {
+    font-size:small;	/* Moz required this to get font-size right? */
+    border:2px inset;
+    margin:2px;
+    cursor:pointer; 
+  }
+  .ws_img {
+    border:1px inset;
+    cursor:pointer;
+    padding:0 1px;
+  }
+  #ct_canvas {
+	background-color:#FFF;
+    border:1px solid #666;
+    position:relative;
+	top: 4px;
+	border-radius:6px;
+  }
+  canvas#ct_wheel_can {
+    cursor:crosshair;
+    z-index:0;
+  }
+  #pointer_circle {
+    position:absolute;
+    display:none;
+	z-index:11;
+  }
+  #ct_buttons {
+    margin-top:4px;
+    z-index:10;
+  }
+  #colortool_input {
+    position: absolute;
+	top: 195px;
+  }
+  #colortool_input * {
+    font-size:x-small;
+  }
+  #colortool_input > div.row {
+	margin-top: 0.7em;
+  }
+  #colortool_input input.number {
+	float: left;
+  }
+  div.tabs_div {
+    height:15px;
+  }
+  span.ct_inp_label {
+	float: left;
+	width: 1.4em;
+  }
+  

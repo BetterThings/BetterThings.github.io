@@ -1,0 +1,54 @@
+
+
+		<style type="text/css">
+		/* <![CDATA[ */
+
+			label {
+				display:block;
+				color:#999;
+			}
+
+		/* ]]> */
+		</style>
+
+		<section>
+			<h2><u>jQuery Tools</u>&nbsp;Validate Form Inputs</h2>	
+
+			<div class="pgrph well">
+				A simple example of the HTML5 form inputs validation script from the&nbsp;<u>jQuery Tools</u>&nbsp;Library.
+			</div>
+
+			<form id="myform">
+
+				<fieldset style="width:85%; padding:10px; margin-top: 1em;">
+					<legend>Sample Form</legend>
+
+					<p> Enter bad values and then press the submit button. </p>
+
+					<p>
+						<label>email *</label>
+						<input type="email" name="email" required="required" />
+					</p>
+					<p>
+						<label>website *</label>
+						<input type="url" name="url" required="required" />
+					</p>
+					<p>
+						<label>name *</label>
+						<input type="text" name="name" pattern="[a-zA-Z ]{5,}" maxlength="30" />
+					</p>
+					<p>
+						<label>age</label>
+						<input type="number" name="age" size="4" min="5" max="110" />
+					</p>
+					<p id="terms">
+						<label>I accept the terms</label>
+						<input type="checkbox" required="required" />   
+					</p>
+
+					<button class="btn btn-success" type="submit">Submit form</button>
+					<button class="btn btn-danger" type="reset">Reset</button>
+				</fieldset>
+
+			</form>
+		</section>

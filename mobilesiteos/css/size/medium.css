@@ -1,0 +1,214 @@
+@charset "utf-8";
+
+/*	MobileSiteOS size specific css, (you typically don't change these). It is better
+	to add your own style sheets or inline styles: Copyright©2008-2011 - OpenSiteMobile */
+
+a,
+abbr,
+address,
+article,
+aside,
+b,
+blockquote,
+body,
+button,
+caption,
+cite,
+code,
+dd,
+del,
+dfn,
+dialog,
+div,
+dl,
+dt,
+em,
+fieldset,
+figure,
+footer,
+form,
+header,
+hgroup,
+hr,
+html,
+i,
+iframe,
+input,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+p,
+pre,
+q,
+samp,
+section,
+select,
+small,
+span,
+strong,
+sub,
+sup,
+table,
+tbody,
+td,
+tfoot,
+thead,
+time,
+tr,
+ul,
+var {
+  font-size: medium;
+}
+th {
+  font-size: large;
+}
+h1 {
+  font-size: x-large;
+}
+h2 {
+  font-size: large;
+}
+h3 {
+  font-size: medium;
+}
+h4 {
+  font-size: small;
+}
+section {
+  width: 746px;
+}
+#body, #pyromane, #debug {
+  width: 760px;
+}
+#rotate_marquee {
+  height: 92px;
+}
+#marquee {
+  width: 754px;
+  font-size: xx-large;
+  top: 0;
+  left: 0;
+  height: 70px;
+  line-height: 70px;
+}
+#slogan {
+  width: 754px;
+  font-size: medium;
+  top: 70px;
+  left: 0;
+  height: 22px;
+  line-height: 22px;
+}
+
+.btn,
+.add-on {
+  line-height: 1.2em;	/* Why this needs adjustment from tablet/phone line-height, not sure? */
+  padding: 0.2em 0.4em;
+}
+.msos_height {
+  height: 480px;
+}
+.msos_width {
+  width: 740px;
+}
+.msos_box {
+  padding: 0 10px;
+}
+
+/* Google AdSense sizing */
+.osm-responsive-2014 {
+  width: 728px;
+  height: 90px;
+}
+
+/* MSOS Grid specific css */
+.row {
+  width: 100%;
+}
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+.row div[class*="span"] {
+  display: inline-table;
+  min-height: 1em;
+  vertical-align: top;
+}
+.row .span12 {
+  width: 98%;
+}
+.row .span11 {
+  width: 89.5%;
+}
+.row .span10 {
+  width: 81.8%;
+}
+.row .span9 {
+  width: 73.9%;
+}
+.row .span8 {
+  width: 65.4%;
+}
+.row .span7 {
+  width: 57.1%;
+}
+.row .span6 {
+  width: 48.8%;
+}
+.row .span5 {
+  width: 40.6%;
+}
+.row .span4 {
+  width: 32.2%;
+}
+.row .span3 {
+  width: 24.1%;
+}
+.row .span2 {
+  width: 15.9%;
+}
+.row .span1 {
+  width: 7.7%;
+}
+
+
+/* Bootstrap size specific CSS (min 768px) */
+.dl-horizontal dt {
+  float: left;
+  width: 160px;
+  overflow: hidden;
+  clear: left;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dl-horizontal dd {
+  margin-left: 180px;
+}
+.dl-horizontal dd:before,
+.dl-horizontal dd:after {
+  display: table;
+  content: " ";
+}
+.dl-horizontal dd:after {
+  clear: both;
+}
+.dl-horizontal dd:before,
+.dl-horizontal dd:after {
+  display: table;
+  content: " ";
+}
+.dl-horizontal dd:after {
+  clear: both;
+}

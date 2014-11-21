@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+/*	MobileSiteOS keyboard widget style properties, (don't change these). It is better
+	to add your own style sheets or inline styles: Copyright©2008-2011 - OpenSiteMobile */
+
+  #keyboard_container {
+    width:410px;
+    height:164px;
+  }
+  #keyboard_header {
+    width:406px;
+  }
+  #keyboard_display {
+    width:404px;
+    height:132px;
+  }
+  #keyboard_display div {
+    font-size:small;
+    height:24px;
+  }
+  .std_kb_cell {
+    width:24px;
+  }
+  .bk_space_cell {
+    width:52px;
+  }
+  .tab_cell {
+    width:34px;
+  }
+  .extra_cell {
+    width:14px;
+  }
+  .caps_cell {
+    width:46px;
+  }
+  .enter_cell {
+    width:30px;
+  }
+  .shift_cell {
+    width:65px;
+  }
+  .bottom_cell {
+    width:40px;
+  }
+  .space_cell {
+    width:146px;
+  }
+
+#key0	{ top:1px; left:1px;	}
+#key1	{ top:1px; left:28px;	}
+#key2	{ top:1px; left:55px;	}
+#key3	{ top:1px; left:82px;	}
+#key4	{ top:1px; left:109px;	}
+#key5	{ top:1px; left:136px;	}
+#key6	{ top:1px; left:163px;	}
+#key7	{ top:1px; left:190px;	}
+#key8	{ top:1px; left:217px;	}
+#key9	{ top:1px; left:244px;	}
+#key10	{ top:1px; left:271px;	}
+#key11	{ top:1px; left:298px;	}
+#key12	{ top:1px; left:325px;	}
+#backsp	{ top:1px; left:352px;	}
+#tab	{ top:28px; left:1px;	}
+#key13	{ top:28px; left:38px;	}
+#key14	{ top:28px; left:65px;	}
+#key15	{ top:28px; left:92px;	}
+#key16	{ top:28px; left:119px;	}
+#key17	{ top:28px; left:146px;	}
+#key18	{ top:28px; left:173px;	}
+#key19	{ top:28px; left:200px;	}
+#key20	{ top:28px; left:227px;	}
+#key21	{ top:28px; left:254px;	}
+#key22	{ top:28px; left:281px;	}
+#key23	{ top:28px; left:308px;	}
+#key24	{ top:28px; left:335px;	}
+#key25	{ top:28px; left:362px;	}
+#extra	{ top:28px; left:389px;	}
+#caps	{ top:55px; left:1px;	}
+#key26	{ top:55px; left:50px;	}
+#key27	{ top:55px; left:77px;	}
+#key28	{ top:55px; left:104px;	}
+#key29	{ top:55px; left:131px;	}
+#key30	{ top:55px; left:158px;	}
+#key31	{ top:55px; left:185px;	}
+#key32	{ top:55px; left:212px;	}
+#key33	{ top:55px; left:239px;	}
+#key34	{ top:55px; left:266px;	}
+#key35	{ top:55px; left:293px;	}
+#key36	{ top:55px; left:320px;	}
+#key37	{ top:55px; left:347px;	}
+#enter	{ top:55px; left:374px;	}
+#shiftl	{ top:82px; left:1px;	}
+#key38	{ top:82px; left:69px;	}
+#key39	{ top:82px; left:96px;	}
+#key40	{ top:82px; left:123px;	}
+#key41	{ top:82px; left:150px;	}
+#key42	{ top:82px; left:177px;	}
+#key43	{ top:82px; left:204px;	}
+#key44	{ top:82px; left:231px;	}
+#key45	{ top:82px; left:258px;	}
+#key46	{ top:82px; left:285px;	}
+#key47	{ top:82px; left:312px;	}
+#shiftr	{ top:82px; left:339px;	}
+#langprv	{ top:109px; left:1px;	}
+#langcrt	{ top:109px; left:44px;	}
+#langnxt	{ top:109px; left:87px;	}
+#space		{ top:109px; left:130px;}
+#del		{ top:109px; left:279px;}
+#alt		{ top:109px; left:322px;}
+#open2		{ top:109px; left:365px;}

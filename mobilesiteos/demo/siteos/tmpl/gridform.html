@@ -1,0 +1,407 @@
+
+		<style type="text/css">
+		/* <![CDATA[ */
+
+		/* Fake the :focus state to demo it */
+		.focused {
+		  border-color: rgba(82,168,236,.8);
+		  -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,.1), 0 0 8px rgba(82,168,236,.6);
+				  box-shadow: inset 0 1px 3px rgba(0,0,0,.1), 0 0 8px rgba(82,168,236,.6);
+		  outline: 0;
+		}
+		.row {
+			margin-bottom: 0.3em;
+		}
+
+		/* ]]> */
+		</style>
+
+		<section class="form">
+			<h2>Mobile Grid Forms</h2>
+
+			<div class="pgrph well">
+				This page demonstrates our responsive web design form elements. These form elements are
+				loosely based on the excellent&nbsp;<u>Twitter Bootstrap</u>&nbsp;v2.3.2 Library of
+				components, while being arranged by our version of responsive grid&nbsp;<u>CSS</u>&nbsp;code.
+				Please note the use of the&nbsp;<code>.form</code>&nbsp;class as derived from Bootstrap v2.x.x.
+				MobileSiteOS uses this simple&nbsp;<u>CSS</u>&nbsp;form structure as it's base by default,
+				without the loading an additional module.
+			</div>
+
+			<div class="row adjust">
+				<div class="span6">
+					<h3>Basic Form</h3>
+
+					<form class="well">
+						<div class="row">
+							<div class="span11 text_lt">
+								<label>Label Name</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="span11">
+								<input class="span11 pull_lt" type="text" placeholder="Type something…" />
+								<div class="help text_lt">Example block-level help text here.</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="span11 text_lt">Example block-level description text here.</div>
+						</div>
+						<div class="row">
+							<div class="span11">
+								<label class="checkbox pull_lt text_lt">
+									<input type="checkbox" /> Check me out
+								</label>
+							</div>
+						</div>
+						<button type="submit" class="btn"> Submit </button>
+					</form>
+				</div>
+
+				<div class="span6">
+					<h3>Search Form</h3>
+
+					<form class="well">
+						<div class="row">
+							<div class="span8">
+								<input type="text" class="span11 search" />
+							</div>
+							<div class="span3">
+								<button type="submit" class="btn"> Search </button>
+							</div>
+						</div>
+						<p>Add&nbsp;<code>.search</code> to the&nbsp;<code>input</code>.</p>
+					</form>
+				</div>
+			</div><!-- /row -->
+			<div class="row">
+				<div class="span12">
+					<h3>Inline form</h3>
+
+					<form class="well">
+						<div class="row">
+							<div class="span4 pull_lt">
+								<input class="span10" type="text" placeholder="Email" />
+							</div>
+							<div class="span3 pull_lt">
+								<input class="span10" type="password" placeholder="Password" />
+							</div>
+							<div class="span3 pull_lt">
+								<label class="span10"><input type="checkbox" /> Save Me</label>
+							</div>
+							<div class="span2 pull_lt">
+								<button type="submit" class="btn">Sign In</button>
+							</div>
+						</div>
+					</form>
+				</div><!-- /.span -->
+			</div><!-- /row -->
+		</section><!-- /form -->
+
+		<section class="form">
+			<h2>Horizontal Forms</h2>
+
+			<form>
+				<fieldset>
+					<div class="row adjust">
+						<div class="span3">
+							<label for="input01">Text input</label>
+						</div>
+						<div class="span9">
+							<input type="text" id="input01" class="span11 pull_lt" />
+							<div class="span11 help text_lt">In addition to freeform text, any HTML5 text-based input appears like so.</div>
+						</div>
+					</div>
+					<div class="row adjust">
+						<div class="span3">
+							<label for="optionsCheckbox">Checkbox</label>
+						</div>
+						<div class="span9">
+							<label class="checkbox span11 pull_lt text_lt">
+								<input type="checkbox" id="optionsCheckbox" value="option1" />
+								Option one is this and that&mdash;be sure to include why it's great!
+							</label>
+						</div>
+					</div>
+					<div class="row adjust">
+						<div class="span3">
+							<label for="select01">Select list</label>
+						</div>
+						<div class="span9">
+							<select id="select01" class="span8 pull_lt">
+								<option>something</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</div>
+					</div>
+					<div class="row adjust">
+						<div class="span3">
+							<label for="multiSelect">Multicon-select</label>
+						</div>
+						<div class="span9">
+							<select multiple="multiple" id="multiSelect" class="span8 pull_lt">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</div>
+					</div>
+					<div class="row adjust">
+						<div class="span3">
+							<label for="fileInput">File input</label>
+						</div>
+						<div class="span9">
+							<input class="span11 pull_lt" id="fileInput" type="file" />
+						</div>
+					</div>
+					<div class="row adjust">
+						<div class="span3">
+							<label for="textarea">Textarea</label>
+						</div>
+						<div class="span9">
+							<textarea id="textarea" rows="3" class="span11 pull_lt"></textarea>
+						</div>
+					</div>
+					<div class="actions">
+							<button type="submit" class="btn btn-primary">Save Changes</button>
+							<button class="btn">Cancel</button>
+					</div>
+				</fieldset>
+			</form>
+		</section>
+
+		<section class="form">
+			<h2>Form Styling</h2>
+
+			<form>
+				<fieldset>
+					<div class="row adjust">
+						<div class="span3 text_rt pad_rt">
+							<label for="focusedInput">Focused Input</label>
+						</div>
+						<div class="span9">
+							<input class="span11 pull_lt focused" id="focusedInput" type="text" value="This is focused..." />
+						</div>
+					</div>
+					<div class="row adjust">
+						<div class="span3 text_rt pad_rt">
+							<label for="readonlyInput">Read Only Input</label>
+						</div>
+						<div class="span9">
+							<input class="span11 readonly pull_lt" id="readonlyInput" type="text" value="Some value here..." readonly="readonly" />
+						</div>
+					</div>
+					<div class="row adjust">
+						<div class="span3 text_rt pad_rt">
+							<label for="disabledInput">Disabled Input</label>
+						</div>
+						<div class="span9">
+							<input class="span11 pull_lt" id="disabledInput" type="text" placeholder="Disabled input here..." disabled="disabled" />
+						</div>
+					</div>
+					<div class="row adjust">
+						<div class="span3 text_rt pad_rt">
+							<label for="optionsCheckbox2">Disabled Checkbox</label>
+						</div>
+						<div class="span9">
+							<label class="checkbox span11 pull_lt text_lt">
+								<input type="checkbox" id="optionsCheckbox2" value="option1" disabled="disabled" />
+								This is a disabled checkbox
+							</label>
+						</div>
+					</div>
+					<div class="row warning adjust">
+						<div class="span3 text_rt pad_rt">
+							<label for="inputWarning">Input with Warning</label>
+						</div>
+						<div class="span9">
+							<input class="span4 pull_lt" type="text" id="inputWarning" />
+							<span class="help">Something may have gone very, very wrong and may need attention.</span>
+						</div>
+					</div>
+					<div class="row error adjust">
+						<div class="span3 text_rt pad_rt">
+							<label for="inputError">Input with Error</label>
+						</div>
+						<div class="span9">
+							<input class="span4 pull_lt" type="text" id="inputError" />
+							<span class="help pull_lt pad_lt">Please correct the error</span>
+						</div>
+					</div>
+					<div class="row success adjust">
+						<div class="span3 text_rt pad_rt">
+						<label for="inputSuccess">Input with Success</label>
+						</div>
+						<div class="span9">
+							<input class="span4 pull_lt" type="text" id="inputSuccess" />
+							<span class="help pull_lt pad_lt">Woohoo!</span>
+						</div>
+					</div>
+					<div class="row success adjust">
+						<div class="span3 text_rt pad_rt">
+							<label for="selectError">Select with Success</label>
+						</div>
+						<div class="span9">
+							<select class="span4 pull_lt" id="selectError">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+							<span class="help pull_lt pad_lt">Woohoo!</span>
+						</div>
+					</div>
+					<div class="actions">
+						<button type="submit" class="btn btn-primary">Save changes</button>
+						<button class="btn">Cancel</button>
+					</div>
+				</fieldset>
+			</form>
+		</section>
+
+		<section class="form">
+			<h2>Append, Prepend Form Styling</h2>
+
+			<form>
+				<div class="row adjust">
+					<div class="span3 text_rt pad_rt">
+						<label for="prependedInput">Prepended text</label>
+					</div>
+					<div class="span9 prepend">
+						<div class="add-on pull_lt">@</div>
+						<input class="span2 pull_lt" id="prependedInput" type="text" />
+						<span class="help pull_lt pad_lt">Here's some help text</span>
+					</div>
+				</div>
+				<div class="row adjust">
+					<div class="span3 text_rt pad_rt">
+						<label for="appendedInput">Appended text</label>
+					</div>
+					<div class="span9 append">
+						<input class="span2 pull_lt" id="appendedInput" type="text" />
+						<div class="add-on pull_lt">.00</div>
+					</div>
+				</div>
+				<div class="row adjust">
+					<div class="span3 text_rt pad_rt">
+						<label for="appendedInput2">Appended text 2</label>
+					</div>
+					<div class="span9 append">
+						<input class="span2 pull_lt" id="appendedInput2" type="text" />
+						<div class="add-on last pull_lt">.00</div>
+						<span class="help pull_lt pad_lt">Here's even more help text</span>
+					</div>
+				</div>
+				<div class="row adjust">
+					<div class="span3 text_rt pad_rt">
+						<label for="appendedPrependedInput">Append and prepend</label>
+					</div>
+					<div class="span9 prepend append">
+							<div class="add-on pull_lt">$</div>
+							<input class="span2 pull_lt" id="appendedPrependedInput" type="text" />
+							<div class="add-on pull_lt">.00</div>
+					</div>
+				</div>
+				<div class="row adjust">
+					<div class="span3 text_rt pad_rt">
+						<label for="appendedInputButton">Append with button</label>
+					</div>
+					<div class="span9 append">
+							<input class="span2 pull_lt" id="appendedInputButton" type="text" />
+							<button class="btn pull_lt" type="button">Go!</button>
+					</div>
+				</div>
+				<div class="row adjust">
+					<div class="span3 text_rt pad_rt">
+						<label for="appendedInputButtons">Two-button append</label>
+					</div>
+					<div class="span9 append">
+						<input class="span2 pull_lt" id="appendedInputButtons" type="text" />
+						<button class="btn pull_lt" type="button">Search</button>
+						<button class="btn pull_lt" type="button">Options</button>
+					</div>
+				</div>
+				<div class="row adjust">
+					<div class="span3 text_rt pad_rt">
+						<label>Inline checkboxes<br />(Short Names)</label>
+					</div>
+					<div class="span9">
+						<label class="checkbox span3 pull_lt text_lt">
+							<input type="checkbox" id="inlineCheckbox1" value="option1" /> Option 1
+						</label>
+						<label class="checkbox span3 pull_lt text_lt">
+							<input type="checkbox" id="inlineCheckbox2" value="option2" /> Option 2
+						</label>
+						<label class="checkbox span3 pull_lt text_lt">
+							<input type="checkbox" id="inlineCheckbox3" value="option3" /> Option 3
+						</label>
+					</div>
+				</div>
+				<div class="row adjust">
+					<div class="span3 text_rt pad_rt">
+						<label>Inline checkboxes<br />(Long Names)</label>
+					</div>
+					<div class="span9">
+						<label class="checkbox span2 pull_lt text_lt">
+							<input type="checkbox" id="inlineCheckbox4" value="option1" />
+							Long Option Name 1
+						</label>
+						<label class="checkbox span2 pull_lt text_lt">
+							<input type="checkbox" id="inlineCheckbox5" value="option2" />
+							Long Option Name 2
+						</label>
+						<label class="checkbox span2 pull_lt text_lt">
+							<input type="checkbox" id="inlineCheckbox6" value="option3" />
+							Long Option Name 3
+						</label>
+					</div>
+				</div>
+				<div class="row adjust">
+					<div class="span3 text_rt pad_rt">
+						<label>Checkboxes</label>
+					</div>
+					<div class="span9">
+						<label class="checkbox span11 pull_lt text_lt">
+							<input type="checkbox" name="optionsCheckboxList1" value="option1" />
+							Option one is this and that&mdash;be sure to include why it's great
+						</label>
+						<label class="checkbox span11 pull_lt text_lt">
+							<input type="checkbox" name="optionsCheckboxList2" value="option2" />
+							Option two can also be checked and included in form results
+						</label>
+						<label class="checkbox span11 pull_lt text_lt">
+							<input type="checkbox" name="optionsCheckboxList3" value="option3" />
+							Option three can&mdash;yes, you guessed it&mdash;also be checked and included in form results
+						</label>
+						<p class="help span11">
+							Note: Labels surround all the options for much larger click areas and a more usable form.
+						</p>
+					</div>
+				</div>
+				<div class="row adjust">
+					<div class="span3 text_rt pad_rt">
+						<label>Radio buttons</label>
+					</div>
+					<div class="span9">
+						<label class="radio span11 pull_lt text_lt">
+							<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="checked" />
+							Option one is this and that&mdash;be sure to include why it's great
+						</label>
+						<label class="radio span11 pull_lt text_lt">
+							<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" />
+							Option two can is something else and selecting it will de-select option one
+						</label>
+					</div>
+				</div>
+				<div class="actions">
+					<button type="submit" class="btn btn-primary">Save changes</button>
+					<button class="btn">Cancel</button>
+				</div>
+			</form>
+		</section>

@@ -1,0 +1,72 @@
+
+
+		<style type="text/css">
+		/* <![CDATA[ */
+
+			#img_loading_demo {
+				position: relative;
+			}
+			#image-container img {
+			  max-height: 140px;
+			}
+			#image-container > li {
+			  height: 140px;
+			  min-width: 100px;
+			  display: block;
+			  float: left;
+			  list-style: none;
+			  margin: 0 5px 5px 0;
+			  background-color: black;
+			  background-position: center center;
+			  background-repeat: no-repeat;
+			}
+			li img,
+			#status {
+			  -webkit-transition: opacity 0.4s;
+				 -moz-transition: opacity 0.4s;
+				  -ms-transition: opacity 0.4s;
+					  transition: opacity 0.4s;
+			}
+			li.is-loading {
+			  background-color: black;
+			  background-image: url('http://desandro.github.io/imagesloaded/assets/loading.gif');
+			}
+			li.is-broken {
+			  background-image: url('http://desandro.github.io/imagesloaded/assets/broken.png');
+			  background-color: #be3730;
+			  width: 120px;
+			}
+			li.is-loading img,
+			li.is-broken img {
+			  opacity: 0;
+			}
+			.buttons { margin-bottom: 1.0em; }
+			#status {
+			  opacity: 0;
+			  width: 200px;
+			  background: hsla( 0, 0%, 0%, 0.8);
+			  padding: 10px;
+			  border-radius: 10px;
+			  margin-bottom: 0.3em;
+			  z-index: 2; /* over other stuff */
+			}
+
+		/* ]]> */
+		</style>
+
+		<section>
+			<h2>Packery - Loading Images</h2>
+
+			<div id="img_loading_demo">
+				<div class="buttons">
+					<button id="add" class="btn btn-success">Add images</button>
+					<button id="reset" class="btn btn-danger">Reset</button>
+				</div>
+
+				<div id="status">
+					<progress max="7" value="0"></progress>
+				</div>
+
+				<div id="image-container"></div>
+			</div>
+        </section>

@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+
+.mejs-container .mejs-controls {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(50,50,50,0.7)), to(rgba(0,0,0,0.7)));
+	background: -webkit-linear-gradient(top, rgba(50,50,50,0.7), rgba(0,0,0,0.7));
+	background: -moz-linear-gradient(top, rgba(50,50,50,0.7), rgba(0,0,0,0.7));
+	background: -o-linear-gradient(top, rgba(50,50,50,0.7), rgba(0,0,0,0.7));
+	background: -ms-linear-gradient(top, rgba(50,50,50,0.7), rgba(0,0,0,0.7));
+	background: linear-gradient(rgba(50,50,50,0.7), rgba(0,0,0,0.7));
+}
+.mejs-time-total {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(30,30,30,0.8)), to(rgba(60,60,60,0.8)));
+	background: -webkit-linear-gradient(top, rgba(30,30,30,0.8), rgba(60,60,60,0.8)); 
+	background: -moz-linear-gradient(top, rgba(30,30,30,0.8), rgba(60,60,60,0.8));
+	background: -o-linear-gradient(top, rgba(30,30,30,0.8), rgba(60,60,60,0.8));
+	background: -ms-linear-gradient(top, rgba(30,30,30,0.8), rgba(60,60,60,0.8));
+	background: linear-gradient(rgba(30,30,30,0.8), rgba(60,60,60,0.8)); 	
+}
+.mejs-time-buffering {
+	background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+	background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+	background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+	background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+	background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+	background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.mejs-time-loaded {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(44,124,145,0.8)), to(rgba(78,183,212,0.8))); 
+	background: -webkit-linear-gradient(top, rgba(44,124,145,0.8), rgba(78,183,212,0.8));
+	background: -moz-linear-gradient(top, rgba(44,124,145,0.8), rgba(78,183,212,0.8));
+	background: -o-linear-gradient(top, rgba(44,124,145,0.8), rgba(78,183,212,0.8));
+	background: -ms-linear-gradient(top, rgba(44,124,145,0.8), rgba(78,183,212,0.8));
+	background: linear-gradient(rgba(44,124,145,0.8), rgba(78,183,212,0.8)); 	
+}
+.mejs-time-current {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,0.9)), to(rgba(200,200,200,0.8)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0.9), rgba(200,200,200,0.8));
+	background: -moz-linear-gradient(top, rgba(255,255,255,0.9), rgba(200,200,200,0.8)); 
+	background: -o-linear-gradient(top, rgba(255,255,255,0.9), rgba(200,200,200,0.8));
+	background: -ms-linear-gradient(top, rgba(255,255,255,0.9), rgba(200,200,200,0.8));
+	background: linear-gradient(rgba(255,255,255,0.9), rgba(200,200,200,0.8));
+}
+.mejs-chapters .mejs-chapter {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(50,50,50,0.7)), to(rgba(0,0,0,0.7)));
+	background: -webkit-linear-gradient(top, rgba(50,50,50,0.7), rgba(0,0,0,0.7));
+	background: -moz-linear-gradient(top, rgba(50,50,50,0.7), rgba(0,0,0,0.7));
+	background: -o-linear-gradient(top, rgba(50,50,50,0.7), rgba(0,0,0,0.7));
+	background: -ms-linear-gradient(top, rgba(50,50,50,0.7), rgba(0,0,0,0.7));
+	background: linear-gradient(rgba(50,50,50,0.7), rgba(0,0,0,0.7));
+}
+.mejs-chapters .mejs-chapter .mejs-chapter-block:hover {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(102,102,102,0.7)), to(rgba(50,50,50,0.6)));
+	background: -webkit-linear-gradient(top, rgba(102,102,102,0.7), rgba(50,50,50,0.6));
+	background: -moz-linear-gradient(top, rgba(102,102,102,0.7), rgba(50,50,50,0.6));
+	background: -o-linear-gradient(top, rgba(102,102,102,0.7), rgba(50,50,50,0.6));
+	background: -ms-linear-gradient(top, rgba(102,102,102,0.7), rgba(50,50,50,0.6));
+	background: linear-gradient(rgba(102,102,102,0.7), rgba(50,50,50,0.6));
+}
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(30,30,30,0.8)), to(rgba(60,60,60,0.8)));
+	background: -webkit-linear-gradient(top, rgba(30,30,30,0.8), rgba(60,60,60,0.8)); 
+	background: -moz-linear-gradient(top, rgba(30,30,30,0.8), rgba(60,60,60,0.8));
+	background: -o-linear-gradient(top, rgba(30,30,30,0.8), rgba(60,60,60,0.8));
+	background: -ms-linear-gradient(top, rgba(30,30,30,0.8), rgba(60,60,60,0.8));
+	background: linear-gradient(rgba(30,30,30,0.8), rgba(60,60,60,0.8));
+}
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,0.9)), to(rgba(200,200,200,0.8)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0.9), rgba(200,200,200,0.8));
+	background: -moz-linear-gradient(top, rgba(255,255,255,0.9), rgba(200,200,200,0.8)); 
+	background: -o-linear-gradient(top, rgba(255,255,255,0.9), rgba(200,200,200,0.8));
+	background: -ms-linear-gradient(top, rgba(255,255,255,0.9), rgba(200,200,200,0.8));
+	background: linear-gradient(rgba(255,255,255,0.9), rgba(200,200,200,0.8));
+}

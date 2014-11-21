@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+/*	MobileSiteOS 'div#ajax_container' style properties, (don't change these). It is better
+	to add your own style sheets or inline styles: Copyright©2008-2011 - OpenSiteMobile
+*/
+
+  #ajax_container {
+    position:absolute;
+    visibility:hidden;
+    border:2px outset grey;
+	border-radius:5px;
+  }
+  #ajax_header {
+    position:absolute;
+	border-radius:4px;
+    z-index:80;
+  }
+  #ajax_close {
+	float:right;
+    z-index:100;
+  }
+  #ajax_display {
+    position:absolute;
+    top:24px;
+    left:0;
+    padding:2px;
+	overflow:auto;
+    z-index:100;
+  }
+  

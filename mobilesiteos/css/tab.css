@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/*	MobileSiteOS page tabbing style properties, (don't change these). It is better
+	to add your own style sheets or inline styles: Copyright©2008-2011 - OpenSiteMobile */
+
+  .tabs_div {
+    text-align:left;
+  }
+  .tab_content {
+	border-top:1px solid #999;
+    border-left:1px solid #999;
+    border-right:2px outset;
+    border-bottom:2px outset;
+    padding:8px 4px 4px 4px;
+    z-index:10;
+	border-radius:0.5em;
+    display:none;
+  }
+  .tab_content_inner {
+    padding:4px;
+    overflow:auto;
+  }
+  .tab_common {
+    position:relative;
+    top:2px;
+    left:4px;
+    display:inline;
+    border-top:2px outset;
+    border-left:2px outset;
+    border-right:2px outset;
+    padding:0 5px;
+	border-radius:0.4em 0.4em 0 0;
+  }
+  .tab_common.tab_active {
+    z-index:15;
+	cursor: text;
+  }
+  .tab_common.tab_passive {
+    z-index:5;
+	cursor: pointer;
+  }

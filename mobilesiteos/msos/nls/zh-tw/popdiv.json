@@ -1,0 +1,1 @@
+{ "button_title": "顯示或隱藏我們的彈出顯示", "button_alt": "顯示 /隱藏", "position": "拖動從這裡到這個位置彈出顯示", "close_title": "關閉彈出顯示", "close_alt": "關閉", "action_value": "OK", "action_title": "點擊提交更改", "cancel_value": "取消", "cancel_title": "點擊取消更改", "blocked": "看來，彈出窗口被阻止。此程序需要一個彈出窗口。", "dialog": "該方案未能通過所需的數據，以彈出窗口。", "smaller": "使彈出小窗口", "larger": "使彈出窗口大" }

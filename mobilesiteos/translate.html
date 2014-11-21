@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8" />
+<meta name="handheldfriendly" content="true" />
+<meta name="mobileoptimized"  content="width" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Open source software for the mobile web!" />
+<meta name="author" content="Dwight Vietzke" />
+
+    <title>MobileSiteOS™ Translate</title>
+
+<style type="text/css">
+/* <![CDATA[ */
+
+	/*
+	 *	Note: Using an external file is fine, but it is best to leave this css here!
+	 *	This prevents a "blank page" showing on slow connections.
+	*/
+	html, body, table, div, article, section, fieldset {
+		font-family: "Comic Sans MS", cursive, sans-serif
+	}
+	html, body {
+		background-color: #A1A1A1;
+	}
+	body {
+		background-image: url(./images/grid_bg.png);
+		background-repeat: repeat-x;
+	}
+	#body {
+		display: none;
+	}
+
+	#no_javascript {
+		background-color: #FFF;
+		border: 2px solid #999;
+		border-radius: 0.4em;
+		margin-left: auto;
+		margin-right: auto;
+		width: 60%;
+	}
+	#no_javascript > i {
+		color: red;
+	}
+
+/* ]]> */
+</style>
+
+<link rel='shortcut icon' href='./images/osm.ico' />
+
+<script src="./msos/base.uc.js"></script>	<!-- index.hmtl has base.min.js instead... -->
+<script>
+// Start up our MSOS Page App
+msos.onload_func_pre.push(
+	function () {
+
+		// Load the Page App
+		msos.require("msos.page");
+
+		// Load the #header and #footer html
+		msos.template("demo.tmpl.header");
+		msos.template("demo.tmpl.footer");
+
+		// Define namespace for page content and header/footer templates
+		msos.onload_func_post.push(
+			function () {
+				var app_config = {
+						root: { base: '', group: 'demo', name: 'translate' },	// ./demo/translate.js is default page script
+						header: demo.tmpl.header,
+						footer: demo.tmpl.footer,
+						template: 'tmpl'		// is template folder name (ie: ./demo/tmpl/home.html)
+					};
+
+				msos.page.initiate(app_config)
+			}
+		);
+	}
+);
+</script>
+<script src="./config.js"></script>
+
+</head>
+<body>
+
+<noscript>
+	<h3 id="no_javascript">
+		<i class="fa fa-ban"></i> We're sorry, but this site requires JavaScript be enabled!
+	</h3>
+</noscript>
+
+<div id='body'>
+
+	<div id="rotate_marquee">
+		<ins id="google_ad" class="adsbygoogle osm-responsive-2014" style="display:inline-block" data-ad-client="ca-pub-0581487774111572" data-ad-slot="2083707378"></ins>
+		<div id='marquee'>OpenSiteMobile</div>
+		<div id='slogan'>Open source software for the mobile web!</div>
+	</div>
+
+	<div id="header" class="msos_navbar"></div>
+
+	<div id="content"></div>
+
+	<div id='social_ties'></div>
+
+	<div id="footer" class="msos_navbar"></div>
+
+</div> <!-- end 'body' div -->
+
+</body>
+</html>

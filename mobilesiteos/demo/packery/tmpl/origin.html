@@ -1,0 +1,135 @@
+
+
+		<style type="text/css">
+		/* <![CDATA[ */
+
+ 			.container {
+			  margin-bottom: 20px;
+			  background: #EEE;
+			}
+            .container.desktop  { width: 800px; }
+            .container.large    { width: 700px; }
+			.container.medium	{ width: 600px; }
+            .container.small    { width: 500px; }
+            .container.tablet   { width: 400px; }
+            .container.phone    { width: 300px; }
+            .item {
+              float: left;
+              width: 50px;
+              height: 50px;
+              border: 1px solid;
+              background: #ACE;
+            }
+            .item.w2 { width:  100px; }
+            .item.h2 { height: 100px; }
+            .item.w4 { width:  200px; }
+            .item.h4 { height: 200px; }
+            .fluid {
+              width: 50%;
+            }
+            .container {
+              position: relative;
+              counter-reset: item;
+            }
+            .container .item:before {
+              counter-increment: item;
+              content: counter(item);
+              display: block;
+            }
+            .stamp {
+              position: absolute;
+              background: red;
+              border: 1px solid;
+              opacity: 0.8;
+            }
+            .stamp1 {
+              width: 150px;
+              height: 100px;
+              left: 130px;
+            }
+            .stamp2 {
+              width: 100px;
+              height: 150px;
+              right: 30%;
+            }
+
+            #top-right .stamp1 { top: 10px; }
+            #bottom-right .stamp1,
+            #bottom-left .stamp1 { bottom: 10px; }
+          
+            #top-right .stamp2 { top: 20px; }
+            #bottom-right .stamp2,
+            #bottom-left .stamp2 { bottom: 20px; }
+
+		/* ]]> */
+		</style>
+
+        <section>
+            <h2>Packery Specific Origin Examples</h2>
+
+            <div id="top-right" class="container">
+                <div class="stamp stamp1"></div>
+                <div class="stamp stamp2"></div>
+                <div class="item w4"></div>
+                <div class="item h4"></div>
+                <div class="item w2"></div>
+                <div class="item h4"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item h2"></div>
+                <div class="item w4"></div>
+                <div class="item w2"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item h4"></div>
+                <div class="item"></div>
+                <div class="item w4"></div>
+                <div class="item"></div>
+                <div class="item w2"></div>
+            </div>
+
+            <div id="bottom-left" class="container">
+                <div class="stamp stamp1"></div>
+                <div class="stamp stamp2"></div>
+                <div class="item w4"></div>
+                <div class="item h4"></div>
+                <div class="item w2"></div>
+                <div class="item h4"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item h2"></div>
+                <div class="item w4"></div>
+                <div class="item w2"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item h4"></div>
+                <div class="item"></div>
+                <div class="item w4"></div>
+                <div class="item"></div>
+                <div class="item w2"></div>
+            </div>
+
+            <div id="bottom-right" class="container">
+                <div class="stamp stamp1"></div>
+                <div class="stamp stamp2"></div>
+                <div class="item w4"></div>
+                <div class="item h4"></div>
+                <div class="item w2"></div>
+                <div class="item h4"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item h2"></div>
+                <div class="item w4"></div>
+                <div class="item w2"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item h4"></div>
+                <div class="item"></div>
+                <div class="item w4"></div>
+                <div class="item"></div>
+                <div class="item w2"></div>
+            </div>
+        </section>

@@ -1,0 +1,143 @@
+
+/*
+
+A couple of additions for the animo.js library (originally bundled with animate.css)
+
+Daniel Raftery <@ThirvingKings>
+
+*/
+
+.animated.fade {
+	-webkit-animation-name: fade;
+  -moz-animation-name: fade;
+  -o-animation-name: fade;
+  animation-name: fade;
+}
+
+@-webkit-keyframes fade {
+	0% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+@-moz-keyframes fade {
+	0% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+@-o-keyframes fade {
+	0% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+@keyframes fade {
+	0% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+.animated.appear {
+	-webkit-animation-name: appear;
+  -moz-animation-name: appear;
+  -o-animation-name: appear;
+  animation-name: appear;
+}
+
+@-webkit-keyframes appear {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@-moz-keyframes appear {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@-o-keyframes appear {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes appear {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+.animated.spinner {
+	-webkit-animation-name: spinner;
+  -moz-animation-name: spinner;
+  -o-animation-name: spinner;
+  animation-name: spinner;
+}
+
+@-webkit-keyframes spinner {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+
+@-moz-keyframes spinner {
+	0% { -moz-transform: rotate(0deg); }
+	100% { -moz-transform: rotate(360deg); }
+}
+
+@-o-keyframes spinner {
+	0% { -o-transform: rotate(0deg); }
+	100% { -o-transform: rotate(360deg); }
+}
+
+@keyframes spinner {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+.animated.twirlIn {
+  -webkit-animation-name: twirlIn;
+  -moz-animation-name: twirlIn;
+  -o-animation-name: twirlIn;
+  animation-name: twirlIn;
+}
+
+@-webkit-keyframes twirlIn {
+  0% { -webkit-transform: rotate3d( 80,-70,10,180deg ); }
+  100% { -webkit-transform: rotate3d( 0,0,0,0deg ); }
+}
+
+@-moz-keyframes twirlIn {
+  0% { -moz-transform: rotate3d( 80,70,10,180deg ); }
+  100% { -moz-transform: rotate3d( 0,0,0,0deg ); }
+}
+
+@-o-keyframes twirlIn {
+  0% { -o-transform: rotate3d( 80,70,10,180deg ); }
+  100% { -o-transform: rotate3d( 0,0,0,0deg ); }
+}
+
+@keyframes twirlIn {
+  0% { transform: rotate3d( 0,0,0,0deg ); }
+  100% { transform: rotate3d( 80,70,10,180deg ); }
+}
+
+.animated.twirlOut {
+  -webkit-animation-name: twirlOut;
+  -moz-animation-name: twirlOut;
+  -o-animation-name: twirlOut;
+  animation-name: twirlOut;
+}
+
+@-webkit-keyframes twirlOut {
+  0% { -webkit-transform: rotate3d( 0,0,0,0deg ); }
+  100% { -webkit-transform: rotate3d( 80,-70,10,180deg );  }
+}
+
+@-moz-keyframes twirlOut {
+  0% { -moz-transform: rotate3d( 0,0,0,0deg ); }
+  100% { -moz-transform: rotate3d( 80,70,10,180deg ); }
+}
+
+@-o-keyframes twirlOut { 
+  0% { -o-transform: rotate3d( 0,0,0,0deg ); }
+  100% { -o-transform: rotate3d( 80,70,10,180deg ); }
+}
+
+@keyframes twirlOut { 
+  0% { transform: rotate3d( 0,0,0,0deg ); }
+  100% { transform: rotate3d( 80,70,10,180deg ); }
+}

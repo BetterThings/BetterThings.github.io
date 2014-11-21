@@ -1,0 +1,145 @@
+
+
+		<style type="text/css">
+		/* <![CDATA[ */
+
+			p {
+				margin-bottom: 0.5em;
+				line-height: 1.2em;
+			}
+			.sidebar li {
+				margin-bottom:0.2em;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+			.sidebar li {
+				display: inline-block;
+				width: 49%;
+			}
+
+			.events li.active { background: lightgreen; }
+			.properties li { white-space: nowrap; }
+			.properties span { margin-left: 5px; }
+			.hitarea {
+				background: aliceblue;
+				padding: 20px;
+				border: solid #ccc 1px;
+			}
+			.hitarea-nested {
+				background: lightblue;
+			}
+
+		/* ]]> */
+		</style>
+
+		<section>
+			<h2><u>Hammer.js</u>&nbsp;Events</h2>
+
+			<div class="pgrph well">
+				Gesture on the "Hit-Area" below. For desktop or laptop pc's, add&nbsp;<code style="white-space: nowrap;">?verbose=true</code>&nbsp;
+				to the base url (before the # sign). This adds "fake finger" support for non-touch devices. Use the "shift" key to start
+				"two finger" support.
+			</div>
+
+			<div class="sidebar well well-small">
+				<h3>Events</h3>
+				<label class="checkbox">
+					<input type="checkbox" checked id="prevent-default"> block browser behavior (preventDefault)
+				</label>
+				<ul class="unstyled events" id="events-list">
+					<li>touch</li>
+					<li>release</li>
+					<li>hold</li>
+					<li>tap</li>
+					<li>doubletap</li>
+
+					<li>dragstart</li>
+					<li>drag</li>
+					<li>dragend</li>
+					<li>dragleft</li>
+					<li>dragright</li>
+					<li>dragup</li>
+					<li>dragdown</li>
+
+					<li>swipe</li>
+					<li>swipeleft</li>
+					<li>swiperight</li>
+					<li>swipeup</li>
+					<li>swipedown</li>
+
+					<li>transformstart</li>
+					<li>transform</li>
+					<li>transformend</li>
+					<li>rotate</li>
+					<li>pinch</li>
+					<li>pinchin</li>
+					<li>pinchout</li>
+				</ul>
+
+				<h3>EventData</h3>
+				<ul class="unstyled properties">
+					<li class="property-gesture">
+						<strong>gesture</strong>        <span id="log-prop-gesture"></span>
+					</li>
+					<li>
+						<strong>touches</strong>        <span id="log-prop-touches"></span>
+					</li>
+					<li>
+						<strong>pointerType</strong>    <span id="log-prop-pointerType"></span>
+					</li>
+					<li>
+						<strong>center</strong>         <span id="log-prop-center"></span>
+					</li>
+					<li>
+						<strong>angle</strong>          <span id="log-prop-angle"></span>&deg;
+					</li>
+					<li>
+						<strong>direction</strong>      <span id="log-prop-direction"></span>
+					</li>
+					<li>
+						<strong>distance</strong>       <span id="log-prop-distance"></span>px
+					</li>
+					<li>
+						<strong>deltaTime</strong>      <span id="log-prop-deltaTime"></span>ms
+					</li>
+					<li>
+						<strong>deltaX</strong>         <span id="log-prop-deltaX"></span>px
+					</li>
+					<li>
+						<strong>deltaY</strong>         <span id="log-prop-deltaY"></span>px
+					</li>
+					<li>
+						<strong>velocityX</strong>      <span id="log-prop-velocityX"></span>
+					</li>
+					<li>
+						<strong>velocityY</strong>      <span id="log-prop-velocityY"></span>
+					</li>
+					<li>
+						<strong>scale</strong>          <span id="log-prop-scale"></span>
+					</li>
+					<li>
+						<strong>rotation</strong>       <span id="log-prop-rotation"></span>&deg;
+					</li>
+					<li>
+						<strong>target</strong>         <span id="log-prop-target"></span>
+					</li>
+				</ul>
+			</div>
+
+			<div id="hitarea" class="hitarea notranslate">
+				<h3>Hit-Area</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					<a href="#">Praesent at erat felis.</a> Donec ornare ligula non nibh vulputate sollicitudin.
+					Cras sodales eros a velit pulvinar vehicula. In sed lorem lectus, vel dapibus nulla. Mauris
+					lacus massa, volutpat vel suscipit at, lacinia condimentum libero. Praesent nec metus ligula.
+					Morbi porttitor rhoncus mattis.
+				</p>
+				<p>
+					Donec nisi ante, eleifend vitae luctus vel, auctor et nibh. Donec scelerisque urna id massa ultricies
+					in facilisis purus rutrum. Proin tristique luctus leo vitae feugiat. Donec sit amet ipsum mi, nec
+					bibendum sem. Nullam sodales aliquet venenatis.
+				</p>
+			</div>
+
+		</section>

@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+
+/* Bootstrap UI Specific */
+
+.progress.active .progress-bar {
+  -webkit-animation: progress-bar-stripes 2s linear infinite;
+          animation: progress-bar-stripes 2s linear infinite;
+}
+@-webkit-keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+/* Font-Awesome Animated rotating icon */
+
+.spin,
+.fa-spin {
+  -webkit-animation: spin 2s infinite linear;
+          animation: spin 2s infinite linear;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+/* Icon rotations and mirroring */
+.fa-rotate-90:before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+.fa-rotate-180:before {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+}
+.fa-rotate-270:before {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+.fa-flip-horizontal:before {
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+.fa-flip-vertical:before {
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}

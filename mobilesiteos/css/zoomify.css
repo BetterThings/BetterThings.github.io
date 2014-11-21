@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+.zoomify_image {
+	max-width:2560px;	/* arbitray MSOS recommended upper limit (ref. normalize.css for std. declaration */
+	z-index:100;
+}
+.zoomify_wrapper {
+	   -moz-user-select:none;
+	 -khtml-user-select:none;
+	-webkit-user-select:none;
+			user-select:none;
+	z-index:101;
+}
+.zoomify_wrapper div.zoom-control {
+	z-index:102;
+}
+.zoomify_wrapper div.zoom-in,
+.zoomify_wrapper div.zoom-out {
+	position:absolute;
+	left:10px;
+	top:10px;
+}
+.zoomify_wrapper div.zoom-out {
+	top:32px;
+}
+.zoomify_wrapper div.zoom-off {
+	opacity: 0.5;
+}
+.zoomify_icon {  
+	position:absolute; 
+	top:5px;
+	right:5px;
+	color:#555;
+	font:bold small sans-serif;
+	cursor:pointer;
+	z-index:102;
+}

@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+/* Start: SourceChooser */
+.mejs-controls .mejs-sourcechooser-button {
+	position:relative;
+}
+.mejs-controls .mejs-sourcechooser-button button {
+	background-position:-128px 0;
+}
+.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector {
+	visibility:hidden;
+	position:absolute;
+	bottom:20px;
+	right:-10px;
+	width:130px;
+	height:100px;
+	background-color:#FFF;
+	opacity:0.9;
+	border:solid 1px #999;
+	padding:6px;
+	overflow:hidden;
+	-webkit-border-radius:0.4em;
+	   -moz-border-radius:0.4em;
+			border-radius:0.4em;
+	z-index:1011;
+}
+.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul {
+	margin:0;
+	padding:0;
+	display:block;
+	list-style-type:none !important;
+	overflow:hidden;
+}
+.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li{
+	margin:0 0 6px 0;
+	padding:0;
+	list-style-type:none !important;
+	display:block;
+	color:#FFF;
+	overflow:hidden;
+}
+.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li input{
+	clear:both;
+	float:left;
+	margin:3px 3px 0 5px;
+}
+.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li label{
+	width:100px;
+	float:left;
+	padding:4px 0 0 0;
+	line-height:15px;
+	font-family:helvetica, arial;
+	font-size:10px;
+}
+/* End: SourceChooser */

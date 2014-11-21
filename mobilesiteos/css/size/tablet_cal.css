@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+/*	MobileSiteOS calendar widget style properties, (don't change these). It is better
+	to add your own style sheets or inline styles: Copyright©2008-2011 - OpenSiteMobile */
+
+  #calendar_container {
+    width:264px;
+    height:300px;
+  }
+  #calendar_header, #calendar_footer, #calendar_control {
+    width:260px;
+  }
+  #calendar_control {
+    top:25px;
+  }
+  #calendar_footer {
+    top:270px;
+  }
+  #calendar_table {
+    top:46px;
+    left:1px;
+    width:258px;
+    height:210px;
+  }
+  #calendar_table, #calendar_table th, #calendar_table td {
+    font-size:small;
+  }
+  #display_date {
+	font-size:small;
+	line-height:1.6em;
+  }
+  .cal_ctrls {
+	font-size:x-small;
+  }

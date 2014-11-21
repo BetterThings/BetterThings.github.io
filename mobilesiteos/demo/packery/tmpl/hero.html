@@ -1,0 +1,128 @@
+
+
+		<style type="text/css">
+		/* <![CDATA[ */
+
+			#hero {
+			  border-radius: 0.4em;
+			  background: #C09;
+			  color: #FAF3F5;
+			  position: relative;
+			  overflow: hidden;
+			  height: 400px;
+			  margin-top: 0.3em;
+			}
+			#hero > * {
+			  z-index: 2;
+			}
+			#hero .item {
+			  border: none;
+			  background: hsla(0, 0%, 0%, 0.3);
+			}
+
+			#hero.desktop,
+			#hero.large		{ height: 400px; }
+			#hero.medium,
+			#hero.small		{ height: 350px; }
+			#hero.tablet,
+			#hero.phone		{ height: 300px; }
+
+			#hero.desktop #title,
+			#hero.large #title		{ font-size: 9em; }
+			#hero.medium #title,
+			#hero.small #title		{ font-size: 7em; }
+			#hero.tablet #title,
+			#hero.phone #title		{ font-size: 5em; }
+
+			#hero.desktop .stamp-tagline,
+			#hero.large .stamp-tagline		{ font-size: 2em;	}
+			#hero.medium .stamp-tagline,
+			#hero.small .stamp-tagline		{ font-size: 1.6em;	}
+			#hero.tablet .stamp-tagline,
+			#hero.phone .stamp-tagline		{ font-size: 1.2em;	}
+
+			#hero #title {
+			  position: absolute;
+			  top: 10%;
+			  left: 15%;
+			  line-height: 1.2;
+			  letter-spacing: -0.02em;
+			  color: white;
+			}
+			#hero .stamp {
+			  position: absolute;
+			}
+			#hero .stamp-tagline {
+			  line-height: 1.2;
+			  top: 65%;
+			  left: 16%;
+			  padding-right: 0.2em;
+			}
+			#hero .stamp-p-top {
+			  width: 20%;
+			  height: 40%;
+			  left: 0;
+			  top: 15%;
+			}
+			#hero .stamp-p-bottom {
+			  width: 8%;
+			  height: 25%;
+			  left: 0;
+			  bottom: 20%;
+			}
+			#hero .stamp-ackery {
+			  width: 80%;
+			  height: 50%;
+			  right: 0;
+			  top: 32%;
+			}
+			#hero .stamp-k {
+			  width: 5%;
+			  height: 15%;
+			  left: 48%;
+			  top: 15%;
+			}
+			#hero .stamp-y {
+			  width: 15%;
+			  height: 15%;
+			  right: 0;
+			  bottom: 0;
+			}
+			.packery:before,
+			.packery:after {
+			  content: " ";
+			  display: table;
+			}
+			.packery:after {
+			  clear: both;
+			}
+
+		/* ]]> */
+		</style>
+
+		<section>
+            <h2>Packery Hero Demo</h2>
+
+			<div class="pgrph well" style="margin-bottom: 0.5em;">
+				This page demonstrates the&nbsp;<u>Packery Grid</u>&nbsp;script's "random" layout in a "hero"
+				format. The example JavaScript code was borrowed from the <a class="msos_link notranslate" href="http://packery.metafizzy.co/">Metafizzy</a>
+				website. Our contribution was to make the CSS fully responsive.
+			</div>
+
+			<h2>Change Display Size</h2>
+
+			<select id='change_size'></select>
+
+			<div id="hero">
+				<div class="packery">
+					<div id="title">Packery
+						<div class="stamp stamp-p-top"></div>
+						<div class="stamp stamp-p-bottom"></div>
+						<div class="stamp stamp-ackery"></div>
+						<div class="stamp stamp-k"></div>
+						<div class="stamp stamp-y"></div>
+					</div>
+					<div class="stamp stamp-tagline">The bin-packing layout library</div>
+				</div>
+			</div>
+        </section>

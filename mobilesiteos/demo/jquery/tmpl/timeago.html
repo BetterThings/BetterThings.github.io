@@ -1,0 +1,59 @@
+
+
+		<style type="text/css">
+		/* <![CDATA[ */
+
+			pre {
+				background-color: #333;
+				color: #fff;
+				padding: 6px;
+				-webkit-border-radius: 0.4em;
+				   -moz-border-radius: 0.4em;
+						border-radius: 0.4em;
+				overflow: auto;
+			}
+
+		/* ]]> */
+		</style>
+
+		<section>
+			<h2><u>jQuery-Timeago</u></h2>
+
+			<div class='pgrph well'>
+				<u>Timeago</u>&nbsp;is a jQuery plugin that makes it easy to support automatically
+				updating fuzzy timestamps (e.g. "4 minutes ago" or "about 1 day ago"). This plugin was
+				written by <a class="msos_link notranslate" href="http://timeago.yarp.com/">Ryan McGeary</a>.
+			</div>
+
+			<!-- Note: use "notranslate" class because jQuery Timeago has it's own i18n strings -->
+			<div style="width: 90%;">
+				<div class='pgrph'>
+					You opened this page <abbr class="loaded timeago notranslate">when you opened the page</abbr>.
+					<span class="help">(This will update every minute. Wait for it.)</span>
+				</div>
+	
+				<div class='pgrph'>
+					This page was last modified <abbr class="modified timeago notranslate">
+					sometime before now [browser might not support document.lastModified]</abbr>.
+				</div>
+	
+				<div class='pgrph'>
+					Ryan was born <abbr class="timeago notranslate" title="1978-12-18T17:17:00Z">Dec 18, 1978</abbr>.
+				</div>
+			</div>
+
+			<h3>You can also use it programmatically:</h3>
+
+			<pre class="notranslate">
+jQuery.timeago(new Date());
+//=> &quot;<span id="prog_date"></span>&quot;
+
+jQuery.timeago("2008-07-17");
+//=> &quot;<span id="prog_string"></span>&quot;
+
+jQuery.timeago(jQuery("abbr#some_id"));
+//=> &quot;<span id="prog_element"></span>&quot;
+//   [title=&quot;2008-07-20&quot;]
+			</pre>
+
+		</section>

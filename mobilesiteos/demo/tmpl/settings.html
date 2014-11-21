@@ -1,0 +1,80 @@
+
+		<style type="text/css">
+		/* <![CDATA[ */
+
+		h2 {
+			margin-top: 1.3em;
+		}
+		div.row {
+			margin-top: 1em;
+		}
+
+		/* ]]> */
+		</style>
+
+		<section>
+			<h1><u>MobileSiteOS™</u>&nbsp;Settings</h1>
+
+			<div class="well" style="margin-bottom: 1.5em;">
+				<div class="pgrph">
+					These are our available user settings for &nbsp;<u>MobileSiteOS™</u>&nbsp;JavaScript.
+					Use these settings to alter the current display or other user specific characteristics
+					of this website.
+				</div>
+			</div>
+
+			<div class="row adjust">
+				<div class="span7">
+					<h2>Language and Culture</h2>
+					<div class="row adjust">
+						<div class="span3 text_rt">Language: </div>
+						<div class="span9 text_lt"><select id='locale' name='locale'></select></div>
+					</div>
+					<div class="row adjust">
+						<div class="span3 text_rt">Culture: </div>
+						<div class="span9 text_lt"><select id='culture' name='culture'></select></div>
+					</div>
+					<div class="row adjust">
+						<div class="span3 text_rt">Calendar: </div>
+						<div class="span9 text_lt"><select id='calendar' name='calendar'></select></div>
+					</div>
+					<div class="row adjust">
+						<div class="span3 text_rt">Keyboard: </div>
+						<div class="span9 text_lt"><select id='keyboard' name='keyboard'></select></div>
+					</div>
+				</div>
+				<div class="span5">
+					<h2>Clear User Data</h2>
+					<div class="row">
+						<div class="span3 text_rt"><a class="btn btn-msos" href="?clear_cookies=true#/page/demo.settings" title="Clear your browser of our cookies"><i class="fa fa-trash-o"></i></a></div>
+						<div class="span9 text_lt"> Clear Cookies</div>
+					</div>
+					<div class="row">
+						<div class="span3 text_rt"><a class="btn btn-msos" href="?clear_storage=true#/page/demo.settings" title="Clear your browser of our stored data"><i class="fa fa-trash-o"></i></a></div>
+						<div class="span9 text_lt"> Clear Storage</div>
+					</div>
+					<div class="row">
+						<div class="span3 text_rt"><a class="btn btn-msos" href="?clear_cookies=true&amp;clear_storage=true#/page/demo.settings" title="Clear both cookies and stored data"><i class="fa fa-trash-o"></i></a></div>
+						<div class="span9 text_lt"> Clear Both</div>
+					</div
+				</div>
+			</div>
+
+			<div class="row adjust">
+				<div class="span7">
+					<h2>Display Size</h2>
+					<select id='change_size'></select>
+				</div>
+				<div class="span5">
+					<h2>Debugging</h2>
+					<div class="row">
+						<div class="span3 text_rt"><a class="btn btn-msos" href="?#/page/demo.debugging" title="Add our website debugging form"><i class="fa fa-cogs"></i></a></div>
+						<div class="span9 text_lt"> Add Page Debugging</div>
+					</div>
+					<div class="row">
+						<div class="span3 text_rt"><a class="btn btn-msos" href="debug.html?debug_script=true&amp;debug_css=true" title="Use un-bundled and un-minified scripts and CSS"><i class="fa fa-bug"></i></a></div>
+						<div class="span9 text_lt"> Use Expanded Files</div>
+					</div>
+				</div>
+			</div>
+		</section>

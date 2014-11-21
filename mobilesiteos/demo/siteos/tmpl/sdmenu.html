@@ -1,0 +1,99 @@
+
+	<style type="text/css">
+	/* <![CDATA[ */
+
+	div.row {
+		margin-top: 1em;
+	}
+
+	/* ]]> */
+	</style>
+
+	<section>
+		<h2><u>SlashDot</u>&nbsp;JavaScript Select Menu</h2>
+
+		<div class="pgrph well">
+			This page demo's a simple JavaScript menu we use with our&nbsp;<u>MobileSiteOS™</u>&nbsp;framework. It is based
+			on the excellent script and styleheet from <a class="msos_link notranslate" href="http://roboweb.awardspace.com/sdmenu/">Slashdot Menu Script</a>&nbsp;-
+			by&nbsp;<u>DimX</u>. The menu script has been modified slightly for better integration into&nbsp;<u>MobileSiteOS™</u>,
+			but retains all the original's functionality.
+		</div>
+
+		<form action="#" onsubmit="return false">
+			<fieldset style="width:92%;">
+				<legend>Menu Controls</legend>
+
+					<div class='row'>
+						<div class='span6 text_rt'><label for="speed">Speed (1-5):</label></div>
+						<div class='span6 text_lt'>
+							<input type="text" id="speed" value="3" size="1" onchange="myMenu.speed = parseInt(this.value)" />
+						</div>
+					</div>
+					<div class='row'>
+						<div class='span6 text_rt'><label for="oneSmOnly">One Submenu at a Time:</label></div>
+						<div class='span6 text_lt'>
+							<select id="oneSmOnly" onchange="myMenu.oneSmOnly = this.selectedIndex">
+								<option>false</option>
+								<option>true</option>
+							</select>
+						</div>
+					</div>
+					<div class='row'>
+						<div class='span6 text_rt'><label for="smNr">Set Controls Sub Menu:</label></div>
+						<div class='span6 text_lt'>
+							<select id="smNr" name="smNr">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+							</select>
+						</div>
+					</div>
+					<div class='row'>
+						<div class='span12'>
+							<input class="btn btn-success" type="button" value="Expand"			onclick="myMenu.expandMenu(myMenu.submenus[smNr.selectedIndex])" />
+							<input class="btn btn-success" type="button" value="Collapse"		onclick="myMenu.collapseMenu(myMenu.submenus[smNr.selectedIndex])" />
+							<input class="btn btn-success" type="button" value="Toggle"			onclick="myMenu.toggleMenu(myMenu.submenus[smNr.selectedIndex])" />
+							<input class="btn btn-success" type="button" value="Expand all"		onclick="myMenu.expandAll()" />
+							<input class="btn btn-success" type="button" value="Collapse all"	onclick="myMenu.collapseAll()" />
+						</div>
+					</div>
+			</fieldset>
+		</form>
+
+		<div id="my_menu" class="sdmenu">
+		  <div>
+			<i class="fa"></i>
+			<span>Online Tools</span>
+			<a href="http://tools.dynamicdrive.com/imageoptimizer/">Image Optimizer</a>
+			<a href="http://tools.dynamicdrive.com/favicon/">FavIcon Generator</a>
+			<a href="http://www.dynamicdrive.com/emailriddler/">Email Riddler</a>
+			<a href="http://tools.dynamicdrive.com/password/">htaccess Password</a>
+			<a href="http://tools.dynamicdrive.com/gradient/">Gradient Image</a>
+			<a href="http://tools.dynamicdrive.com/button/">Button Maker</a>
+		  </div>
+		  <div class="collapsed">
+			<i class="fa"></i>
+			<span>Support Us</span>
+			<a href="http://www.dynamicdrive.com/recommendit/">Recommend Us</a>
+			<a href="http://www.dynamicdrive.com/link.htm">Link to Us</a>
+			<a href="http://www.dynamicdrive.com/resources/">Web Resources</a>
+		  </div>
+		  <div class="collapsed">
+			<i class="fa"></i>
+			<span>Partners</span>
+			<a href="http://www.javascriptkit.com">JavaScript Kit</a>
+			<a href="http://www.cssdrive.com">CSS Drive</a>
+			<a href="http://www.codingforums.com">CodingForums</a>
+			<a href="http://www.dynamicdrive.com/style/">CSS Examples</a>
+		  </div>
+		  <div>
+			<i class="fa"></i>
+			<span>Test Current</span>
+			<a href="?foo=bar">Current or not</a>
+			<a href="./">Current or not</a>
+			<a href="sdmenu.html">Current or not</a>
+			<a href="sdmenu.html?query">Current or not</a>
+		  </div>
+		</div>
+	</section>

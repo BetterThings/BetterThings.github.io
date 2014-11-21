@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/*	MobileSiteOS 'div#debug_container' style properties, (don't change these). It is better
+	to add your own style sheets or inline styles: Copyright©2008-2011 - OpenSiteMobile
+*/
+
+  #debug_container {
+    width:300px;
+    height:342px;
+  }
+  #debug_header {
+    width:296px;
+  }
+  #debug_display {
+    width:296px;
+    height:310px;
+  }
+  #debug_display .tab_content_inner {
+    /* Ref tab.css for rest of 'tab_content spec. (ref. 86% of 'debug_display') */
+    height:280px;
+  }

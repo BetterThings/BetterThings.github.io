@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+
+/* context menu */
+.mejs-contextmenu {
+	position:absolute;
+	width:150px;
+	padding:6px;
+	background-color:#FFF;
+	opacity:0.9;
+	border:solid 1px #999;
+	-webkit-border-radius:0.4em;
+	   -moz-border-radius:0.4em;
+			border-radius:0.4em;
+	z-index:1010; /* make sure it shows on fullscreen */
+}
+.mejs-contextmenu .mejs-contextmenu-separator {
+	height:1px;
+	font-size:0;
+	margin:5px 6px;
+	background:#333;	
+}
+.mejs-contextmenu .mejs-contextmenu-item {
+	font-size:12px;
+	padding:4px 6px;
+	cursor:pointer;
+	color:#333;
+	-webkit-border-radius:0.3em;
+	   -moz-border-radius:0.3em;
+			border-radius:0.3em;
+}
+.mejs-contextmenu .mejs-contextmenu-item:hover {
+	background:#FF9933;
+	color:#FFF;
+}

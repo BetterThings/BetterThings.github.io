@@ -1,0 +1,261 @@
+@charset "utf-8";
+/**
+ * @summary     Visual Event CSS
+ * @file        VisualEvent.css
+ * @author      Allan Jardine (www.sprymedia.co.uk)
+ * @license     GPL v2
+ * @contact     www.sprymedia.co.uk/contact
+ *
+ * @copyright Copyright 2007-2011 Allan Jardine.
+ *
+ * This source file is free software, under the GPL v2 license:
+ *   http://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Label
+ */
+
+#Event_Label {
+	position: fixed;
+	top: 0;
+	left: 0;
+	color: white !important;
+	padding: 5px;
+	background-color: #7C94C0;
+	border-radius: 0.4em;
+	z-index: 55002;
+}
+#Event_Label > span {
+	color: white !important;
+}
+
+span.Event_LabelClose,
+span.Event_LabelHelp {
+	margin-left: 0.5em;
+}
+div.Event_LabelColour {
+	height: 20px;
+	width: 20px;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Help
+ */
+
+#Event_Help {
+	position: absolute;
+	top: 90px;
+	left: 0;
+	background-color: #eee;
+	color: #222;
+	border-radius: 0.4em;
+	z-index: 55001;
+}
+#Event_Help div.Event_HelpInner {
+	margin: 0.5em;
+}
+#Event_Help h1 {
+	border-bottom: 1px solid #ccc;
+	color: #222;
+}
+#Event_Help h3 {
+	color: #222;
+	margin-bottom: 0;
+}
+#Event_Help p {
+	color: #555;
+	margin: 0.2em;
+}
+#Event_Help table {
+	width: 95%;
+}
+#Event_Help p.Event_HelpClose {
+	text-align: center;
+	margin-top: 1em;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Lightbox
+ */
+
+#Event_Lightbox {
+	position: fixed;
+	top: 90px;
+	left: 0;
+	display: none;
+	color: #111;
+	z-index: 55003;
+	text-align: left;
+	border-radius: 10px;
+	padding: 5px;
+	font-size: x-small;
+	direction: ltr;
+	background-color: #F8F8F8;
+	border: 4px solid #7C94C0;
+	-webkit-box-shadow: 3px 3px 5px #111;
+			box-shadow: 3px 3px 5px #111;
+}
+#Event_Lightbox ul li {
+	display: block;
+	width: 9em;
+	padding: 5px;
+	cursor: pointer;
+	*cursor: hand;
+}
+#Event_Lightbox ul li.Event_EventSelected {
+	background-color: #eee;
+}
+#Event_Lightbox div.Event_NodeRemove {
+	float: right;
+	color: #4E6CA3;
+	cursor: pointer;
+	*cursor: hand;
+}
+#Event_Lightbox div.Event_NodeRemove:hover {
+	text-decoration: underline;
+}
+#Event_Lightbox div.Event_Nav {
+	float: left;
+	width: 100px;
+}
+#Event_Lightbox div.Event_Code {
+	float: left;
+	background-color: #eee;
+	padding: 5px;
+}
+#Event_Lightbox div.Event_Code p {
+	padding: 0 0 0.4em 0;
+	margin: 0;
+}
+#Event_Lightbox div.Event_NodeName {
+	padding: 5px;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Display
+ */
+
+#Event_Display {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 55001;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+#Event_Display div.Event_info {
+	float: left;
+	width: 15px;
+	height: 15px;
+	z-index: 55002;
+	border: transparent 2px solid;
+}
+#Event_Help div.Event_bg_blue,
+#Event_Display div.Event_bg_blue {
+	background-color: rgba(0, 0, 255, 0.3);
+	border: rgba(0, 0, 255, 0.5) 2px solid;
+}
+#Event_Display div.Event_bg_blue:hover {
+	border: rgba(0, 0, 255, 1) 2px solid;
+}
+#Event_Help div.Event_bg_red,
+#Event_Display div.Event_bg_red {
+	background-color: rgba(255, 0, 0, 0.3);
+	border: rgba(255, 0, 0, 0.5) 2px solid;
+}
+#Event_Display div.Event_bg_red:hover {
+	border: rgba(255, 0, 0, 1) 2px solid;
+}
+#Event_Help div.Event_bg_yellow,
+#Event_Display div.Event_bg_yellow {
+	background-color: rgba(255, 204, 51, 0.3);
+	border: rgba(245, 184, 0, 0.5) 2px solid;
+}
+#Event_Display div.Event_bg_yellow:hover {
+	border: rgba(255, 204, 51, 1) 2px solid;
+}
+#Event_Help div.Event_bg_green,
+#Event_Display div.Event_bg_green {
+	background-color: rgba(0, 167, 0, 0.3);
+	border: rgba(0, 167, 0, 0.5) 2px solid;
+}
+#Event_Display div.Event_bg_green:hover {
+	border: rgba(0, 167, 0, 1) 2px solid;
+}
+#Event_Help div.Event_bg_purple,
+#Event_Display div.Event_bg_purple {
+	background-color: rgba(167, 0, 145, 0.3);
+	border: rgba(167, 0, 145, 0.5) 2px solid;
+}
+#Event_Display div.Event_bg_purple:hover {
+	border: rgba(167, 0, 145, 1) 2px solid;
+}
+#Event_Help div.Event_bg_orange,
+#Event_Display div.Event_bg_orange {
+	background-color: rgba(201, 145, 35, 0.3);
+	border: rgba(201, 145, 35, 0.5) 2px solid;
+}
+#Event_Display div.Event_bg_orange:hover {
+	border: rgba(201, 145, 35, 1) 2px solid;
+}
+#Event_Help div.Event_bg_black,
+#Event_Display div.Event_bg_black {
+	background-color: rgba(190, 190, 190, 0.3);
+	border: rgba(190, 190, 190, 0.5) 2px solid;
+}
+#Event_Display div.Event_bg_black:hover {
+	border: rgba(190, 190, 190, 1) 2px solid;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Misc.
+ */
+
+#Event_code > div.syntaxhighlighter {
+  overflow-y: hidden!important;
+}
+
+#Event_Label.pbone,
+#Event_Lightbox.phone,
+#Event_Help.phone {
+	width: 320px;
+}
+#Event_Label.tablet,
+#Event_Lightbox.tablet,
+#Event_Help.tablet {
+	width: 420px;
+}
+#Event_Label.small,
+#Event_Lightbox.small,
+#Event_Help.small,
+#Event_Label.medium,
+#Event_Lightbox.medium,
+#Event_Help.medium {
+	width: 520px;
+}
+#Event_Label.large,
+#Event_Lightbox.large,
+#Event_Help.large,
+#Event_Label.desktop,
+#Event_Lightbox.desktop,
+#Event_Help.desktop {
+	width: 620px;
+}
+
+#Event_Lightbox.phone > div.Event_Code {
+	font-size: x-small;
+	width: 290px;
+}
+#Event_Lightbox.tablet > div.Event_Code {
+	width: 390px;
+}
+#Event_Lightbox.small > div.Event_Code,
+#Event_Lightbox.medium > div.Event_Code {
+	width: 490px;
+}
+#Event_Lightbox.large > div.Event_Code,
+#Event_Lightbox.desktop > div.Event_Code {
+	width: 590px;
+}

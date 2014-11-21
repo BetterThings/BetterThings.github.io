@@ -1,0 +1,118 @@
+
+
+	<style type="text/css">
+	/* <![CDATA[ */
+
+		input.trans_input {
+			margin-top: 4px;
+			margin-bottom: 4px;
+			width: 100%;
+			border: 1px solid #BCCDF0;
+		}
+		select#src, select#dst {
+			width:40%;
+		}
+		span#brackets {
+			margin: 4px;
+		}
+		div#translate_display {
+			min-height: 300px;
+		}
+		ol#translate_list > li {
+			margin-left: 1em;
+		}
+		span#keyboard_button {
+			margin-left: 1em;
+		}
+		#google_trans {
+			border: 1px solid #CCC;
+			padding: 3px;
+			border-radius: 0.4em;
+		}
+
+	/* ]]> */
+	</style>
+
+    <section>
+		<h2><u>MobileSiteOS™</u>&nbsp;Widget Translation Tool</h2>
+
+		<h3>
+			<a id="google_trans" class="msos_link notranslate" href="http://translate.google.com/">
+				Powered by:&nbsp;&nbsp;<img src="./images/google.jpg" alt="Google Translate Branding" />&nbsp;Google Translate
+			</a>
+		</h3>
+
+		<div class='pgrph well'>
+			Use this page to edit&nbsp;<u>MobileSiteOS™</u>&nbsp;widget&nbsp;<code>'nls'</code>&nbsp;files. Use the top input
+			fields as a	scratch pad to do trial translations, before applying them below.
+			Or translate in bulk with the "Auto-fill" option.<br /><br />
+
+			The&nbsp;<u>Google Translate v2.0 API</u>&nbsp;is no longer free to use (bummer). You will have to
+			use your own&nbsp;<u>Google Translate API</u>&nbsp;key. Google will be charged your for usage (although it isn't
+			terribly expensive). You can get a key by going to Google via this url, and signing up for one:
+			<a class='msos_link' href='https://code.google.com/apis/console/?api=translate'>https://code.google.com/apis/console/?api=translate</a>
+		</div>
+
+		<div>
+			<input id='google_api_key' style='width: 20em;' type='text' placeholder='Enter your Google API key here.' />
+		</div>
+
+		<div class='msos_legend notranslate'>
+
+			<h3>Translation Control Panel</h3>
+
+			<select id='select_module' name='translate_module' title='Select a MobileSiteOS™ Widget nls file'>
+				<option value='page' selected='selected'>page.json</option>
+				<option value='calendar'>calendar.json</option>
+				<option value='colortool'>colortool.json</option>
+				<option value='common'>common.json</option>
+				<option value='keyboard'>keyboard.json</option>
+				<option value='popdiv'>popdiv.json</option>
+			</select>
+
+			<span id='keyboard_button' title='Enter text using our virtual keyboard'> Virtual Keyboard </span>
+
+			<input class="trans_input" id="source"			placeholder='workspace source'	    type="text" value="" title="Source text to translate" />
+			<input class="trans_input" id="destination" 	placeholder='workspace destination' type="text" value="" title="Destination text to update" /> 
+			<select name="src" id="src"></select>
+			<span id='brackets'> >> </span>
+			<select name="dst" id="dst"></select>
+			<button id='workspace_go' class="btn btn-msos" title='Translate workspace source string to a destination string'>Go</button>
+		</div>
+
+		<h3><button id='auto_fill' class="btn btn-msos" title='Click here to auto-fill all destination fields at once'>Auto-Fill</button> Source vs. Destination</h3>
+	
+		<div id='translate_display' class='msos_legend notranslate'>
+			<ol id='translate_list'>
+				<li>Enter your Google Translate API key above to start loading i18n data...</li>
+			</ol>
+		</div>
+	
+		<h3>
+			<button id='get_json_source' class="btn btn-success notranslate" title='Create popup of JSON text strings'>JSON Text (From)</button>
+			<button id='get_json_destin' class="btn btn-success notranslate" title='Create popup of JSON text strings'>JSON Text (To)</button>
+		</h3>
+
+		<div class="msos_legend">
+			<h3>Change Website Language or Available Keyboard Layouts</h3>
+
+			<div class="well pgrph">
+				You may change the webite's display language and add keyboard layouts to be used by our
+				virtual keyboard tool here. Typical keyboard layouts will be made available automatically
+				for each translate "to" language. If however, you prefer another which is not already available,
+				just select it from the menu below.
+			</div>
+			<div style="max-width: 24em; margin-top: 1em;">
+				<div class="row adjust" style="margin-bottom: 0.6em;">
+					<div class="span3 text_rt">Language:</div>
+					<div class="span9 text_lt"><select id='locale' name='locale'></select></div>
+				</div>
+				<div class="row adjust">
+					<div class="span3 text_rt">Keyboard:</div>
+					<div class="span9 text_lt"><select id='keyboard' name='keyboard'></select></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div id='branding' class='pgrph_small'> </div>

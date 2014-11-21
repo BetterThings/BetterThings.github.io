@@ -1,0 +1,44 @@
+
+
+		<style type="text/css">
+		/* <![CDATA[ */
+
+		#test_iframe {
+			width: 105%;
+			-ms-zoom: 0.90;
+			-moz-transform: scale(0.90);
+			-moz-transform-origin: 0px 0;
+			-o-transform: scale(0.90);
+			-o-transform-origin: 0 0;
+			-webkit-transform: scale(0.90);
+			-webkit-transform-origin: 0 0;
+			transform: scale(0.90);
+			transform-origin: 0 0;
+			margin-left: 2%;
+		}
+
+		/* ]]> */
+		</style>
+
+		<section>
+			<h2>Content Editable Iframe</h2>
+
+			<div class="pgrph well">
+				Place your "text-insert" cursor in the&nbsp;<code>iframe</code>&nbspbelow, then click&nbsp;<code>'Bksp'</code>&nbsp;or
+				<code>'Del'</code>&nbsp;to demo our JavaScript driven backspace and delete functions. Or insert text as entered
+				into the text input field below.
+			</div>
+
+			<div class='accent1' style='width:80%; padding:8px; border-radius: 0.6em; margin-top: 1.2em;'>
+				<input type="text" id="text_input" style='width:100%;' value="Enter some text..." />
+			</div>
+
+			<div style='margin-top: 0.5em;'>
+				<button class="btn btn-danger notranslate" id='bksp_button'  title='Backspace'>Bksp</button>
+				<button class="btn btn-danger notranslate" id='dele_button'  title='Delete'>Del</button>
+				<button class="btn btn-inverse" id="input_button" title='Insert entered text into iframe'>Insert Text</button>
+				<button class="btn btn-inverse" id="cursor_button" title='Display relative cursor position'>Cursor Position</button>
+			</div>
+		</section>
+
+		<iframe id='test_iframe' class='msos_display msos_width msos_height notranslate'></iframe>

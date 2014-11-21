@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+/* set up the keyframes */
+@keyframes nodeInserted {  
+  from { clip: rect(1px, auto, auto, auto); }
+  to { clip: rect(0px, auto, auto, auto); }  
+}
+
+@-moz-keyframes nodeInserted {  
+  from { clip: rect(1px, auto, auto, auto); }
+  to { clip: rect(0px, auto, auto, auto); }
+}
+
+@-webkit-keyframes nodeInserted {  
+  from { clip: rect(1px, auto, auto, auto); }
+  to { clip: rect(0px, auto, auto, auto); }
+}
+
+@-ms-keyframes nodeInserted {  
+  from { clip: rect(1px, auto, auto, auto); }
+  to { clip: rect(0px, auto, auto, auto); }
+}
+
+@-o-keyframes nodeInserted {  
+  from { clip: rect(1px, auto, auto, auto); }
+  to { clip: rect(0px, auto, auto, auto); }
+}

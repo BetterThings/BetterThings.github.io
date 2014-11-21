@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+/*	MobileSiteOS calendar widget style properties, (don't change these). It is better
+	to add your own style sheets or inline styles: Copyright©2008-2011 - OpenSiteMobile */
+
+#calendar_container {
+    position:absolute;
+    visibility:hidden;
+    border:2px outset grey;
+	border-radius:5px;
+}
+#calendar_header, #calendar_footer, #calendar_control {
+    position:absolute;
+    font-weight:bold;
+    text-align:center;
+    z-index:70;
+	border-radius:4px;
+}
+#calendar_close {
+	float:right;
+    z-index:90;
+}
+#calendar_table {
+    position:absolute;
+    background-color:white;
+    color:black;
+    z-index:70;
+}
+#calendar_table th {
+    background-color:beige;
+    text-align:center;
+    border:1px solid grey;
+}
+#calendar_table th:nth-child(-n+6) {
+    border-right:1px solid grey;
+}
+#calendar_table td {
+    text-align:right;
+    border:1px solid grey;
+}
+.cal_ctrls.fa {
+	width:2.5em;
+}
+.cal_both {
+    background-color:pink;
+    color:red;
+}
+.cal_entered {
+    background-color:yellow;
+}
+.cal_current {
+    background-color:salmon;
+}
+.cal_weekday {
+    background-color:white;
+}
+.cal_weekend {
+    background-color:lightblue;
+}
+.cal_prior {
+    color:darkblue;
+}
+.cal_available {
+    font-weight:bold;
+    cursor:pointer;
+}
+.cal_not_avail {
+    cursor:default;
+    color:grey;
+}
