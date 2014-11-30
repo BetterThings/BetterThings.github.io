@@ -1,0 +1,169 @@
+
+body {
+    padding-top: 50px;
+}
+
+footer {
+    margin-top: 1em;
+}
+
+footer > hr {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+#body {
+    padding-bottom: 1.5em;
+}
+
+#old_browser {
+    margin-left: 1.5em;
+}
+
+.jumbotron {
+    padding: 0 0;
+    background-size: cover;
+}
+
+#jumbotron_h1 {
+    color: #00001F;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 1);
+    font-family: Impact, Charcoal, sans-serif;
+    margin-bottom: 6em;
+}
+
+#jumbotron_div {
+    color: #CCC;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    margin-bottom: 1em;
+}
+
+#jumbotron_grid {
+    height: 4em;
+}
+
+#rotating_header > li {
+    color: #FFF;
+    list-style-type: none;
+}
+
+.calculators .title {
+    font-size: medium;
+}
+
+#cffp {
+    font-size: small;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#disclaimer {
+    font-size: small;
+    margin-top: 1em;
+}
+
+#disclaimer > p {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+#disclaimer > ul > li {
+    list-style-type: none;
+}
+
+#disclaimer > ul > li > i {
+    color: green;
+}
+
+#social_ties {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#copyright {
+    font-size: x-small;
+    text-align: center
+}
+
+ul.dropdown-menu li a {
+    position: relative;
+    padding-left: 30px;
+}
+
+ul.dropdown-menu i.fa {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+    /*==========  Default css (sizing, etc.)  ==========*/
+
+        .jumbotron {
+            min-height: 700px;
+        }
+
+        #jumbotron_h1 {
+            font-size: 40px;
+        }
+
+        #jumbotron_div {
+            font-size: x-large;
+        }
+
+        #rotating_header > li {
+            font-size: xx-large;
+        }
+
+
+	/*==========  Non-Mobile First Method  ==========*/
+
+	/* Large Devices, Wide Screens */
+	@media only screen and (max-width : 1200px) {
+
+        #jumbotron_h1 {
+            font-size: 30px;
+        }
+
+        #rotating_header > li {
+            font-size: x-large;
+        }
+	}
+
+	/* Medium Devices, Desktops */
+	@media only screen and (max-width : 992px) {
+
+	}
+
+	/* Small Devices, Tablets */
+	@media only screen and (max-width : 768px) {
+
+        #jumbotron_h1 {
+            font-size: 25px;
+        }
+
+        #rotating_header > li {
+            font-size: large;
+        }
+	}
+
+	/* Extra Small Devices, Phones */ 
+	@media only screen and (max-width : 480px) {
+
+	}
+
+	/* Custom, iPhone Retina */ 
+	@media only screen and (max-width : 320px) {
+
+        #jumbotron_h1 {
+            font-size: x-large;
+        }
+
+        #rotating_header > li {
+            font-size: medium;
+        }
+	}

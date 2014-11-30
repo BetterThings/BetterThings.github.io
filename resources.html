@@ -11,18 +11,21 @@
     <meta name="keywords" content="Chip Estes, chartered retirement planning counselor, financial planning, retirement planning, financial strategies, retirement plans, financial planner, retirement services, CRPC, FINRA, Lexington South Carolina" />
     <meta name="author" content="Chip Estes" />
 
-    <title>Better Things Financial Partners, LLC</title>
+    <title>Planning Resources - Better Things Financial Partners, LLC</title>
 
+    <!-- Page specific css, or css required before script loading -->
     <style>
         #body {
-            padding-top: 50px;
-            padding-bottom: 20px;
             display: none;
         }
 
         #no_javascript {
             text-align: center;
             color: #999;
+        }
+
+        .jumbotron {
+            background-image: url("../images/gov_building.jpg");
         }
     </style>
 
@@ -38,18 +41,11 @@
 
     <div id="body">
 
-        <!--[if lt IE 8]>
-            <p>
-                You are using an <strong>outdated</strong> browser. Please
-                <a href="http://browsehappy.com/">upgrade your browser</a>
-                to improve your experience.
-            </p>
-        <![endif]-->
-
-        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -57,94 +53,103 @@
                     </button>
                     <a class="navbar-brand" href="#">Better Things Financial Partners</a>
                 </div>
-                <div class="navbar-collapse collapse">
-                    <button type="button" class="btn btn-default btn-sm">
-                        <span class="glyphicon glyphicon-home"></span> Home
-                    </button>
-                    <div class="btn-group btn-group-sm">
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                            About Us <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Our Philosophy</a></li>
-                            <li><a href="./about.html">Our People</a></li>
-                            <li><a href="#">Our Process</a></li>
-                            <li><a href="#">Our Capabilities</a></li>
-                            <li><a href="./contact.html">
-                                <span class="glyphicon glyphicon-earphone"></span> Contact Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <button type="button" class="btn btn-default btn-sm">
-                        <span class="glyphicon glyphicon-log-in"></span> Account Access
-                    </button>
-                    <div class="btn-group btn-group-sm">
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                            Our Services <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Financial Planning</a></li>
-                            <li><a href="#">Estate Planning</a></li>
-                            <li><a href="#">Investment Planning</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Business Owner Planning</a></li>
-                            <li><a href="#">Charitable Planning</a></li>
-                        </ul>
-                    </div>
-                    <div class="btn-group btn-group-sm">
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                            Resources <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Calculators</a></li>
-                            <li><a href="#">Resource Links</a></li>
-                            <li><a href="#">Financial Glossary</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Stock Quotes</a></li>
-                            <li><a href="#">Press Releases</a></li>
-                        </ul>
-                    </div>
-                    <form class="navbar-form navbar-right" role="form">
-                        <div class="form-group">
-                            <input type="text" placeholder="Email" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" placeholder="Password" class="form-control">
-                        </div>
-                        <button type="submit" class="btn btn-success">Sign in</button>
-                    </form>
-                </div><!--/.navbar-collapse -->
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="./index.html"><i class="fa fa-home"></i> Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                About <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="./philosophy.html">Our Philosophy</a></li>
+                                <li><a href="./capabilities.html">Our Capabilities</a></li>
+                                <li><a href="./about.html"><i class="fa fa-user"></i>Chip Estes, President</a></li>
+								<li><a href="./privacy.html">Privacy Statement</a></li>
+								<li><a href="./legal.html"><i class="fa fa-legal"></i>Legal Disclaimer</a></li>
+								<li><a href="./disclaimer.html"><i class="fa fa-legal"></i>Website Disclaimer</a></li>
+                                <li class="divider"></li>
+                                <li class="dropdown-header">Lexington, SC</li>
+                                <li><a href="./contact.html"><i class="fa fa-phone"></i>Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                Services <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="./financial.html">Financial Planning</a></li>
+								<li><a href="./retirement.html">Retirement Planning</a></li>
+                                <li><a href="./estate.html">Estate Planning</a></li>
+                                <li><a href="./investment.html">Investment Planning</a></li>
+								<li><a href="./access.html"><i class="fa fa-sign-in"></i>Account Access</a></li>
+                                <li class="divider"></li>
+                                <li class="dropdown-header">Business Owners</li>
+                                <li><a href="#">Business Planning</a></li>
+                                <li><a href="#">Charitable Planning</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                Resources <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="./calculators.html">Financial Calculators</a></li>
+                                <li><a href="./resources.html">Resource Links</a></li>
+                                <li><a href="./glossary.html">Financial Glossary</a></li>
+                                <li class="divider"></li>
+                                <li class="dropdown-header">Current</li>
+                                <li><a href="#">Stock Quotes</a></li>
+                                <li><a href="#">Press Releases</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!--/.nav-collapse -->
             </div>
-        </div>
+        </nav>
+
+        <!--[if lt IE 8]>
+        <p id="old_browser">
+            You are using an <strong>outdated</strong> browser. Please
+            <a href="http://browsehappy.com/">upgrade your browser</a>
+            to improve your experience.
+        </p>
+        <![endif]-->
 
         <!-- Main jumbotron for a primary marketing message or call to action -->
         <div class="jumbotron">
-            <div id="banner">
-                <ul id="news">
-                    <li>You've worked hard to retire...
-                        <br />We work hard so you can stay retired.</li>
-                    <li>How confident are you about...
-                        <br />Reaching your retirement income goals?</li>
-                </ul>
-            </div>
             <div class="container">
-                <h1>Welcome to Better Things Financial Partners, LLC</h1>
-
-                <p>
-                    For the first time in history, retirees are more concerned about living
-                    too long than they are about dying too soon. We are all living longer.
-                    We could live well beyond the monetary benefits of our retirement plans.
-                    It is a serious problem but there is a solution:
-                    <em><strong>The Retirement Income&nbsp;Solution.</strong></em>
-                </p>
-
-                <p>
-                    <a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a>
-                </p>
+                <h1 id="jumbotron_h1">Information is the Key to Good Decision Making</h1>
+    
+                <div id="jumbotron_div">
+                    An investment in knowledge pays the best interest - Benjamin Franklin
+                </div>
+    
+                <div id="jumbotron_grid" class="row">
+                   <div class="col-md-2">
+                        <p>
+                            <a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a>
+                        </p>
+                    </div>
+    
+                    <div class="col-md-10">
+                        <p>
+                            <ul id="rotating_header">
+                                <li>Are you planning for retirement now...
+                                    <br />Planning ahead is always a great strategy.</li>
+                                <li>You've worked hard to retire...
+                                    <br />We work hard so you can enjoy retirement to the fullest.</li>
+                                <li>How confident are you about...
+                                    <br />Reaching your retirement income goals?</li>
+                                <li>How literate are you about...
+                                    <br />The multitude of financial products available for retirees?</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="container">
+        <div id="page_content" class="container">
             <!-- Example row of columns -->
             <div class="row">
                 <div class="col-md-6">
@@ -152,7 +157,7 @@
                         <h2 class="title">IRS</h2>
                         <div class="text">
                             <a target="_blank" href="http://irs.gov/">
-                                <span class="glyphicon glyphicon-new-window"></span> [http://irs.gov]
+                                <i class="fa fa-external-link"></i> [http://irs.gov]
                             </a>
                         </div>
                     </div>
@@ -160,7 +165,7 @@
                         <h2 class="title">Social Security Administration</h2>
                         <div class="text">
                             <a target="_blank" href="http://ssa.gov/">
-                                <span class="glyphicon glyphicon-new-window"> [http://ssa.gov]
+                                <i class="fa fa-external-link"></i> [http://ssa.gov]
                             </a>
                         </div>
                     </div>
@@ -168,7 +173,7 @@
                         <h2 class="title">CNN Financial</h2>
                         <div class="text">
                             <a target="_blank" href="http://cnnfn.com/">
-                                <span class="glyphicon glyphicon-new-window"> [http://cnnfn.com]
+                                <i class="fa fa-external-link"></i> [http://cnnfn.com]
                             </a>
                         </div>
                     </div>
@@ -176,7 +181,7 @@
                         <h2 class="title">USA Today</h2>
                         <div class="text">
                             <a target="_blank" href="http://www.usatoday.com/">
-                                <span class="glyphicon glyphicon-new-window"> [http://www.usatoday.com]
+                                <i class="fa fa-external-link"></i> [http://www.usatoday.com]
                             </a>
                         </div>
                     </div>
@@ -184,7 +189,7 @@
                         <h2 class="title">US Securities and Exchange Commision: Brokers</h2>
                         <div class="text">
                             <a target="_blank" href="http://www.sec.gov/investor/brokers.htm">
-                                <span class="glyphicon glyphicon-new-window"> [http://www.sec.gov/investor/brokers.htm]
+                                <i class="fa fa-external-link"></i> [http://www.sec.gov/investor/brokers.htm]
                             </a>
                         </div>
                     </div>
@@ -192,7 +197,7 @@
                         <h2 class="title">Lincoln Financial Group</h2>
                         <div class="text">
                             <a target="_blank" href="http://www.lfg.com/">
-                                <span class="glyphicon glyphicon-new-window"> [http://www.lfg.com]
+                                <i class="fa fa-external-link"></i> [http://www.lfg.com]
                             </a>
                         </div>
                     </div>
@@ -200,7 +205,7 @@
                         <h2 class="title">Benefits Link</h2>
                         <div class="text">
                             <a target="_blank" href="http://www.benefitslink.com/">
-                                <span class="glyphicon glyphicon-new-window"> [http://www.benefitslink.com]
+                                <i class="fa fa-external-link"></i> [http://www.benefitslink.com]
                             </a>
                         </div>
                     </div>
@@ -208,7 +213,7 @@
                         <h2 class="title">Wall Street Journal</h2>
                         <div class="text">
                             <a target="_blank" href="http://www.wsj.com/">
-                                <span class="glyphicon glyphicon-new-window"> [http://www.wsj.com]
+                                <i class="fa fa-external-link"></i> [http://www.wsj.com]
                             </a>
                         </div>
                     </div>
@@ -216,7 +221,7 @@
                         <h2 class="title">Invesco</h2>
                         <div class="text">
                             <a target="_blank" href="https://www.invesco.com/">
-                                <span class="glyphicon glyphicon-new-window"> [https://www.invesco.com]
+                                <i class="fa fa-external-link"></i> [https://www.invesco.com]
                             </a>
                         </div>
                     </div>
@@ -224,7 +229,7 @@
                         <h2 class="title">American Legacy</h2>
                         <div class="text">
                             <a target="_blank" href="http://www.americanlegacy.com/">
-                                <span class="glyphicon glyphicon-new-window"> [http://www.americanlegacy.com]
+                                <i class="fa fa-external-link"></i> [http://www.americanlegacy.com]
                             </a>
                         </div>
                     </div>
@@ -232,7 +237,7 @@
                         <h2 class="title">Certified Financial Planners Board</h2>
                         <div class="text">
                             <a target="_blank" href="http://cfp.net/">
-                                <span class="glyphicon glyphicon-new-window"> [http://cfp.net]
+                                <i class="fa fa-external-link"></i> [http://cfp.net]
                             </a>
                         </div>
                     </div>
@@ -240,7 +245,7 @@
                         <h2 class="title">Nationwide</h2>
                         <div class="text">
                             <a target="_blank" href="http://www.nationwide.com/">
-                                <span class="glyphicon glyphicon-new-window"> [http://www.nationwide.com]
+                                <i class="fa fa-external-link"></i> [http://www.nationwide.com]
                             </a>
                         </div>
                     </div>
@@ -248,7 +253,7 @@
                         <h2 class="title">American Funds</h2>
                         <div class="text">
                             <a target="_blank" href="http://www.americanfunds.com/">
-                                <span class="glyphicon glyphicon-new-window"> [http://www.americanfunds.com]
+                                <i class="fa fa-external-link"></i> [http://www.americanfunds.com]
                             </a>
                         </div>
                     </div>
@@ -256,7 +261,7 @@
                         <h2 class="title">Bank Rate Monitor</h2>
                         <div class="text">
                             <a target="_blank" href="http://www.bankrate.com/">
-                                <span class="glyphicon glyphicon-new-window"> [http://www.bankrate.com]
+                                <i class="fa fa-external-link"></i> [http://www.bankrate.com]
                             </a>
                         </div>
                     </div>
@@ -264,7 +269,7 @@
                         <h2 class="title">Calvert Investments</h2>
                         <div class="text">
                             <a target="_blank" href="http://www.calvert.com/">
-                                <span class="glyphicon glyphicon-new-window"> [http://www.calvert.com]
+                                <i class="fa fa-external-link"></i> [http://www.calvert.com]
                             </a>
                         </div>
                     </div>
@@ -272,7 +277,7 @@
                         <h2 class="title">Lincoln Financial Advisors Corp</h2>
                         <div class="text">
                             <a target="_blank" href="http://www.lfg.com/">
-                                <span class="glyphicon glyphicon-new-window"> [http://www.lfg.com]
+                                <i class="fa fa-external-link"></i> [http://www.lfg.com]
                             </a>
                         </div>
                     </div>
@@ -283,7 +288,7 @@
                         <h2 class="title">Financial Aid Information</h2>
                         <div class="text">
                             <a target="_blank" href="http://www.finaid.org/">
-                                <span class="glyphicon glyphicon-new-window"> [http://www.finaid.org]
+                                <i class="fa fa-external-link"></i> [http://www.finaid.org]
                             </a>
                         </div>
                     </div>
@@ -291,7 +296,7 @@
                         <h2 class="title">Franklin Templeton</h2>
                         <div class="text">
                             <a target="_blank" href="http://www.franklintempleton.com/">
-                                <span class="glyphicon glyphicon-new-window"> [http://www.franklintempleton.com]
+                                <i class="fa fa-external-link"></i> [http://www.franklintempleton.com]
                             </a>
                         </div>
                     </div>
@@ -299,7 +304,7 @@
                         <h2 class="title">Financial Planning Careers.com</h2>
                         <div class="text">
                             <a target="_blank" href="http://www.financialplanningcareers.com/">
-                                <span class="glyphicon glyphicon-new-window"> [http://www.financialplanningcareers.com]
+                                <i class="fa fa-external-link"></i> [http://www.financialplanningcareers.com]
                             </a>
                         </div>
                     </div>
@@ -307,7 +312,7 @@
                         <h2 class="title">Financial Planning Association</h2>
                         <div class="text">
                             <a target="_blank" href="http://www.fpanet.org/">
-                                <span class="glyphicon glyphicon-new-window"> [http://www.fpanet.org]
+                                <i class="fa fa-external-link"></i> [http://www.fpanet.org]
                             </a>
                         </div>
                     </div>
@@ -315,7 +320,7 @@
                         <h2 class="title">College Board</h2>
                         <div class="text">
                             <a target="_blank" href="http://www.collegeboard.org/">
-                                <span class="glyphicon glyphicon-new-window"> [http://www.collegeboard.org]
+                                <i class="fa fa-external-link"></i> [http://www.collegeboard.org]
                             </a>
                         </div>
                     </div>
@@ -323,7 +328,7 @@
                         <h2 class="title">Goldman Sachs Funds</h2>
                         <div class="text">
                             <a target="_blank" href="http://www.goldmansachs.com/">
-                                <span class="glyphicon glyphicon-new-window"> [http://www.goldmansachs.com]
+                                <i class="fa fa-external-link"></i> [http://www.goldmansachs.com]
                             </a>
                         </div>
                     </div>
@@ -331,7 +336,7 @@
                         <h2 class="title">The Weather Channel</h2>
                         <div class="text">
                             <a target="_blank" href="http://www.weather.com/">
-                                <span class="glyphicon glyphicon-new-window"> [http://www.weather.com]
+                                <i class="fa fa-external-link"></i> [http://www.weather.com]
                             </a>
                         </div>
                     </div>
@@ -339,7 +344,7 @@
                         <h2 class="title">Oppenheimer Funds</h2>
                         <div class="text">
                             <a target="_blank" href="http://www.oppenheimerfunds.com/">
-                                <span class="glyphicon glyphicon-new-window"> [http://www.oppenheimerfunds.com]
+                                <i class="fa fa-external-link"></i> [http://www.oppenheimerfunds.com]
                             </a>
                         </div>
                     </div>
@@ -347,7 +352,7 @@
                         <h2 class="title">Fidelity Investments</h2>
                         <div class="text">
                             <a target="_blank" href="http://www.fidelity.com/">
-                                <span class="glyphicon glyphicon-new-window"> [http://www.fidelity.com]
+                                <i class="fa fa-external-link"></i> [http://www.fidelity.com]
                             </a>
                         </div>
                     </div>
@@ -355,7 +360,7 @@
                         <h2 class="title">MFS Investment Management</h2>
                         <div class="text">
                             <a target="_blank" href="http://www.mfs.com/">
-                                <span class="glyphicon glyphicon-new-window"> [http://www.mfs.com]
+                                <i class="fa fa-external-link"></i> [http://www.mfs.com]
                             </a>
                         </div>
                     </div>
@@ -363,7 +368,7 @@
                         <h2 class="title">Zurich Insurance Group</h2>
                         <div class="text">
                             <a target="_blank" href="http://www.zurich.com/">
-                                <span class="glyphicon glyphicon-new-window"> [http://www.zurich.com]
+                                <i class="fa fa-external-link"></i> [http://www.zurich.com]
                             </a>
                         </div>
                     </div>
@@ -371,7 +376,7 @@
                         <h2 class="title">Putnam Investments</h2>
                         <div class="text">
                             <a target="_blank" href="http://www.putnam.com/">
-                                <span class="glyphicon glyphicon-new-window"> [http://www.putnam.com]
+                                <i class="fa fa-external-link"></i> [http://www.putnam.com]
                             </a>
                         </div>
                     </div>
@@ -379,7 +384,7 @@
                         <h2 class="title">White House</h2>
                         <div class="text">
                             <a target="_blank" href="http://www.whitehouse.gov/">
-                                <span class="glyphicon glyphicon-new-window"> [http://www.whitehouse.gov]
+                                <i class="fa fa-external-link"></i> [http://www.whitehouse.gov]
                             </a>
                         </div>
                     </div>
@@ -387,7 +392,7 @@
                         <h2 class="title">United States Department of Labor</h2>
                         <div class="text">
                             <a target="_blank" href="http://www.dol.gov/">
-                                <span class="glyphicon glyphicon-new-window"> [http://www.dol.gov/]
+                                <i class="fa fa-external-link"></i> [http://www.dol.gov/]
                             </a>
                         </div>
                     </div>
@@ -395,7 +400,7 @@
                         <h2 class="title">Yahoo Finance</h2>
                         <div class="text">
                             <a target="_blank" href="http://finance.yahoo.com/">
-                                <span class="glyphicon glyphicon-new-window"> [http://finance.yahoo.com]
+                                <i class="fa fa-external-link"></i> [http://finance.yahoo.com]
                             </a>
                         </div>
                     </div>
@@ -403,7 +408,7 @@
                         <h2 class="title">Delaware Investments</h2>
                         <div class="text">
                             <a target="_blank"  href="http://www.delawareinvestments.com/">
-                                <span class="glyphicon glyphicon-new-window"> [http://www.delawareinvestments.com]
+                                <i class="fa fa-external-link"></i> [http://www.delawareinvestments.com]
                             </a>
                         </div>
                     </div>
@@ -411,119 +416,77 @@
                         <h2 class="title">Federal Student Aid</h2>
                         <div class="text">
                             <a target="_blank"  href="https://fafsa.ed.gov/">
-                                <span class="glyphicon glyphicon-new-window"> [https://fafsa.ed.gov]
+                                <i class="fa fa-external-link"></i> [https://fafsa.ed.gov]
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <hr />
-
             <footer>
-                <p>&copy; Better Things Financial Partners, LLC - 2014</p>
+                <hr />
 
-                <div class="cffp_logo">
-                    <img src="./images/cffp_logo_150x150.png" alt="College for Financial Planning logo" />
-                </div>
-    
+                <p>
+                    <span style="white-space: nowrap;">Better Things Financial Partners, LLC.</span>&nbsp;&nbsp;|&nbsp;
+                    <span style="white-space: nowrap;">Phone: 803-622-3868</span>&nbsp;&nbsp;|&nbsp;
+                    <span style="white-space: nowrap;">Email: <a href="mailto:chipestes@betterthingsfp.com">chipestes@betterthingsfp.com</a></span>&nbsp;&nbsp;|&nbsp;
+                    <span style="white-space: nowrap;"><a id="disclaimer_toggle" href="#disclaimer">Disclaimer</a></span>
+                </p>
+
+                <hr />
+
                 <div id="disclaimer">
                     <p>
-                        229 Wyndotte Court, Lexington, SC 29072 |
-                        Phone: 803-622-3868 |
-                        Email: <a href="mailto:chipestes@betterthingsfp.com">chipestes@betterthingsfp.com</a>
-                    </p>
-                    <p>
-                        Securities and investment advisory services offered through SagePoint
-                        Financial, Inc., member of
-                        <span style="LINE-HEIGHT: 115%; FONT-FAMILY: &#39Calibri&#39,&#39sans-serif&#39 FONT-SIZE: 11pt; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: &#39Times New Roman&#39 mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">
+                        Chip Estes is a member of
+                        <span>
                             <a href="http://www.finra.org/">FINRA</a>/
                             <a href="http://www.sipc.org/">SIPC</a>
-                        </span>and a registered investment advisor. Retirement Solutions, Inc. is not
-                        affiliated with SagePoint Financial, Inc., or registered as a broker dealer
-                        or investment advisor. Insurance services are offered through Scott Chelberg
-                        as a licensed agent independent of SagePoint Financial. California Department
-                        of Insurance License #0694123.
+                        </span> and a registered investment advisor. Better Things Financial Planning, LLC. is not
+                        registered as a broker dealer or investment advisor.
                     </p>
                     <p>
-                        Investment products and services from this representative(s) available
-                        only to residents of Arizona (AZ),California (CA),Colorado (CO),Georgia
-                        (GA),Michigan (MI),Mississippi (MS),North Carolina (NC),Nebraska (NE),New
-                        York (NY),Pennsylvania (PA),South Dakota (SD),Tennessee (TN),Texas (TX),Washington
-                        (WA).
+                        Investment products and services provided by Better Things Financial Planning, LLC
+                        are available only to residents of Georgia (GA), North Carolina (NC), South Carolina (SC).
                     </p>
                     <p>
-                        PLEASE NOTE: The information being provided is strictly as a courtesy.
-                        When you link to any of the web sites provided here, you are leaving this
-                        web site. We make no representation as to the completeness or accuracy
-                        of information provided at these web sites. Nor is the company liable for
-                        any direct or indirect technical or system issues or any consequences arising
-                        out of your access to or your use of third-party technologies, web sites,
-                        information and programs made available through this web site. When you
-                        access one of these web sites, you are leaving our web site and assume
-                        total responsibility and risk for your use of the web sites you are linking
-                        to.
+                        Links to third-party websites are provided for your convenience and information purposes
+                        only. Better Things Financial Planning, LLC is not responsible for the information
+                        contained on third party websites.
                     </p>
-                </div>
 
-                <ul>
-                    <li>
-                        I am licensed and registered to conduct business in SC.
-                    </li>
-                    <li>
-                        Based on licenses and registrations I hold, I may also conduct business in FL, GA, MI, NC.
-                    </li>
-                    <li>
-                        The initial consultation provides an overview of financial planning concepts and
-                        stategies. You will not receive written analysis and/or specific recommendations.
-                    </li>
-                    <li>
-                        Better Things Financial Planning, LLC cannot guarantee future financial results.
-                    </li>
-                    <li>
-                        Better Things Financial Planning, LLC and its representatives do not provide tax or
-                        legal advice. Consult with your tax advisor or attorney regarding specific tax issues.
-                    </li>
-                </ul>
+                    <ul class="fa-ul">
+                        <li>
+                            <i class="fa-li fa fa-check-circle-o"></i>
+                            I am licensed and registered to conduct business in SC.
+                        </li>
+                        <li>
+                            <i class="fa-li fa fa-check-circle-o"></i>
+                            Based on licenses and registrations I hold, I may also conduct business in FL, GA, MI, NC.
+                        </li>
+                        <li>
+                            <i class="fa-li fa fa-check-circle-o"></i>
+                            The initial consultation provides an overview of financial planning concepts and
+                            stategies. You will not receive written analysis and/or specific recommendations.
+                        </li>
+                        <li>
+                            <i class="fa-li fa fa-check-circle-o"></i>
+                            Better Things Financial Planning, LLC cannot guarantee future financial results.
+                        </li>
+                        <li>
+                            <i class="fa-li fa fa-check-circle-o"></i>
+                            Better Things Financial Planning, LLC and its representatives do not provide tax or
+                            legal advice. Consult with your tax advisor or attorney regarding specific tax issues.
+                        </li>
+                    </ul>
+                </div>
             </footer>
         </div> <!-- /container -->
 
-        <div id='social_ties' style="margin:0 auto;"></div>
+        <div id='social_ties'></div>
 
+        <div id="copyright">
+            &copy; 2014 Better Things Financial Partners, LLC. All rights reserved.
+        </div>
     </div>
-
-	<script>
-		msos.onload_func_pre.push(
-			function () {
-				"use strict";
-
-				msos.console.info('Page index.html loaded!');
-
-                msos.require("jquery.tools.innerfade");
-                msos.require("bootstrap.collapse");
-                msos.require("bootstrap.dropdownV3");
-			}
-		);
-
-		msos.onload_func_done.push(
-			function () {
-				"use strict";
-
-                // Rotating header
-				jQuery('#news').innerfade(
-                    {
-						animationtype: 'fade',
-						speed: 1500,
-						timeout: 6000,
-						type: 'sequence',
-						containerheight: '1em'
-					}
-                );
-
-                jQuery('#body').fadeIn('slow');
-			}
-		);
-	</script>
-
 </body>
 </html>

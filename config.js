@@ -36,17 +36,21 @@ msos.config.run_social = true;
 // --------------------------
 
 if (msos.config.debug_css) {
-	
+
 	msos.deferred_css = [
-		msos.resource_url('ng','bootstrap/css/v311.uc.css'),
-		msos.resource_url('ng','bootstrap/css/v311_theme.uc.css')
+		msos.resource_url('css','font_awesome.uc.css'),
+		msos.resource_url('..','css/bootstrap/v331_wo_icons.uc.css'),
+		msos.resource_url('..','css/bootstrap/v331_theme.uc.css'),
+		msos.resource_url('..','betterthings.css')
 	];
 
 } else {
 
 	msos.deferred_css = [
-		msos.resource_url('ng','bootstrap/css/v311.min.css'),
-		msos.resource_url('ng','bootstrap/css/v311_theme.min.css')
+		msos.resource_url('css','font_awesome.min.css'),
+		msos.resource_url('..','css/bootstrap/v331_wo_icons.min.css'),
+		msos.resource_url('..','css/bootstrap/v331_theme.min.css'),
+		msos.resource_url('..','css/betterthings.css')
 	];
 
 }
@@ -64,6 +68,7 @@ if (msos.config.debug_script) {
 		msos.resource_url('jquery', 'v211.uc.js'),
 		msos.resource_url('jquery', 'ui/v1104.uc.js'),		// All UI Core + Draggable Interaction + Effects Core
 		msos.resource_url('underscore', 'v170.uc.js'),
+		msos.resource_url('bootstrap', 'v331.uc.js'),
 
 		'site.js',											// Common installation specific setup code (which needs jQuery, underscore.js, etc.)
 		msos.resource_url('msos', 'core.uc.js')
@@ -77,6 +82,7 @@ if (msos.config.debug_script) {
 		msos.resource_url('jquery', 'v211.min.js'),
 		msos.resource_url('jquery', 'ui/v1104.min.js'),			// All UI Core + Draggable Interaction + Effects Core
 		msos.resource_url('underscore', 'v170.min.js'),
+		msos.resource_url('bootstrap', 'v331.uc.js'),
 
 		'site.js',
 		msos.resource_url('msos', 'core.min.js')

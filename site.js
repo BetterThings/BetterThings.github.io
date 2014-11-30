@@ -108,38 +108,6 @@ if (msos.config.visualevent) {
 }(jQuery));
 
 
-jQuery(
-	function ($) {
-		"use strict";
-
-		$.expr[':'].external = function(obj) {
-			return obj.protocol.match(/^http/)
-			&& obj.hostname != location.hostname
-			&& !obj.rel.match(/shadowbox/);
-		};
-
-		$('a:external').click(
-			function() {
-				if (
-					confirm(
-						'You have clicked on an external site link which may not be affiliated with' +
-						'this site. Click OK to open this link in a new window '
-					)) {
-					window.open(this.href,'_blank');
-				}
-					return false;
-				}
-			);
-	}
-);
-
-//confirm(
-//    'This link is provided as a service to you, and will take you to a third party' +
-//    'site not affiliated with this site.  We are not responsible for the content and' +
-//    'do not guarantee the accuracy of any information or material contained therein.'
-//};
-
-
 // Adjust marquee display using above
 msos.ondisplay_size_change.push(
 	function () {
@@ -256,9 +224,115 @@ msos.site.auto_init = function () {
 	msos.console.debug(temp_ai + 'done!');
 };
 
+msos.site.external_link_warning = function () {
+	"use strict";
+
+	jQuery(
+		function ($) {
+	
+			$.expr[':'].external = function (obj) {
+				return obj.protocol.match(/^http/)
+				&& obj.hostname != location.hostname;
+			};
+
+			$('a:external').click(
+				function() {
+					if (
+						confirm(
+							'This link is provided as a service to you, and will take you to a third party' +
+							'site, not affiliated with Better Things Financial Partners, LLC. We are not' +
+							'responsible for the content and do not guarantee the accuracy of any information' +
+							'or materials contained therein. Click OK to open this link in a new browser window.'
+						)) {
+						window.open(this.href,'_blank');
+					}
+						return false;
+					}
+				);
+		}
+	);
+};
+
+msos.site.toggle_disclaimer = function () {
+	"use strict";
+
+	// Toggles disclaimer text at bottom of page
+
+	var disclaim_tog = $("#disclaimer_toggle"),
+		disclaim_div = $("#disclaimer");
+
+	msos.require("jquery.tools.innerfade");
+
+	// Show disclaimer on first visit, then hide.
+	if (msos.cookie('betterthings')) {
+		$('#disclaimer').hide();
+	} else {
+		msos.cookie('betterthings', 'welcome', { expires: 1, path : '/'});
+	}
+
+	disclaim_tog.click(
+		function (e) {
+			e.preventDefault();
+
+			disclaim_div.toggle(
+				"slow",
+				function () {
+					if (disclaim_div.css('display') === 'none') {
+						disclaim_tog.attr('href', '#disclaimer');
+
+						 // Once close, scroll to page top...
+						jQuery("#page_content").animate(
+							{ scrollTop: 0 },
+							1000
+						);
+
+					} else {
+
+						// Scroll to optimum position...
+						jQuery("html, body").animate(
+							{ scrollTop: disclaim_div.offset().top - 150 },
+							1000
+						);
+					}
+				}
+			);
+		}
+	);
+}
+
+msos.site.visual_effects = function () {
+	"use strict";
+
+	// Add some common page visual effects
+
+	var url = msos.purl(),
+		file = url.attr('file') || 'index.html';
+
+	msos.console.info('Page ' + file + ' loaded!');
+
+	// Rotating header
+	jQuery('#rotating_header').innerfade(
+		{
+			animationtype: 'fade',
+			speed: 1200,
+			timeout: 6000,
+			type: 'sequence',
+			containerheight: '2em'
+		}
+	);
+
+	// All loaded, so show #body
+	jQuery('#body').fadeIn('slow');
+
+	// Active Menu Class
+	jQuery('#navbar li > a[href$="' + file + '"]').parents('li').addClass('active');
+}
 
 // Load site specific setup code
 msos.onload_func_pre.push(msos.site.auto_init);
+msos.onload_func_pre.push(msos.site.toggle_disclaimer);
+msos.onload_func_done.push(msos.site.external_link_warning);
+msos.onload_func_done.push(msos.site.visual_effects);
 
 msos.console.info('site -> done!');
 msos.console.timeEnd('site');
