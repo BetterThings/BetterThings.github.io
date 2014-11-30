@@ -663,12 +663,12 @@ msos.notify = {
 };
 
 // Add error notification (Overwritten in msos.onerror for server notification)
-window.onerror = function (msg, url, line) {
+window.onerror = function (msg, url, line, col, er) {
 	"use strict";
 
 	var error_txt = 'JavaScript Error!';
 
-	msos.console.error('window.onerror -> fired, line: ' + line + ', url: ' + url + ', error: ' + msg);
+	msos.console.error('window.onerror -> fired, line: ' + line + ', url: ' + url + ', error: ' + msg, er);
 
 	// Timing and availability of i18n common loading is a factor (so isolate)
 	if (msos.i18n
