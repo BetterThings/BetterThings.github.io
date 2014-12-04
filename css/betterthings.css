@@ -98,6 +98,10 @@ ul.dropdown-menu i.fa {
     left: 10px;
 }
 
+span.no_wrap {
+    white-space: nowrap;
+}
+
 /*==================================================
 =            Bootstrap 3 Media Queries             =
 ==================================================*/

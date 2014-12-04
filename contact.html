@@ -27,6 +27,11 @@
         .jumbotron {
             background-image: url("../images/lake_murray2.jpg");
         }
+
+        #BTFP_address td {
+            font-size: large;
+            height: 2.2em;
+        }
     </style>
 
 	<script src="./mobilesiteos/msos/base.min.js"></script>
@@ -98,7 +103,7 @@
                                 <li><a href="./glossary.html">Financial Glossary</a></li>
                                 <li class="divider"></li>
                                 <li class="dropdown-header">Current</li>
-                                <li><a href="#">Stock Quotes</a></li>
+                                <li><a href="./stocks.html">Stocks/Markets</a></li>
                                 <li><a href="#">Press Releases</a></li>
                             </ul>
                         </li>
@@ -157,42 +162,35 @@
             <!-- Example row of columns -->
             <div class="row">
                 <div class="col-md-6">
-                    <h2>Better Things Financial Partners, LLC</h2>
-                    <table>
+                    <h2>Better Things <span class="no_wrap">Financial Partners, LLC</span></h2>
+                    <table id="BTFP_address">
                         <tr>
-                            <td>
+                            <td colspan="2">
                                 <address>
                                   229 Wyndotte Court<br />
-                                  &nbsp;<br />
-                                </address>
-                            </td><td>
-                                <address>
-                                  Lexington, SC<br />
-                                  29072<br />
+                                  Lexington, SC 29072
                                 </address>
                             </td>
                         </tr><tr>
                             <td>Telephone: </td>
-                            <td> <a class="btn btn-primary" href="tel:8036223868">803 622-3868</a></td>
+                            <td>&nbsp;<a class="btn btn-primary" href="tel:8036223868" data-rel="external">803 622-3868</a></td>
                         </tr><tr>
                             <td>Email: </td>
-                            <td> <a class="btn btn-primary" href="mailto:chipestes@betterthingsfp.com">chipestes@betterthingsfp.com</a></td>
+                            <td>&nbsp;<a class="btn btn-primary" href="mailto:chipestes@betterthingsfp.com?subject=Website%20Inquiry" data-rel="external">chipestes@betterthingsfp.com</a></td>
                         </tr>
                     </table>
-    
-                    <p>
+
+                    <p style="margin-top: 1em; font-size: larger;">
                         Please feel free to e-mail or call for information about any of our financial
                         planning or retirement planning services.
                     </p>
                 </div>
 
                 <div class="col-md-6">
-                    <h2>Lexington, South Carolina, 29072</h2>
 
-                    <div id='status'></div>
+                    <h2 id='status'></h2>
                     <div id='map_canvas' style="width: 100%; height: 300px;"></div>
 
-                    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
                 </div>
             </div>
 
@@ -200,10 +198,10 @@
                 <hr />
 
                 <p>
-                    <span style="white-space: nowrap;">Better Things Financial Partners, LLC.</span>&nbsp;&nbsp;|&nbsp;
-                    <span style="white-space: nowrap;">Phone: 803-622-3868</span>&nbsp;&nbsp;|&nbsp;
-                    <span style="white-space: nowrap;">Email: <a href="mailto:chipestes@betterthingsfp.com">chipestes@betterthingsfp.com</a></span>&nbsp;&nbsp;|&nbsp;
-                    <span style="white-space: nowrap;"><a id="disclaimer_toggle" href="#disclaimer">Disclaimer</a></span>
+                    <span class="no_wrap">Better Things Financial Partners, LLC.</span>&nbsp;&nbsp;|&nbsp;
+                    <span class="no_wrap">Phone: 803-622-3868</span>&nbsp;&nbsp;|&nbsp;
+                    <span class="no_wrap">Email: <a href="mailto:chipestes@betterthingsfp.com">chipestes@betterthingsfp.com</a></span>&nbsp;&nbsp;|&nbsp;
+                    <span class="no_wrap"><a id="disclaimer_toggle" href="#disclaimer">Disclaimer</a></span>
                 </p>
 
                 <hr />
@@ -261,5 +259,86 @@
             &copy; 2014 Better Things Financial Partners, LLC. All rights reserved.
         </div>
     </div>
+
+	<script>
+
+        // Must load 'msos.google.maps' before 'msos.onload_func_start' is called
+		msos.onload_func_pre.push(
+			function () {
+				"use strict";
+
+                msos.require("msos.google.maps");
+			}
+		);
+
+        msos.onload_func_start.push(
+            function () {
+                "use strict";
+
+                var image_home = './images/location_pin.png',
+                    position_home = { coords: { latitude: 33.987895, longitude: -81.331597 } },
+                    contact_map = function () {
+
+                        var geo_error = function (msg) {
+                                msos.byid('status').innerHTML = typeof msg === 'string' ? msg : "Sorry, Mapping Failed!";
+                            },
+                            geo_locate = function (position) {
+
+                                // Go to go, so show map canvas
+                                msos.byid("map_canvas").style.display = 'block';
+
+                                var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
+                                    myOptions = {
+                                        zoom: 12,
+                                        center: latlng,
+                                        mapTypeControl: false,
+                                        navigationControlOptions: { style: google.maps.NavigationControlStyle.SMALL },
+                                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                                    },
+                                    map = new google.maps.Map(msos.byid("map_canvas"), myOptions),
+                                    marker = new google.maps.Marker({
+                                        position: latlng,
+                                        map: map,
+                                        title: "Your current browser provided location"
+                                    }),
+                                    latlng_home,
+                                    marker_home;
+
+                                msos.console.info('Page contact.html - geo_locate -> user marker:', position);
+
+                                // Add our location
+                                if (position !== position_home) {
+                                    latlng_home = new google.maps.LatLng(position_home.coords.latitude, position_home.coords.longitude);
+                                    //latlng_home = new google.maps.LatLng(position_home.coords.latitude, position_home.coords.longitude);
+                                    marker_home = new google.maps.Marker(
+                                        {
+                                            position: latlng_home,
+                                            map: map,
+                                            title: 'We are here...',
+                                            icon: image_home
+                                        }
+                                    );
+
+                                    msos.console.info('Page contact.html - geo_locate -> BTFP marker:', position_home);
+                                }
+                            };
+
+                        if (navigator.geolocation) {
+                            // If geolocation, show user's current location
+                            msos.byid('status').innerHTML = "We found your current location!";
+                            navigator.geolocation.getCurrentPosition(geo_locate, geo_error);
+
+                       } else {
+                            // Show our location only...
+                            msos.byid('status').innerHTML = "Serving Lexington, SC and the Surrounding Area";
+                            geo_locate(position_home);
+                        }
+                    };
+
+                msos.google.maps.add_onload_ready(contact_map);
+            }
+        );
+
+	</script>
 </body>
 </html>

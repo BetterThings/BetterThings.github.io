@@ -29,9 +29,8 @@
         }
 
         #glossary_wrapper {
-            position: relative;
             width: 100%;
-            height: 720px;
+            height: 840px;
             padding: 0 0;
             overflow: hidden;
         }
@@ -45,18 +44,40 @@
             -webkit-transform-origin: 0 0; 
         }
 
+        #glossary {
+            -ms-zoom: 1.15;
+            -moz-transform: scale(1.15);
+            -o-transform: scale(1.15);
+            -webkit-transform: scale(1.15);
+        }
+
+        /* Large Devices, Wide Screens */
+        @media only screen and (max-width : 1200px) {
+
+            #glossary_wrapper {
+                height: 740px;
+            }
+
+            #glossary {
+                -ms-zoom: 0.95;
+                -moz-transform: scale(0.95);
+                -o-transform: scale(0.95);
+                -webkit-transform: scale(0.95);
+            }
+        }
+
         /* Medium Devices, Desktops */
         @media only screen and (max-width : 992px) {
 
             #glossary_wrapper {
-                height: 500px;
+                height: 550px;
             }
 
             #glossary {
-                -ms-zoom: 0.75;
-                -moz-transform: scale(0.75);
-                -o-transform: scale(0.75);
-                -webkit-transform: scale(0.75);
+                -ms-zoom: 0.74;
+                -moz-transform: scale(0.74);
+                -o-transform: scale(0.74);
+                -webkit-transform: scale(0.74);
             }
         }
 
@@ -64,14 +85,14 @@
         @media only screen and (max-width : 768px) {
 
             #glossary_wrapper {
-                height: 400px;
+                height: 350px;
             }
 
             #glossary {
-                -ms-zoom: 0.50;
-                -moz-transform: scale(0.50);
-                -o-transform: scale(0.50);
-                -webkit-transform: scale(0.50);
+                -ms-zoom: 0.46;
+                -moz-transform: scale(0.46);
+                -o-transform: scale(0.46);
+                -webkit-transform: scale(0.46);
             }
         }
 
@@ -79,14 +100,14 @@
         @media only screen and (max-width : 480px) {
 
             #glossary_wrapper {
-                height: 300px;
+                height: 230px;
             }
 
             #glossary {
-                -ms-zoom: 0.30;
-                -moz-transform: scale(0.30);
-                -o-transform: scale(0.30);
-                -webkit-transform: scale(0.30);
+                -ms-zoom: 0.32;
+                -moz-transform: scale(0.32);
+                -o-transform: scale(0.32);
+                -webkit-transform: scale(0.32);
             }
         }
 
@@ -94,14 +115,15 @@
         @media only screen and (max-width : 320px) {
 
             #glossary_wrapper {
-                height: 200px;
+                height: 100px;
             }
 
             #glossary {
-                -ms-zoom: 0.25;
-                -moz-transform: scale(0.25);
-                -o-transform: scale(0.25);
-                -webkit-transform: scale(0.25);
+                display: none;
+            }
+
+            #glossary_alt {
+                display: block;
             }
         }
     </style>
@@ -175,7 +197,7 @@
                                 <li><a href="./glossary.html">Financial Glossary</a></li>
                                 <li class="divider"></li>
                                 <li class="dropdown-header">Current</li>
-                                <li><a href="#">Stock Quotes</a></li>
+                                <li><a href="./stocks.html">Stocks/Markets</a></li>
                                 <li><a href="#">Press Releases</a></li>
                             </ul>
                         </li>
@@ -228,24 +250,26 @@
 
         <div id="page_content" class="container">
 
-            <h2>Thomson Reuters Financial Glossary
+            <h2>Provided by Thomson Reuters
                 <a target="_blank" href="http://glossary.reuters.com/" title="Open in a new browser window.">
-                    <i class="glyphicon glyphicon-new-window"></i>
+                    <i class="fa fa-external-link"></i>
                 </a>
             </h2>
 
             <div id="glossary_wrapper">
                 <iframe id="glossary" src="http://glossary.reuters.com/"></iframe>
+
+                <a id="glossary_alt" class="btn btn-primary btn-lg" role="button"><i class="fa fa-external-link"></i> Financial Glossary</a>
             </div>
 
             <footer>
                 <hr />
 
                 <p>
-                    <span style="white-space: nowrap;">Better Things Financial Partners, LLC.</span>&nbsp;&nbsp;|&nbsp;
-                    <span style="white-space: nowrap;">Phone: 803-622-3868</span>&nbsp;&nbsp;|&nbsp;
-                    <span style="white-space: nowrap;">Email: <a href="mailto:chipestes@betterthingsfp.com">chipestes@betterthingsfp.com</a></span>&nbsp;&nbsp;|&nbsp;
-                    <span style="white-space: nowrap;"><a id="disclaimer_toggle" href="#disclaimer">Disclaimer</a></span>
+                    <span class="no_wrap">Better Things Financial Partners, LLC.</span>&nbsp;&nbsp;|&nbsp;
+                    <span class="no_wrap">Phone: 803-622-3868</span>&nbsp;&nbsp;|&nbsp;
+                    <span class="no_wrap">Email: <a href="mailto:chipestes@betterthingsfp.com">chipestes@betterthingsfp.com</a></span>&nbsp;&nbsp;|&nbsp;
+                    <span class="no_wrap"><a id="disclaimer_toggle" href="#disclaimer">Disclaimer</a></span>
                 </p>
 
                 <hr />

@@ -239,9 +239,9 @@ msos.site.external_link_warning = function () {
 				function() {
 					if (
 						confirm(
-							'This link is provided as a service to you, and will take you to a third party' +
-							'site, not affiliated with Better Things Financial Partners, LLC. We are not' +
-							'responsible for the content and do not guarantee the accuracy of any information' +
+							'This link is provided as a service to you, and will take you to a third party ' +
+							'site, not affiliated with Better Things Financial Partners, LLC. We are not ' +
+							'responsible for the content and do not guarantee the accuracy of any information ' +
 							'or materials contained therein. Click OK to open this link in a new browser window.'
 						)) {
 						window.open(this.href,'_blank');
