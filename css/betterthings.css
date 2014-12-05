@@ -12,39 +12,51 @@ footer > hr {
     margin-bottom: 0.7em;
 }
 
-#body {
-    padding-bottom: 1.5em;
-}
-
 #old_browser {
     margin-left: 1.5em;
 }
 
 .jumbotron {
-    padding: 0 0;
-    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+            background-size: cover;
 }
 
 #jumbotron_h1 {
     color: #00001F;
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 1);
-    font-family: Impact, Charcoal, sans-serif;
-    margin-bottom: 6em;
 }
 
 #jumbotron_div {
     color: #CCC;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
-    margin-bottom: 1em;
-}
-
-#jumbotron_grid {
-    height: 4em;
 }
 
 #rotating_header > li {
     color: #FFF;
     list-style-type: none;
+}
+
+.shadow {
+    height: 30px;
+    margin-top: -30px;
+    background-image: url("../images/rule_shadow.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+            background-size: cover;
+}
+
+.shadow.bottom {
+    margin-top: 0;
+    -webkit-transform:scaleY(-1);
+       -moz-transform:scaleY(-1);
+        -ms-transform:scaleY(-1);
+         -o-transform:scaleY(-1);
+            transform:scaleY(-1);
 }
 
 .calculators .title {
@@ -71,8 +83,12 @@ footer > hr {
     list-style-type: none;
 }
 
-#disclaimer > ul > li > i {
+#disclaimer > ul > li > i.fa-check-circle-o {
     color: green;
+}
+
+#disclaimer > ul > li > i.fa-warning {
+    color: #f0ad4e;
 }
 
 #social_ties {
@@ -109,11 +125,13 @@ span.no_wrap {
     /*==========  Default css (sizing, etc.)  ==========*/
 
         .jumbotron {
-            min-height: 700px;
-        }
+			min-height: 680px;
+		}
 
         #jumbotron_h1 {
             font-size: 40px;
+            font-family: Georgia, serif;
+            font-style: oblique;
         }
 
         #jumbotron_div {
@@ -128,10 +146,18 @@ span.no_wrap {
 	/*==========  Non-Mobile First Method  ==========*/
 
 	/* Large Devices, Wide Screens */
-	@media only screen and (max-width : 1200px) {
+	@media only screen and (max-width: 1200px) {
+
+        .jumbotron {
+			min-height: 450px;
+		}
 
         #jumbotron_h1 {
-            font-size: 30px;
+            font-size: 35px;
+        }
+
+        #jumbotron_div {
+            font-size: large;
         }
 
         #rotating_header > li {
@@ -140,15 +166,38 @@ span.no_wrap {
 	}
 
 	/* Medium Devices, Desktops */
-	@media only screen and (max-width : 992px) {
+	@media only screen and (max-width: 992px) {
 
+        .jumbotron {
+			min-height: 340px;
+		}
+
+        #jumbotron_h1 {
+            font-size: 30px;
+        }
+
+        #jumbotron_div {
+            font-size: large;
+        }
+
+        #rotating_header > li {
+            font-size: x-large;
+        }
 	}
 
 	/* Small Devices, Tablets */
-	@media only screen and (max-width : 768px) {
+	@media only screen and (max-width: 768px) {
+
+        .jumbotron {
+			min-height: 220px;
+		}
 
         #jumbotron_h1 {
             font-size: 25px;
+        }
+
+        #jumbotron_div {
+            font-size: medium;
         }
 
         #rotating_header > li {
@@ -157,18 +206,49 @@ span.no_wrap {
 	}
 
 	/* Extra Small Devices, Phones */ 
-	@media only screen and (max-width : 480px) {
+	@media only screen and (max-width: 480px) {
 
-	}
-
-	/* Custom, iPhone Retina */ 
-	@media only screen and (max-width : 320px) {
+        .jumbotron {
+			min-height: 170px;
+		}
 
         #jumbotron_h1 {
-            font-size: x-large;
+            font-size: 25px;
+        }
+
+        #jumbotron_div {
+            font-size: small;
         }
 
         #rotating_header > li {
             font-size: medium;
+        }
+
+        .shorten {
+            display: none;
+        }
+	}
+
+	/* Custom, iPhone Retina */ 
+	@media only screen and (max-width: 320px) {
+
+        .jumbotron {
+			min-height: 110px;
+		}
+
+        #jumbotron_h1 {
+            font-size: 20px;
+        }
+
+        #jumbotron_div {
+            font-size: small;
+        }
+
+        #rotating_header > li {
+            font-size: medium;
+        }
+
+        .shorten {
+            display: none;
         }
 	}

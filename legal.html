@@ -24,9 +24,63 @@
             color: #999;
         }
 
-        .jumbotron {
-            background-image: url("../images/lake_murray.jpg");
-        }
+		#jumbotron_h1 {
+			margin-top: -0.5em;
+			margin-bottom: 1em;
+		}
+
+		/*==================================================
+		=            Bootstrap 3 Media Queries             =
+		==================================================*/
+	
+		/*==========  Default css (sizing, etc.)  ==========*/
+	
+		.jumbotron {
+			background-image: url("../images/sized/1920/pensacola.jpg");
+		}
+	
+		/*==========  Non-Mobile First Method  ==========*/
+	
+		/* Large Devices, Wide Screens */
+		@media only screen and (max-width : 1200px) {
+	
+			.jumbotron {
+				background-image: url("../images/sized/1280/pensacola.jpg");
+			}
+		}
+	
+		/* Medium Devices, Desktops */
+		@media only screen and (max-width : 992px) {
+	
+			.jumbotron {
+				background-image: url("../images/sized/960/pensacola.jpg");
+			}
+		}
+	
+		/* Small Devices, Tablets */
+		@media only screen and (max-width : 768px) {
+	
+			.jumbotron {
+				background-image: url("../images/sized/640/pensacola.jpg");
+			}
+		}
+	
+		/* Extra Small Devices, Phones */ 
+		@media only screen and (max-width : 480px) {
+	
+			.jumbotron {
+				background-image: url("../images/sized/480/pensacola.jpg");
+			}
+		}
+	
+		/* Custom, iPhone Retina */ 
+		@media only screen and (max-width : 320px) {
+	
+			.jumbotron {
+				background-image: url("../images/sized/320/pensacola.jpg");
+			}
+		}
+
     </style>
 
 	<script src="./mobilesiteos/msos/base.min.js"></script>
@@ -63,6 +117,7 @@
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="./philosophy.html">Our Philosophy</a></li>
                                 <li><a href="./capabilities.html">Our Capabilities</a></li>
+								<li><a href="./firm.html">Our Firm</a></li>
                                 <li><a href="./about.html"><i class="fa fa-user"></i>Chip Estes, President</a></li>
 								<li><a href="./privacy.html">Privacy Statement</a></li>
 								<li><a href="./legal.html"><i class="fa fa-legal"></i>Legal Disclaimer</a></li>
@@ -118,7 +173,7 @@
         <!-- Main jumbotron for a primary marketing message or call to action -->
         <div class="jumbotron">
             <div class="container">
-                <h1 id="jumbotron_h1">Welcome to Better Things Financial Partners, LLC</h1>
+                <h1 id="jumbotron_h1">Professional Services for Retirement Planning</h1>
     
                 <div id="jumbotron_div">
                     Today, many retirees are more concerned about outliving their retirement
@@ -127,12 +182,10 @@
                     retirement plans. It is a serious problem, but there is a solution:
                     <em><strong>Informed Retirement Planning.</strong></em>
                 </div>
-    
+
                 <div id="jumbotron_grid" class="row">
                    <div class="col-md-2">
-                        <p>
-                            <a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a>
-                        </p>
+                        
                     </div>
 
                     <div class="col-md-10">
@@ -152,6 +205,7 @@
                 </div>
             </div>
         </div>
+		<div class="shadow"></div>
 
         <div id="page_content" class="container">
             <!-- Example row of columns -->
@@ -249,16 +303,16 @@
                             Based on licenses and registrations I hold, I may also conduct business in FL, GA, MI, NC.
                         </li>
                         <li>
-                            <i class="fa-li fa fa-check-circle-o"></i>
+                            <i class="fa-li fa fa-warning"></i>
                             The initial consultation provides an overview of financial planning concepts and
                             stategies. You will not receive written analysis and/or specific recommendations.
                         </li>
                         <li>
-                            <i class="fa-li fa fa-check-circle-o"></i>
+                            <i class="fa-li fa fa-warning"></i>
                             Better Things Financial Planning, LLC cannot guarantee future financial results.
                         </li>
                         <li>
-                            <i class="fa-li fa fa-check-circle-o"></i>
+                            <i class="fa-li fa fa-warning"></i>
                             Better Things Financial Planning, LLC and its representatives do not provide tax or
                             legal advice. Consult with your tax advisor or attorney regarding specific tax issues.
                         </li>
@@ -272,6 +326,7 @@
         <div id="copyright">
             &copy; 2014 Better Things Financial Partners, LLC. All rights reserved.
         </div>
+		<div class="shadow bottom"></div>
     </div>
 </body>
 </html>
