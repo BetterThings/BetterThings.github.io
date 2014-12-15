@@ -37,7 +37,9 @@
 	addthis_config: false
 */
 
-msos.site = {};
+msos.site = {
+	loading: null
+};
 
 msos.console.info('site -> start, (/BetterThings/site.js file).');
 msos.console.time('site');
@@ -106,23 +108,6 @@ if (msos.config.visualevent) {
 	};
 
 }(jQuery));
-
-
-// Adjust marquee display using above
-msos.ondisplay_size_change.push(
-	function () {
-		"use strict";
-
-		var marquee = jQuery('#marquee');
-
-		marquee.hide();
-
-		// Adjust marquee for display size. (.8 is a compression factor for #marquee)
-		marquee.fitText(0.8, { maxFontSize: marquee.height() + 'px' });
-
-		marquee.fadeIn('slow');
-	}
-);
 
 
 // --------------------------
@@ -202,12 +187,12 @@ msos.site.auto_init = function () {
 	var temp_ai = 'msos.site.auto_init -> ',
 		cfg = msos.config,
 		bw_val = msos.config.cookie.site_bdwd.value || '',
-		bdwidth = bw_val ? parseInt(bw_val, 10) : 0;
+		bdwidth = bw_val ? parseInt(bw_val, 10) : 0,
+		loading_obj = null;
 
 	msos.console.debug(temp_ai + 'start.');
 
-	// Run MobileSiteOS sizing (alt. would be: use media queries instead)
-	if (cfg.run_size)							{ msos.require("msos.size"); }
+	msos.site.loading = msos.notify.loading('Page content will be ready momentarily.', 'Loading Page');
 
     // Based on page elements and configuration -> run functions or add modules
     if (cfg.run_ads
@@ -326,6 +311,9 @@ msos.site.visual_effects = function () {
 
 	// Active Menu Class
 	jQuery('#navbar li > a[href$="' + file + '"]').parents('li').addClass('active');
+
+	// Turn off loading indicator
+	msos.site.loading.fade_out();
 }
 
 // Load site specific setup code
