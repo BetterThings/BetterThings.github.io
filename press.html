@@ -26,7 +26,15 @@
 
 		#jumbotron_h1 {
 			margin-top: -1em;
-			margin-bottom: 5em;
+			margin-left: 1em;
+			margin-bottom: 1em;
+			color: #DDD;
+			text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+		}
+
+		#jumbotron_h1.privacy {
+			color: #DDD;
+			text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 		}
 
 		#notify_container {
@@ -105,7 +113,7 @@
 		/*==========  Default css (sizing, etc.)  ==========*/
 	
 		.jumbotron {
-			background-image: url("../images/sized/1920/lake_murray.jpg");
+			background-image: url("../images/sized/1920/hotel.jpg");
 		}
 	
 		/*==========  Non-Mobile First Method  ==========*/
@@ -114,7 +122,7 @@
 		@media only screen and (max-width : 1200px) {
 	
 			.jumbotron {
-				background-image: url("../images/sized/1280/lake_murray.jpg");
+				background-image: url("../images/sized/1280/hotel.jpg");
 			}
 		}
 	
@@ -122,7 +130,7 @@
 		@media only screen and (max-width : 992px) {
 	
 			.jumbotron {
-				background-image: url("../images/sized/960/lake_murray.jpg");
+				background-image: url("../images/sized/960/hotel.jpg");
 			}
 		}
 	
@@ -130,7 +138,7 @@
 		@media only screen and (max-width : 768px) {
 	
 			.jumbotron {
-				background-image: url("../images/sized/640/lake_murray.jpg");
+				background-image: url("../images/sized/640/hotel.jpg");
 			}
 		}
 	
@@ -138,7 +146,7 @@
 		@media only screen and (max-width : 480px) {
 	
 			.jumbotron {
-				background-image: url("../images/sized/480/lake_murray.jpg");
+				background-image: url("../images/sized/480/hotel.jpg");
 			}
 		}
 	
@@ -146,7 +154,7 @@
 		@media only screen and (max-width : 320px) {
 	
 			.jumbotron {
-				background-image: url("../images/sized/320/lake_murray.jpg");
+				background-image: url("../images/sized/320/hotel.jpg");
 			}
 		}
 
@@ -184,7 +192,8 @@
                                 About <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu" role="menu">
-								<li><a href="./about.html">Our Firm</a></li>
+								<li><a href="./firm.html">Our Firm</a></li>
+                                <li><a href="./about.html"><i class="fa fa-user"></i>Chip Estes, President</a></li>
 								<li><a href="./privacy.html">Privacy Statement</a></li>
 								<li><a href="./legal.html"><i class="fa fa-legal"></i>Legal Disclaimer</a></li>
 								<li><a href="./disclaimer.html"><i class="fa fa-legal"></i>Website Disclaimer</a></li>
@@ -222,6 +231,7 @@
             </div>
         </nav>
 
+
         <!--[if lt IE 8]>
         <p id="old_browser">
             You are using an <strong>outdated</strong> browser. Please
@@ -233,15 +243,7 @@
         <!-- Main jumbotron for a primary marketing message or call to action -->
         <div class="jumbotron">
             <div class="container">
-                <h1 id="jumbotron_h1">Welcome to Better Things <span class="no_wrap shorten">Financial Partners</span></h1>
-    
-                <div id="jumbotron_div">
-                    Today, many retirees are more concerned about outliving their retirement
-                    funds than they are about estate and inheritance planning. We are all
-                    living longer, and many could live well beyond the monetary benefits of our
-                    retirement plans. It is a serious problem, but there is a solution:
-                    <em><strong>Informed Retirement Planning.</strong></em>
-                </div>
+                <h1 id="jumbotron_h1" class="privacy">Latest Happenings</h1>
 
                 <div id="jumbotron_grid" class="row">
                    <div class="col-md-2">
@@ -251,21 +253,17 @@
                     <div class="col-md-10">
                         <p>
                             <ul id="rotating_header">
-                                <li>Are you planning for retirement now...
-                                    <br />Planning ahead is always a great strategy.</li>
-                                <li>You've worked hard to retire...
-                                    <br />We work hard so you can enjoy retirement to the fullest.</li>
-                                <li>How confident are you about...
-                                    <br />Reaching your retirement income goals?</li>
-                                <li>How literate are you about...
-                                    <br />The multitude of financial products available for retirees?</li>
+                                <li>Maybe all you need to do is add some color to your retirement portfolio</li>
+                                <li>Let us help you enjoy retirement to the fullest</li>
+                                <li>Is travel a part of your retirement plan?</li>
+                                <li>Is a second home or relocation a priority when you retire?</li>
                             </ul>
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-		<div class="shadow"></div>
+		<div class="shadow top"></div>
 
         <div id="page_content" class="container">
             <!-- Example row of columns -->
