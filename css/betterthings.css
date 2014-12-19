@@ -41,17 +41,20 @@ footer > hr {
 
 .shadow {
     height: 30px;
-    margin-top: -30px;
     background-image: url("../images/rule_shadow.png");
     background-repeat: no-repeat;
-    background-position: center top;
     -webkit-background-size: cover;
        -moz-background-size: cover;
             background-size: cover;
 }
 
+.shadow.top {
+    margin-top: -30px;
+    background-position: center top;
+}
+
 .shadow.bottom {
-    margin-top: 0;
+	background-position: center bottom;
     -webkit-transform:scaleY(-1);
        -moz-transform:scaleY(-1);
         -ms-transform:scaleY(-1);
@@ -116,6 +119,12 @@ ul.dropdown-menu i.fa {
 
 span.no_wrap {
     white-space: nowrap;
+}
+
+/* Stop AddThis Iframe adding padding to bottom of html node */
+#_atssh {
+	position: absolute;
+	bottom: 0;
 }
 
 /*==================================================
