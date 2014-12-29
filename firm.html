@@ -24,9 +24,14 @@
             color: #999;
         }
 
-        .jumbotron {
-            background-image: url("../images/lake_murray.jpg");
-        }
+		#jumbotron_h1 {
+			margin-top: -1em;
+			margin-bottom: 0.7em;
+		}
+
+		#jumbotron_div {
+			margin-bottom: 8em;
+		}
 
 		#notify_container {
 			position: absolute;
@@ -96,6 +101,59 @@
 			-webkit-box-shadow:0 0 12px #000;
 					box-shadow:0 0 12px #000;
 		}
+
+		/*==================================================
+		=            Bootstrap 3 Media Queries             =
+		==================================================*/
+	
+		/*==========  Default css (sizing, etc.)  ==========*/
+	
+		.jumbotron {
+			background-image: url("../images/sized/1920/lake_murray2.jpg");
+		}
+	
+		/*==========  Non-Mobile First Method  ==========*/
+	
+		/* Large Devices, Wide Screens */
+		@media only screen and (max-width : 1200px) {
+	
+			.jumbotron {
+				background-image: url("../images/sized/1280/lake_murray2.jpg");
+			}
+		}
+	
+		/* Medium Devices, Desktops */
+		@media only screen and (max-width : 992px) {
+	
+			.jumbotron {
+				background-image: url("../images/sized/960/lake_murray2.jpg");
+			}
+		}
+	
+		/* Small Devices, Tablets */
+		@media only screen and (max-width : 768px) {
+	
+			.jumbotron {
+				background-image: url("../images/sized/640/lake_murray2.jpg");
+			}
+		}
+	
+		/* Extra Small Devices, Phones */ 
+		@media only screen and (max-width : 480px) {
+	
+			.jumbotron {
+				background-image: url("../images/sized/480/lake_murray2.jpg");
+			}
+		}
+	
+		/* Custom, iPhone Retina */ 
+		@media only screen and (max-width : 320px) {
+	
+			.jumbotron {
+				background-image: url("../images/sized/320/lake_murray2.jpg");
+			}
+		}
+
     </style>
 
 	<script src="./mobilesiteos/msos/base.min.js"></script>
@@ -180,52 +238,24 @@
         <!-- Main jumbotron for a primary marketing message or call to action -->
         <div class="jumbotron">
             <div class="container">
-                <h1 id="jumbotron_h1">Welcome to Better Things Financial Partners, LLC</h1>
-    <p>
+                <h1 id="jumbotron_h1">Your Financial Partner</h1>
     
-    </p>
                 <div id="jumbotron_div">
-                    
-                    <p> We believe that there is a better way for most people to receive retirement planning and investment services.
-                    </p>
-                    <p>
-                    The Broker-Dealer model is just not efficient and cost effective for most clients. Too much client money is being wasted by Wall Street. 
-                    Investment clients are asking for a clearer fee structure with more client focused advisors. 
-                    </p>
-                    <p>
-                    Even today, Broker-Dealers and Wall Street are resisting stronger fiduciary requirements. 
-                    At Better Things Financial Partners LLC, we embrace the RIA fiduciary, pledging to act <b>in the best interests of our clients.</b>
-                    </p>
-                    <p>
-                    From our formation as a registered investment advising firm to accreditation as a Chartered Retirement Planning Counselor,
-                    our goal is to be able to provide the best financial advice and products at the best value for our clients.
-                    </p>
-                    <p>
-                    	You do not have compromise between working with a Broker-Dealer or doing it on your own. There is a <b>better way! </b>
-                    </p>
-                    <em><strong>Work with a  Registered Investment Advisor with Customized Retirement Planning.</strong></em>
+					Even today, Broker-Dealers and Wall Street are resisting stronger fiduciary requirements.
+					And still, too much client money is being wasted. Investment clients are demanding a
+					clearer fee structure, with more client focused advisory serivces. At Better Things
+					Financial Partners LLC, we embrace the RIA fiduciary, pledging to always act
+					<b>in the best interests of our clients.</b>
                 </div>
 
                 <div id="jumbotron_grid" class="row">
-                   <div class="col-md-2">
-                        <p>
-                            <a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a>
-                        </p>
-                    </div>
-    
-                    <div class="col-md-10">
-                        <p>
-                            <ul id="rotating_header">
-                                <li>Are you planning for retirement now...
-                                    <br />Planning ahead is always a great strategy.</li>
-                                <li>You've worked hard to retire...
-                                    <br />We work hard so you can enjoy retirement to the fullest.</li>
-                                <li>How confident are you about...
-                                    <br />Reaching your retirement income goals?</li>
-                                <li>How literate are you about...
-                                    <br />The multitude of financial products available for retirees?</li>
-                            </ul>
-                        </p>
+                    <div class="col-md-12">
+                        <ul id="rotating_header">
+                            <li>We believe that there is a better way for most people to receive retirement planning and investment services.</li>
+                            <li>The Broker-Dealer model is just not efficient and cost effective for most clients.</li>
+                            <li>You don't have to only invest with a Broker-Dealer. There is a <b>better way!</b></li>
+                            <li>Work with a Registered Investment Advisor with Customized Retirement Planning.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -234,7 +264,7 @@
         <div id="page_content" class="container">
             <!-- Example row of columns -->
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <h2>About Our Firm</h2>
 
 					<p>
@@ -268,7 +298,7 @@
 					</p>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <h2>Advisory Services</h2>
 
 					<p>
@@ -287,8 +317,11 @@
 						Investment strategies, investment selection, assets allocation, portfolio monitoring and
 						the overall investment program will be based on the above factors.
 					</p>
-
-					<h3>Financial Planning and Consulting</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<h2>Financial Planning and Consulting</h2>
 
 					<p>
 						BTFP offers financial planning and consulting services to all clients. Clients will
@@ -300,10 +333,9 @@
 						recommendation. If the client elects to act on any of the recommendations, the client is
 						under no obligation to effect the transaction through BTFP.
 					</p>
- 
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <h2>Client Tailored Services</h2>
 
 					<p>
@@ -313,6 +345,10 @@
 						Agreements may not be assigned without written client consent.
 					</p> 
 
+					<p>
+						From our formation as a registered investment advising firm to accreditation as a Chartered Retirement Planning Counselor,
+						our goal is to be able to provide the best financial advice and products at the best value for our clients.
+					</p>
                 </div>
             </div>
 

@@ -24,9 +24,10 @@
             color: #999;
         }
 
-        .jumbotron {
-            background-image: url("../images/lake_murray2.jpg");
-        }
+		#jumbotron_h1 {
+			margin-top: 0.5em;
+			margin-bottom: 1.5em;
+		}
 
 		#notify_container {
 			position: absolute;
@@ -101,6 +102,59 @@
             font-size: large;
             height: 2.2em;
         }
+
+		/*==================================================
+		=            Bootstrap 3 Media Queries             =
+		==================================================*/
+	
+		/*==========  Default css (sizing, etc.)  ==========*/
+	
+		.jumbotron {
+			background-image: url("../images/sized/1920/sunrise2.jpg");
+		}
+	
+		/*==========  Non-Mobile First Method  ==========*/
+	
+		/* Large Devices, Wide Screens */
+		@media only screen and (max-width : 1200px) {
+	
+			.jumbotron {
+				background-image: url("../images/sized/1280/sunrise2.jpg");
+			}
+		}
+	
+		/* Medium Devices, Desktops */
+		@media only screen and (max-width : 992px) {
+	
+			.jumbotron {
+				background-image: url("../images/sized/960/sunrise2.jpg");
+			}
+		}
+	
+		/* Small Devices, Tablets */
+		@media only screen and (max-width : 768px) {
+	
+			.jumbotron {
+				background-image: url("../images/sized/640/sunrise2.jpg");
+			}
+		}
+	
+		/* Extra Small Devices, Phones */ 
+		@media only screen and (max-width : 480px) {
+	
+			.jumbotron {
+				background-image: url("../images/sized/480/sunrise2.jpg");
+			}
+		}
+	
+		/* Custom, iPhone Retina */ 
+		@media only screen and (max-width : 320px) {
+	
+			.jumbotron {
+				background-image: url("../images/sized/320/sunrise2.jpg");
+			}
+		}
+
     </style>
 
 	<script src="./mobilesiteos/msos/base.min.js"></script>
@@ -188,46 +242,23 @@
                 <h1 id="jumbotron_h1">Thank you from Better Things Financial Partners, LLC</h1>
     
                 <div id="jumbotron_div">
-                    We appreciate you spending your time to learn more about our firm and a better way receive:
-                    <p>
-                    	
-                    </p>
-                    <p>
-                    	Retirement and Financial Planning
-                    </p>
-                    <p>
-                    	Investment Services
-                    </p>
-                    <p>
-                    	Client Centered Advice
-                    </p>
-                    
+                    We appreciate you taking the time to learn more about us and our firm. We would
+					love to help with your financial planning needs.
                 </div>
     
                 <div id="jumbotron_grid" class="row">
-                   <div class="col-md-2">
-                        <p>
-                            <a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a>
-                        </p>
-                    </div>
-    
                     <div class="col-md-10">
-                        <p>
-                            <ul id="rotating_header">
-                                <li>Are you planning for retirement now...
-                                    <br />Planning ahead is always a great strategy.</li>
-                                <li>You've worked hard to retire...
-                                    <br />We work hard so you can enjoy retirement to the fullest.</li>
-                                <li>How confident are you about...
-                                    <br />Reaching your retirement income goals?</li>
-                                <li>How literate are you about...
-                                    <br />The multitude of financial products available for retirees?</li>
-                            </ul>
-                        </p>
+                        <ul id="rotating_header">
+                            <li>Financial and Retirement Planning</li>
+							<li>Asset Management</li>
+                            <li>Investment Services</li>
+                            <li>Client Centered Advice</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
+		<div class="shadow top"></div>
 
         <div id="page_content" class="container">
             <!-- Example row of columns -->
@@ -238,8 +269,7 @@
                         <tr>
                             <td colspan="2">
                                 <address>
-                                  229 Wyndotte Court<br />
-                                  Lexington, SC 29072
+                                  229 Wyndotte Court, Lexington, SC 29072
                                 </address>
                             </td>
                         </tr><tr>
