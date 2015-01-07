@@ -3,7 +3,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="handheldfriendly" content="true" />
     <meta name="mobileoptimized"  content="width" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -24,9 +24,15 @@
             color: #999;
         }
 
-        .jumbotron {
-            background-image: url("../images/gov_building.jpg");
-        }
+		#jumbotron_h1 {
+			margin-top: 0.2em;
+			margin-bottom: 1em;
+		}
+
+		#jumbotron_h1.access {
+			color: #FFF;
+			text-shadow: 4px 4px 2px rgba(0, 0, 0, 1);
+		}
 
 		#notify_container {
 			position: absolute;
@@ -96,6 +102,59 @@
 			-webkit-box-shadow:0 0 12px #000;
 					box-shadow:0 0 12px #000;
 		}
+
+		/*==================================================
+		=            Bootstrap 3 Media Queries             =
+		==================================================*/
+	
+		/*==========  Default css (sizing, etc.)  ==========*/
+	
+		.jumbotron {
+			background-image: url("../images/sized/1920/sunset.jpg");
+		}
+	
+		/*==========  Non-Mobile First Method  ==========*/
+	
+		/* Large Devices, Wide Screens */
+		@media only screen and (max-width : 1200px) {
+	
+			.jumbotron {
+				background-image: url("../images/sized/1280/sunset.jpg");
+			}
+		}
+	
+		/* Medium Devices, Desktops */
+		@media only screen and (max-width : 992px) {
+	
+			.jumbotron {
+				background-image: url("../images/sized/960/sunset.jpg");
+			}
+		}
+	
+		/* Small Devices, Tablets */
+		@media only screen and (max-width : 768px) {
+	
+			.jumbotron {
+				background-image: url("../images/sized/640/sunset.jpg");
+			}
+		}
+	
+		/* Extra Small Devices, Phones */ 
+		@media only screen and (max-width : 480px) {
+	
+			.jumbotron {
+				background-image: url("../images/sized/480/sunset.jpg");
+			}
+		}
+	
+		/* Custom, iPhone Retina */ 
+		@media only screen and (max-width : 320px) {
+	
+			.jumbotron {
+				background-image: url("../images/sized/320/sunset.jpg");
+			}
+		}
+
     </style>
 
 	<script src="./mobilesiteos/msos/base.min.js"></script>
@@ -130,31 +189,24 @@
                                 About <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="./philosophy.html">Our Philosophy</a></li>
-                                <li><a href="./capabilities.html">Our Capabilities</a></li>
+								<li><a href="./firm.html">Our Firm</a></li>
                                 <li><a href="./about.html"><i class="fa fa-user"></i>Chip Estes, President</a></li>
 								<li><a href="./privacy.html">Privacy Statement</a></li>
 								<li><a href="./legal.html"><i class="fa fa-legal"></i>Legal Disclaimer</a></li>
 								<li><a href="./disclaimer.html"><i class="fa fa-legal"></i>Website Disclaimer</a></li>
-                                <li class="divider"></li>
-                                <li class="dropdown-header">Lexington, SC</li>
-                                <li><a href="./contact.html"><i class="fa fa-phone"></i>Contact Us</a></li>
                             </ul>
                         </li>
+						<li><a href="./contact.html"><i class="fa fa-phone"></i> Contact</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                 Services <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="./financial.html">Financial Planning</a></li>
 								<li><a href="./retirement.html">Retirement Planning</a></li>
+                                <li><a href="./financial.html">Financial Planning</a></li>
+								<li><a href="./investment.html">Investment Services</a></li>
                                 <li><a href="./estate.html">Estate Planning</a></li>
-                                <li><a href="./investment.html">Investment Planning</a></li>
-								<li><a href="./access.html"><i class="fa fa-sign-in"></i>Account Access</a></li>
-                                <li class="divider"></li>
-                                <li class="dropdown-header">Business Owners</li>
-                                <li><a href="#">Business Planning</a></li>
-                                <li><a href="#">Charitable Planning</a></li>
+								<!-- <li><a href="./access.html"><i class="fa fa-sign-in"></i>Account Access</a></li> -->
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -168,7 +220,7 @@
                                 <li class="divider"></li>
                                 <li class="dropdown-header">Current</li>
                                 <li><a href="./stocks.html">Stocks/Markets</a></li>
-                                <li><a href="#">Press Releases</a></li>
+                                <!-- <li><a href="./press.html">Press Releases</a></li> -->
                             </ul>
                         </li>
                     </ul>
@@ -194,7 +246,7 @@
                     funds than they are about estate and inheritance planning. We are all
                     living longer, and many could live well beyond the monetary benefits of our
                     retirement plans. It is a serious problem, but there is a solution:
-                    <em><strong>Informed Retirement Planning.</strong></em>
+                    <span class="emph">Informed Retirement Planning.</span>
                 </div>
     
                 <div id="jumbotron_grid" class="row">
@@ -205,264 +257,28 @@
                     </div>
     
                     <div class="col-md-10">
-                        <p>
-                            <ul id="rotating_header">
-                                <li>Are you planning for retirement now...
-                                    <br />Planning ahead is always a great strategy.</li>
-                                <li>You've worked hard to retire...
-                                    <br />We work hard so you can enjoy retirement to the fullest.</li>
-                                <li>How confident are you about...
-                                    <br />Reaching your retirement income goals?</li>
-                                <li>How literate are you about...
-                                    <br />The multitude of financial products available for retirees?</li>
-                            </ul>
-                        </p>
+						<ul id="rotating_header">
+							<li>Are you planning for retirement now...
+								<br />Planning ahead is always a great strategy.</li>
+							<li>You've worked hard to retire...
+								<br />We work hard so you can enjoy retirement to the fullest.</li>
+							<li>How confident are you about...
+								<br />Reaching your retirement income goals?</li>
+							<li>How literate are you about...
+								<br />The multitude of financial products available for retirees?</li>
+						</ul>
                     </div>
                 </div>
             </div>
         </div>
+		<div class="shadow top"></div>
 
         <div id="page_content" class="container">
             <!-- Example row of columns -->
             <div class="row">
                 <div class="col-md-12">
-                    <h2>Charles "Chip" Estes</h2>
-
-                    <table>
-                      <tbody>
-                        <tr>
-                            <td class='label_column'>President</td>
-                            <td>Better Things Financial Partners, LLC</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    
-                    <table class="description">
-                      <tbody>
-                        <tr>
-                            <td class='label_column'> </td>
-                            <td style="font-weight:600;">
-                                Chartered Retirement Planning Counselor (CRPC)
-                                <hr class="about" />
-                                Registered investment adviser specializing in counseling and financial planning
-                                for retirement. registered investment advisor (RIA) manages the assets of
-                                high net-worth individuals and institutional investors, and sits
-                                on the buy side of the investment field. He or she must register
-                                with the Securities and Exchange Commission (SEC) and any states
-                                in which he or she operates.
-                                <ul>
-                                    <li>Licensed Financial Adviser - Series 6, 63, 66 and 7</li>
-                                    <li>Licensed for Life & Health Insurance in SC</li>
-                                </ul>
-                            </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    
-                    <table>
-                      <tbody>
-                        <tr>
-                            <td class='label_column'>Financial Advisor</td>
-                            <td>NCFS Carolina, Lexingtion, South Carolina</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    
-                    <table class="description">
-                      <tbody>
-                        <tr>
-                            <td class='label_column'> </td>
-                            <td style="font-weight:600;">
-                                College Planning and Funding Coordinator
-                                <hr class="about" />
-                                Advised and facilitated the financial planning for soon to be high-school graduates
-                                in anticipation of best managing their college funding needs.
-                                Provided expertise in inuity planning for a "College Planned Path" for students, parents,
-                                and counselors. The college process can be overwhelming. With no customized plan,
-                                college funding may become "retirement sacrifice"! For clients, the education costs
-                                could be afforable and the college experience becomes rewarding.
-                            </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    
-                    <table>
-                      <tbody>
-                        <tr>
-                            <td class='label_column'>Wealth Advisor</td>
-                            <td>Branch Banking and Trust Company (BB&T), Lexington, South Carolina</td>
-                        </tr>
-                      </tbody>
-                    </table>
-
-                    <table  class="description">
-                      <tbody>
-                        <tr>
-                            <td class='label_column'> </td>
-                            <td style="font-weight:600;">
-                                BB&T Bank Officer
-                                <hr class="about" />
-                                Primary focus is on new business development in an assigned territory.
-                                Enthusiastic mortgage professional, dedicated to helping clients meet
-                                their financial needs. Together we'll find a mortgage solution that fits
-                                your needs!Specializes but not limited to new construction purchase and
-                                construction to perm.
-                            </td>
-                        </tr>
-                      </tbody>
-                    </table>
-
-                    <table>
-                      <tbody>
-                        <tr>
-                            <td class='label_column'>Financial Advisor</td>
-                            <td>Bank of America</td>
-                        </tr>
-                      </tbody>
-                    </table>
-
-                    <table class="description">
-                      <tbody>
-                        <tr>
-                            <td class='label_column'> </td>
-                            <td style="font-weight:600;">
-                                Research and development center for North America.
-                                <hr class="about" />
-                                Designed tire components to produce finished tire architecture. Specified
-                                fabrication processes and supervised construction activities. Conceived and implemented
-                                methods of hand building experimental doublewide tires.
-                            </td>
-                        </tr>
-                      </tbody>
-                    </table>
-
-                    <table>
-                      <tbody>
-                        <tr>
-                            <td class='label_column'>Formal Education</td>
-                            <td>College for Financial Planning, 2014</td>
-                        </tr>
-                      </tbody>
-                    </table>
-
-                    <table class="description">
-                      <tbody>
-                        <tr>
-                            <td class='label_column'> </td>
-                            <td style="font-weight:600;">
-                                Chartered Retirement Planning Counselor (CRPC)
-                                <hr class="about" />
-                                Completed coarse work in retirement planning as accredited by blah blah.
-                            </td>
-                        </tr>
-                      </tbody>
-                    </table>
-
-                    <table>
-                      <tbody>
-                        <tr>
-                            <td class='label_column'> </td>
-                            <td>Clemson University</td>
-                        </tr>
-                      </tbody>
-                    </table>
-
-                    <table class="description">
-                      <tbody>
-                        <tr>
-                            <td class='label_column'> </td>
-                            <td style="font-weight:600;">
-                                Bachelor's of Science, 1980 - 1985
-                                <hr class="about" />
-                                Earned degree: Chemical Engineering.
-                            </td>
-                        </tr>
-                      </tbody>
-                    </table>
-
-                    <table>
-                      <tbody>
-                        <tr>
-                            <td class='label_column'>Expertise</td>
-                            <td style='width:150px;'>Name</td>
-                            <td>Experience</td>
-                        </tr>
-                      </tbody>
-                    </table>
-
-                    <table>
-                      <tbody>
-                        <tr>
-                            <td class='label_column'> </td>
-                            <td style='width:150px;'>Internet - HTML5</td>
-                            <td>6 years</td>
-                        </tr>
-                      </tbody>
-                    </table>
-
-                    <table>
-                      <tbody>
-                        <tr>
-                            <td class='label_column'> </td>
-                            <td style='width:150px;'>Internet - JavaScript</td>
-                            <td>6 years</td>
-                        </tr>
-                      </tbody>
-                    </table>
-
-                    <table>
-                      <tbody>
-                        <tr>
-                            <td class='label_column'> </td>
-                            <td style='width:150px;'>Internet - CSS3</td>
-                            <td>4 year</td>
-                      </tr>
-                      </tbody>
-                    </table>
-
-                    <table>
-                      <tbody>
-                        <tr>
-                            <td class='label_column'> </td>
-                            <td style='width:150px;'>Internet - jQuery</td>
-                            <td>3 year</td>
-                      </tr>
-                      </tbody>
-                    </table>
-
-                    <table>
-                      <tbody>
-                        <tr>
-                            <td class='label_column'> </td>
-                            <td style='width:150px;'>Internet - PERL</td>
-                            <td>4 years</td>
-                        </tr>
-                      </tbody>
-                    </table>
-
-                    <table>
-                      <tbody>
-                        <tr>
-                            <td class='label_column'> </td>
-                            <td style='width:150px;'>FAFSA, SAR, EFC (college funding) expertise</td>
-                            <td>1 year</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <div id="cffp" class="row">
-                <div class="col-md-2">
-                    <a href="https://www.cffp.edu/" target="_blank">
-                        <img src="./images/cffp_logo_sm.png" alt="College for Financial Planning Logo" />
-                    </a>
-                </div>
-                <div class="col-md-8">
-                    <b>Chartered Retirement Planning Counselor<sup>SM</sup></b> and
-                    <a href="http://cffpdesignations.com/designation/crpc"><b>CRPC®</b></a> are
-                    registered service marks of the College for Financial Planning.
-                </div>
+					Add access html code here!
+				</div>
             </div>
 
             <footer>

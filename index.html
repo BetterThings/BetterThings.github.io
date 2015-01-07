@@ -3,7 +3,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="handheldfriendly" content="true" />
     <meta name="mobileoptimized"  content="width" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -25,8 +25,13 @@
         }
 
 		#jumbotron_h1 {
-			margin-top: -1em;
-			margin-bottom: 8em;
+			margin-top: 0.2em;
+			margin-bottom: 1.5em;
+		}
+
+		#jumbotron_h1.financial {
+			color: #FFF;
+			text-shadow: 4px 4px 2px rgba(0, 0, 0, 1);
 		}
 
 		#jumbotron_div {
@@ -109,7 +114,7 @@
 		/*==========  Default css (sizing, etc.)  ==========*/
 	
 		.jumbotron {
-			background-image: url("../images/sized/1920/lake_murray.jpg");
+			background-image: url("../images/sized/1920/calm_sunrise.jpg");
 		}
 	
 		/*==========  Non-Mobile First Method  ==========*/
@@ -118,7 +123,7 @@
 		@media only screen and (max-width : 1200px) {
 	
 			.jumbotron {
-				background-image: url("../images/sized/1280/lake_murray.jpg");
+				background-image: url("../images/sized/1280/calm_sunrise.jpg");
 			}
 		}
 	
@@ -126,7 +131,7 @@
 		@media only screen and (max-width : 992px) {
 	
 			.jumbotron {
-				background-image: url("../images/sized/960/lake_murray.jpg");
+				background-image: url("../images/sized/960/calm_sunrise.jpg");
 			}
 		}
 	
@@ -134,7 +139,7 @@
 		@media only screen and (max-width : 768px) {
 	
 			.jumbotron {
-				background-image: url("../images/sized/640/lake_murray.jpg");
+				background-image: url("../images/sized/640/calm_sunrise.jpg");
 			}
 		}
 	
@@ -142,7 +147,7 @@
 		@media only screen and (max-width : 480px) {
 	
 			.jumbotron {
-				background-image: url("../images/sized/480/lake_murray.jpg");
+				background-image: url("../images/sized/480/calm_sunrise.jpg");
 			}
 		}
 	
@@ -150,7 +155,7 @@
 		@media only screen and (max-width : 320px) {
 	
 			.jumbotron {
-				background-image: url("../images/sized/320/lake_murray.jpg");
+				background-image: url("../images/sized/320/calm_sunrise.jpg");
 			}
 		}
 
@@ -203,9 +208,9 @@
                             <ul class="dropdown-menu" role="menu">
 								<li><a href="./retirement.html">Retirement Planning</a></li>
                                 <li><a href="./financial.html">Financial Planning</a></li>
-								<li><a href="./investment.html">Investment Planning</a></li>
+								<li><a href="./investment.html">Investment Services</a></li>
                                 <li><a href="./estate.html">Estate Planning</a></li>
-								<li><a href="./access.html"><i class="fa fa-sign-in"></i>Account Access</a></li>
+								<!-- <li><a href="./access.html"><i class="fa fa-sign-in"></i>Account Access</a></li> -->
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -219,7 +224,7 @@
                                 <li class="divider"></li>
                                 <li class="dropdown-header">Current</li>
                                 <li><a href="./stocks.html">Stocks/Markets</a></li>
-                                <li><a href="./press.html">Press Releases</a></li>
+                                <!-- <li><a href="./press.html">Press Releases</a></li> -->
                             </ul>
                         </li>
                     </ul>
@@ -276,13 +281,17 @@
                         The solution is an investment strategy that includes the objective of providing
                         inflation-adjusted income. Our financial analysis can offer you a unique
                         report that will answer the previous three questions, and help you navigate
-                        through retirement by developing a <strong>plan that addresses inflation,
-                        taxes, income and asset allocation</strong>
+                        through retirement by developing a
+						<span class="emph">
+							plan that addresses inflation, taxes, income and asset allocation
+						</span>
                     </p>
 
                     <p>
                         A distribution strategy with these objectives:
-                        <strong>increase income, decrease risk, minimize income taxes, preserve principal</strong>
+                        <span class="emph">
+							increase income, decrease risk, minimize income taxes, preserve principal
+						</span>
                     </p>
 
                     <p>
@@ -291,25 +300,25 @@
                     	
                     </p>
 
-		<p>
-			<strong>
-			Our client-centered focus begins with a complimentary meeting to determine if we are a good fit 
-			for each other by reviewing your concerns, goals and requirements. 	
-			</strong>
-		</p>
-			<p>
-				View "Financial Planning" and see how we can help!
-			</p>
+					<p>
+						<span class="emph">
+							Our client-centered focus begins with a complimentary meeting to determine
+							if we are a good fit for each other by reviewing your concerns, goals and
+							requirements. 	
+						</span>
+					</p>
+
+					<p>
+						View "Financial Planning" and see how we can help!
+					</p>
+
                     <p>
-						<a class="btn btn-default" href="http://cffpdesignations.com/designation/crpc" role="button">
-							<i class="fa fa-external-link"></i> CRPC®</a>
+						<a class="btn btn-default" href="./financial.html" role="button">Financial Planning</a>
 					</p>
                 </div>
 
                 <div class="col-md-6">
                     <h2>Better Investment Services</h2>
-
-                   
 
                     <ul>
                         <li>Are you paying Wall Street too much?</li>
@@ -317,13 +326,15 @@
                         <li>Are you using the right tools for your financial goals?</li>
 						<li>Do you know what financial products are available?</li>
                     </ul>
- 		<p>
-                        <strong>$600 Billion in Annual Fee Revenue </strong> - For what, exactly?
-                    <p>
+
+					<p>
+                        <span class="emph">$600 Billion in Annual Fee Revenue </span> - For what, exactly?
+                    </p>
+
                     <p>
                         A new report from the Center for Applied Research, a think tank associated 
                         with State Street Corporation, estimates that investment management industry
-                        annual fee revenue -- from active management -- is <b>$600 billion.</b> (The estimate
+                        annual fee revenue -- from active management -- is <span class="emph">$600 billion.</span> (The estimate
                         is derived from a Boston Consulting Group report and based on estimates of 
                         world-wide assets under active management.) 
                     </p>  
@@ -335,7 +346,7 @@
 					</p>
 
                     <p>
-                        You may be paying 2%-5% in fees and costs <b>that you don't even see!</b>
+                        You may be paying 2%-5% in fees and costs <span class="emph">that you don't even see!</span>
                     </p>
 
                     <p>
@@ -350,7 +361,7 @@
                     <h2>A Better Advisor Relationship</h2>
 
 					<p>
-                        Better Things Financial Partners, LLC ("BTFP") is a <b>Registered Investment Advisor</b>.
+                        Better Things Financial Partners, LLC (BTFP) is a <span class="emph">Registered Investment Advisor</span>.
 						We must follow the highest known standard in law, known as the “trust” standard. This
 						means that we are required by law to place the interests of our clients before our own, and 
                         fulfill critical fiduciary duties in trust and confidence. Why is this important? Here are
@@ -364,7 +375,7 @@
                     </ul>
                     
 					<p>
-						In other words, we must provide our <b>“best impartial advice”</b>.
+						In other words, we must provide our <span class="emph">“best impartial advice”</span>.
 					</p>
 
                     <p>
@@ -376,13 +387,13 @@
                     </p>
 
                     <p>
-                        At BTFP, we do not work for a broker-dealer: <b>we work only for you, our client</b>.
+                        At BTFP, we do not work for a broker-dealer: <span class="emph">we work only for you, our client</span>.
 						Have a look at this video, linked here, which illustrates the difference between a
 						"fiduciary" versus "suitability" standard of client advisement. 
                     </p>
 
                     <p>
-						<a class="btn btn-default" href="https://www.youtube.com/watch?feature=player_embedded&v=Dg5RRMAc1GY" role="button">
+						<a class="btn btn-default" href="https://www.youtube.com/watch?feature=player_embedded&amp;v=Dg5RRMAc1GY" role="button">
 							<i class="fa fa-external-link"></i> A Butcher vs. Nutricianist
 						</a>
 					</p>

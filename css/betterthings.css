@@ -122,6 +122,11 @@ span.no_wrap {
     white-space: nowrap;
 }
 
+span.emph {
+	font-weight: bold;
+	font-style: italic;
+}
+
 /* Stop AddThis Iframe adding padding to bottom of html node */
 #_atssh {
 	position: absolute;
