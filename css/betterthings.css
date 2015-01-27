@@ -95,6 +95,14 @@ footer > hr {
     color: #f0ad4e;
 }
 
+#btfp_icon {
+	height: 0.8em;
+	width: 0.8em;
+	margin-bottom: 0.2em;
+	border: 1px outset #CCC;
+	border-radius: 0.4em;
+}
+
 #social_ties {
     text-align: center;
     margin-right: auto;
