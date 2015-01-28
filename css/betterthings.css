@@ -95,7 +95,7 @@ footer > hr {
     color: #f0ad4e;
 }
 
-#btfp_icon {
+img.btfp_icon {
 	height: 0.8em;
 	width: 0.8em;
 	margin-bottom: 0.2em;
@@ -133,6 +133,17 @@ span.no_wrap {
 span.emph {
 	font-weight: bold;
 	font-style: italic;
+}
+
+div.btfp_icon {
+	height: 0.9em;
+	width: 0.9em;
+	border: 1px solid #999;
+	border-radius: 0.4em;
+	display: inline-block;
+	background-image: url("../images/btfp_icon.png");
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 /* Stop AddThis Iframe adding padding to bottom of html node */
