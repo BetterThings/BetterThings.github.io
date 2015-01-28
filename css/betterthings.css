@@ -146,6 +146,17 @@ div.btfp_icon {
     background-repeat: no-repeat;
 }
 
+div.btfp_logo {
+	height: 60px;
+	width: 306px;
+	border: 1px solid #999;
+	border-radius: 0.6em;
+	display: inline-block;
+	background-image: url("../images/btfp_logo_lg.png");
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
 /* Stop AddThis Iframe adding padding to bottom of html node */
 #_atssh {
 	position: absolute;

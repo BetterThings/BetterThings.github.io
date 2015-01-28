@@ -3,7 +3,6 @@
 <head>
 
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="handheldfriendly" content="true" />
     <meta name="mobileoptimized"  content="width" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -110,52 +109,55 @@
 		/*==========  Default css (sizing, etc.)  ==========*/
 	
 		.jumbotron {
-			background-image: url("../images/sized/1920/pensacola.jpg");
+			background-image: url("./images/sized/1920/pensacola.jpg");
 		}
 	
 		/*==========  Non-Mobile First Method  ==========*/
 	
 		/* Large Devices, Wide Screens */
-		@media only screen and (max-width : 1200px) {
+		@media only screen and (max-width: 1200px) {
 	
 			.jumbotron {
-				background-image: url("../images/sized/1280/pensacola.jpg");
+				background-image: url("./images/sized/1280/pensacola.jpg");
 			}
 		}
 	
 		/* Medium Devices, Desktops */
-		@media only screen and (max-width : 992px) {
+		@media only screen and (max-width: 992px) {
 	
 			.jumbotron {
-				background-image: url("../images/sized/960/pensacola.jpg");
+				background-image: url("./images/sized/960/pensacola.jpg");
 			}
 		}
 	
 		/* Small Devices, Tablets */
-		@media only screen and (max-width : 768px) {
+		@media only screen and (max-width: 768px) {
 	
 			.jumbotron {
-				background-image: url("../images/sized/640/pensacola.jpg");
+				background-image: url("./images/sized/640/pensacola.jpg");
 			}
 		}
 	
 		/* Extra Small Devices, Phones */ 
-		@media only screen and (max-width : 480px) {
+		@media only screen and (max-width: 480px) {
 	
 			.jumbotron {
-				background-image: url("../images/sized/480/pensacola.jpg");
+				background-image: url("./images/sized/480/pensacola.jpg");
 			}
 		}
 	
 		/* Custom, iPhone Retina */ 
-		@media only screen and (max-width : 320px) {
+		@media only screen and (max-width: 320px) {
 	
 			.jumbotron {
-				background-image: url("../images/sized/320/pensacola.jpg");
+				background-image: url("./images/sized/320/pensacola.jpg");
 			}
 		}
 
     </style>
+
+	<link rel="shortcut icon" href="./images/btfp_icon.png" type="image/png">
+	<link rel="icon" href="./favicon.ico" type="image/x-icon">
 
 	<script src="./mobilesiteos/msos/base.min.js"></script>
 	<script src="./config.js"></script>
@@ -251,7 +253,6 @@
                     <h2>
                         Better Things <span style="font-size: smaller;" class="no_wrap">Financial Partners, LLC</span>
                     </h2>
-
                     <table>
                         <tr>
                             <td colspan="2">
@@ -271,7 +272,7 @@
                 </div>
 
                 <div class="col-md-8">
-                    <h2>Legal Disclosures</h2>
+                    <h2><div class="btfp_icon"></div> Legal Disclosures</h2>
 
                     <p>
                         The information on this website is intended only for persons and entities
