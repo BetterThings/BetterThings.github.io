@@ -20,9 +20,8 @@ footer > hr {
 .jumbotron {
     position: relative;
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-            background-size: cover;
+	background-position: center center;
+    background-size: cover;
 }
 
 #jumbotron_h1 {
@@ -44,9 +43,7 @@ footer > hr {
     height: 30px;
     background-image: url("../images/rule_shadow.png");
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-            background-size: cover;
+    background-size: cover;
 }
 
 .shadow.top {
@@ -135,9 +132,15 @@ span.emph {
 	font-style: italic;
 }
 
-div.btfp_icon {
+h2.w_icon,
+h3.w_icon {
+	margin-left: 2em;
+}
+
+i.btfp_icon {
 	height: 0.9em;
 	width: 0.9em;
+	margin-left: -2em;
 	border: 1px solid #999;
 	border-radius: 0.4em;
 	display: inline-block;
@@ -169,10 +172,6 @@ div.btfp_logo {
 
     /*==========  Default css (sizing, etc.)  ==========*/
 
-        .jumbotron {
-			min-height: 680px;
-		}
-
         #jumbotron_h1 {
             font-size: 40px;
             font-family: Georgia, serif;
@@ -193,10 +192,6 @@ div.btfp_logo {
 	/* Large Devices, Wide Screens */
 	@media only screen and (max-width: 1200px) {
 
-        .jumbotron {
-			min-height: 450px;
-		}
-
         #jumbotron_h1 {
             font-size: 35px;
         }
@@ -213,10 +208,6 @@ div.btfp_logo {
 	/* Medium Devices, Desktops */
 	@media only screen and (max-width: 992px) {
 
-        .jumbotron {
-			min-height: 340px;
-		}
-
         #jumbotron_h1 {
             font-size: 30px;
         }
@@ -228,14 +219,16 @@ div.btfp_logo {
         #rotating_header > li {
             font-size: x-large;
         }
+
+		/* Adjust so menu doesn't wrap (covering jumbotron) */
+		#navbar > .nav > li > a {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
 	}
 
 	/* Small Devices, Tablets */
 	@media only screen and (max-width: 768px) {
-
-        .jumbotron {
-			min-height: 220px;
-		}
 
         #jumbotron_h1 {
             font-size: 25px;
@@ -253,10 +246,6 @@ div.btfp_logo {
 	/* Extra Small Devices, Phones */ 
 	@media only screen and (max-width: 480px) {
 
-        .jumbotron {
-			min-height: 170px;
-		}
-
         #jumbotron_h1 {
             font-size: 25px;
         }
@@ -269,6 +258,14 @@ div.btfp_logo {
             font-size: medium;
         }
 
+		h2 {
+			font-size: x-large;
+		}
+
+		h3 {
+			font-size: large;
+		}
+
         .shorten {
             display: none;
         }
@@ -276,10 +273,6 @@ div.btfp_logo {
 
 	/* Custom, iPhone Retina */ 
 	@media only screen and (max-width: 320px) {
-
-        .jumbotron {
-			min-height: 110px;
-		}
 
         #jumbotron_h1 {
             font-size: 20px;
@@ -293,6 +286,14 @@ div.btfp_logo {
             font-size: medium;
         }
 
+		h2 {
+			font-size: large;
+		}
+
+		h3 {
+			font-size: medium;
+		}
+	
         .shorten {
             display: none;
         }
